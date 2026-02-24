@@ -76,13 +76,17 @@ signupForm.addEventListener("submit", function(e) {
 loginForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // Fake validation (you can improve later)
     const email = loginForm.querySelector("input[type='email']").value;
     const password = document.getElementById("loginPassword").value;
 
     if (email && password) {
-        // Redirect to dashboard
+
+        // ✅ STORE SESSION
+        localStorage.setItem("travelUser", email);
+
+        // Redirect
         window.location.href = "dashboard.html";
+
     } else {
         document.getElementById("loginError").innerText = "Invalid credentials";
     }
