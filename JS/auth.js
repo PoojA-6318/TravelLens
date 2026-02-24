@@ -47,35 +47,45 @@ signupForm.querySelector("input[type='password']").addEventListener("input", fun
 });
 
 // ===== SIGN UP =====
+const loginSlider = document.querySelector(".form-slider");
+const successPopup = document.getElementById("successPopup");
+
 signupForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const name = signupForm.querySelector("input[type='text']").value;
-    const email = signupForm.querySelector("input[type='email']").value;
-    const password = signupForm.querySelector("input[type='password']").value;
+    // Show popup
+    successPopup.classList.add("active");
 
-    localStorage.setItem("userName", name);
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userPassword", password);
+    // Trigger confetti
+    confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 }
+    });
 
-    // 🎉 Trigger Confetti
-    if (typeof confetti === "function") {
-        confetti({
-            particleCount: 120,
-            spread: 90,
-            origin: { y: 0.6 }
-        });
-    }
-
-    // Show success message
-    strengthText.textContent = "Account created successfully!";
-    strengthText.style.color = "#00ffcc";
-
-    // After 2 seconds switch to login
+    // After 3 seconds → hide popup + go to login
     setTimeout(() => {
-        document.querySelector(".form-slider")
-            .classList.remove("active");
+        successPopup.classList.remove("active");
+
+        // Slide back to login
+        loginSlider.style.transform = "translateX(0%)";
+
     }, 3000);
+});
+
+loginForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Fake validation (you can improve later)
+    const email = loginForm.querySelector("input[type='email']").value;
+    const password = document.getElementById("loginPassword").value;
+
+    if (email && password) {
+        // Redirect to dashboard
+        window.location.href = "dashboard.html";
+    } else {
+        document.getElementById("loginError").innerText = "Invalid credentials";
+    }
 });
 
 // ===== LOGIN =====
