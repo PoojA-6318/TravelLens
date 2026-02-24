@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Ooty Lake",
+    "city": "Ooty",
+    "category": "Relaxed",
+    "cost": 200,
+    "popularity": 9
+  },
+  {
+    "name": "Doddabetta Peak Trek",
+    "city": "Ooty",
+    "category": "Adventure",
+    "cost": 300,
+    "popularity": 8
+  },
+  {
+    "name": "Kodaikanal Lake",
+    "city": "Kodaikanal",
+    "category": "Relaxed",
+    "cost": 250,
+    "popularity": 9
+  },
+  {
+    "name": "Meenakshi Amman Temple",
+    "city": "Madurai",
+    "category": "Spiritual",
+    "cost": 100,
+    "popularity": 10
+  },
+  {
+    "name": "Ramanathaswamy Temple",
+    "city": "Rameswaram",
+    "category": "Spiritual",
+    "cost": 120,
+    "popularity": 9
+  },
+  {
+    "name": "Marina Beach",
+    "city": "Chennai",
+    "category": "Relaxed",
+    "cost": 50,
+    "popularity": 8
+  },
+  {
+    "name": "Mahabalipuram Shore Temple",
+    "city": "Mahabalipuram",
+    "category": "Romantic",
+    "cost": 200,
+    "popularity": 8
+  },
+  {
+    "name": "Yercaud Hills Trek",
+    "city": "Yercaud",
+    "category": "Adventure",
+    "cost": 250,
+    "popularity": 7
+  },
+  {
+    "name": "Kanyakumari Sunrise Point",
+    "city": "Kanyakumari",
+    "category": "Romantic",
+    "cost": 150,
+    "popularity": 9
+  },
+  {
+    "name": "Chennai Nightlife (T. Nagar)",
+    "city": "Chennai",
+    "category": "Party",
+    "cost": 500,
+    "popularity": 7
+  }
+]

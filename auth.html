@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TravelLens Auth</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="auth-body">
+
+<div class="glass-container">
+
+    <div class="form-slider">
+
+        <!-- Login -->
+        <div class="form-box login-box">
+            <h2>Welcome Back</h2>
+            <p>Login to continue your journey.</p>
+
+            <form>
+              <input type="email" placeholder="Email Address" required>
+
+              <div class="password-wrapper">
+                  <input type="password" placeholder="Password" required id="loginPassword" autocomplete="new-password">
+                  <span class="toggle-eye" data-target="loginPassword">👁</span>
+              </div>
+
+              <label class="remember-me">
+                  <input type="checkbox" id="rememberMe">
+                  Remember Me
+              </label>
+
+              <p class="error-message" id="loginError"></p>
+
+              <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <span class="switch-link">
+                Don’t have an account?
+                <button type="button" id="goSignup">Sign Up</button>
+            </span>
+        </div>
+
+        <!-- Signup -->
+        <div class="form-box signup-box">
+            <h2>Create Account</h2>
+            <p>Start exploring Tamil Nadu smartly.</p>
+
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <div class="password-wrapper">
+                  <input type="password" placeholder="Create Password" required id="signupPassword" autocomplete="new-password">
+                  <span class="toggle-eye" data-target="signupPassword">👁</span>
+                </div>
+                <p class="password-strength">Password Strength: <span id="strengthText">—</span></p>
+                <button type="submit" class="btn-primary">Enter Account</button>
+            </form>
+
+            <span class="switch-link">
+                Already have an account?
+                <button type="button" id="goLogin">Login</button>
+            </span>
+        </div>
+
+    </div>
+
+</div>
+<div class="success-popup" id="successPopup">
+    <div class="success-content">
+        <div class="checkmark">✓</div>
+        <h3>Account Created Successfully!</h3>
+        <p>Welcome to TravelLens 🌿</p>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

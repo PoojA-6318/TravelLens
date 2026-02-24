@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelLens - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar scrolled">
+    <div class="logo">TravelLens</div>
+    <nav>
+        <ul>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h2 id="dashboardTitle">Smart Travel Dashboard</h2>
+
+    <!-- Mood Selection -->
+    <div class="mood-section">
+        <h3>Select Your Travel Mood</h3>
+        <div class="mood-options">
+            <button class="mood-btn">Relaxed</button>
+            <button class="mood-btn">Adventure</button>
+            <button class="mood-btn">Romantic</button>
+            <button class="mood-btn">Spiritual</button>
+            <button class="mood-btn">Party</button>
+        </div>
+    </div>
+
+    <!-- Destination + Budget -->
+    <div class="input-section">
+        <input type="text" placeholder="Enter Destination">
+        <input type="number" placeholder="Enter Budget ($)">
+        <button class="btn-primary">Analyze Trip</button>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-cards">
+        <div class="info-card">
+            <h4>Weather</h4>
+            <p>--</p>
+        </div>
+        <div class="info-card">
+            <h4>Smart Travel Score</h4>
+            <p>--</p>
+        </div>
+    </div>
+
+    <!-- Recommended Attractions -->
+    <div class="recommendations">
+        <h3>Recommended Attractions</h3>
+        <div class="card-grid">
+            <!-- Will be dynamically populated -->
+        </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+        <a href="planner.html" class="btn-primary">Generate Itinerary</a>
+    </div>
+
+</section>
+
+<script src="js/engine.js"></script>
+<script>
+
+let selectedMood = null;
+
+const moodButtons = document.querySelectorAll(".mood-btn");
+moodButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        selectedMood = btn.textContent;
+        moodButtons.forEach(b => b.style.background = "white");
+        btn.style.background = "#60A5FA";
+        btn.style.color = "white";
+    });
+});
+
+document.querySelector(".btn-primary").addEventListener("click", async () => {
+
+    const budget = document.querySelector('input[type="number"]').value;
+
+    if (!selectedMood) {
+        alert("Please select a mood");
+        return;
+    }
+
+    const response = await fetch("assets/data/destinations.json");
+    const data = await response.json();
+
+    const engine = new TravelEngine(data);
+
+    const ranked = engine.rankDestinations(selectedMood, budget);
+
+    displayResults(ranked);
+
+});
+
+function displayResults(results) {
+
+    const container = document.querySelector(".recommendations .card-grid");
+    container.innerHTML = "";
+
+    results.forEach(item => {
+
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+            <div class="overlay">
+                <h3>${item.name}</h3>
+                <p>Score: ${item.score}</p>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+}
+</script>
+<script src="js/session.js"></script>
+</body>
+</html>
