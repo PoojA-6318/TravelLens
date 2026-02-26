@@ -1,72 +1,341 @@
 [
-  {
-    "name": "Ooty Lake",
-    "city": "Ooty",
-    "category": "Relaxed",
-    "cost": 200,
-    "popularity": 9
-  },
-  {
-    "name": "Doddabetta Peak Trek",
-    "city": "Ooty",
-    "category": "Adventure",
-    "cost": 300,
-    "popularity": 8
-  },
-  {
-    "name": "Kodaikanal Lake",
-    "city": "Kodaikanal",
-    "category": "Relaxed",
-    "cost": 250,
-    "popularity": 9
-  },
-  {
-    "name": "Meenakshi Amman Temple",
-    "city": "Madurai",
-    "category": "Spiritual",
-    "cost": 100,
-    "popularity": 10
-  },
-  {
-    "name": "Ramanathaswamy Temple",
-    "city": "Rameswaram",
-    "category": "Spiritual",
-    "cost": 120,
-    "popularity": 9
-  },
-  {
-    "name": "Marina Beach",
-    "city": "Chennai",
-    "category": "Relaxed",
-    "cost": 50,
-    "popularity": 8
-  },
-  {
-    "name": "Mahabalipuram Shore Temple",
-    "city": "Mahabalipuram",
-    "category": "Romantic",
-    "cost": 200,
-    "popularity": 8
-  },
-  {
-    "name": "Yercaud Hills Trek",
-    "city": "Yercaud",
-    "category": "Adventure",
-    "cost": 250,
-    "popularity": 7
-  },
-  {
-    "name": "Kanyakumari Sunrise Point",
-    "city": "Kanyakumari",
-    "category": "Romantic",
-    "cost": 150,
-    "popularity": 9
-  },
-  {
-    "name": "Chennai Nightlife (T. Nagar)",
-    "city": "Chennai",
-    "category": "Party",
-    "cost": 500,
-    "popularity": 7
-  }
+{
+"name": "Ooty",
+"image": "assets/images/ooty.jpg",
+"themes": ["Relaxed","Romantic","Adventure"],
+"budget": {"low":1500,"mid":4500,"luxury":6000},
+"popularity": 8.7,
+"crowdLevel": 6,
+"partyLevel": 2,
+"adventureLevel": 6,
+"spiritualLevel": 2,
+"region": "Nilgiris",
+"visitingSpots": ["Ooty Lake","Botanical Garden","Doddabetta Peak","Rose Garden","Nilgiri Railway"]
+},
+
+{
+"name": "Kodaikanal",
+"image": "assets/images/kodaikanal.jpg",
+"themes": ["Relaxed","Romantic","Adventure"],
+"budget": {"low":1500,"mid":4000,"luxury":6000},
+"popularity": 8.5,
+"crowdLevel": 5,
+"partyLevel": 2,
+"adventureLevel": 5,
+"spiritualLevel": 1,
+"region": "Dindigul",
+"visitingSpots": ["Kodai Lake","Coaker’s Walk","Pillar Rocks","Dolphin’s Nose","Pine Forest"]
+},
+
+{
+"name": "Madurai",
+"image": "assets/images/madurai.jpg",
+"themes": ["Spiritual","Cultural","Relaxed"],
+"budget": {"low":1200,"mid":3500,"luxury":5000},
+"popularity": 8.3,
+"crowdLevel": 7,
+"partyLevel": 3,
+"adventureLevel": 2,
+"spiritualLevel": 9,
+"region": "South TN",
+"visitingSpots": ["Meenakshi Temple","Thirumalai Nayakar Mahal","Gandhi Museum","Alagar Kovil","Teppakulam"]
+},
+
+{
+"name": "Rameswaram",
+"image": "assets/images/rameswaram.jpg",
+"themes": ["Spiritual","Relaxed","Adventure"],
+"budget": {"low":1200,"mid":3500,"luxury":5000},
+"popularity": 8.0,
+"crowdLevel": 4,
+"partyLevel": 1,
+"adventureLevel": 5,
+"spiritualLevel": 9,
+"region": "Ramanathapuram",
+"visitingSpots": ["Ramanathaswamy Temple","Dhanushkodi","Pamban Bridge","Agni Theertham","Sea Walk"]
+},
+
+{
+"name": "Mahabalipuram",
+"image": "assets/images/mahabalipuram.jpg",
+"themes": ["Relaxed","Adventure","Romantic","Cultural"],
+"budget": {"low":1000,"mid":3500,"luxury":6000},
+"popularity": 8.8,
+"crowdLevel": 6,
+"partyLevel": 6,
+"adventureLevel": 7,
+"spiritualLevel": 3,
+"region": "Chengalpattu",
+"visitingSpots": ["Shore Temple","Pancha Rathas","Butterball","Beach","Cave Temples"]
+},
+
+{
+"name": "Kanyakumari",
+"image": "assets/images/kanyakumari.jpg",
+"themes": ["Spiritual","Romantic","Relaxed"],
+"budget": {"low":1200,"mid":4000,"luxury":5500},
+"popularity": 8.4,
+"crowdLevel": 5,
+"partyLevel": 2,
+"adventureLevel": 4,
+"spiritualLevel": 8,
+"region": "South TN",
+"visitingSpots": ["Vivekananda Rock","Thiruvalluvar Statue","Sunrise Point","Beach","Suchindram"]
+},
+
+{
+"name": "Yercaud",
+"image": "assets/images/yercaud.jpg",
+"themes": ["Relaxed","Romantic","Adventure"],
+"budget": {"low":1200,"mid":3500,"luxury":5000},
+"popularity": 7.8,
+"crowdLevel": 4,
+"partyLevel": 1,
+"adventureLevel": 5,
+"spiritualLevel": 2,
+"region": "Salem",
+"visitingSpots": ["Yercaud Lake","Lady’s Seat","Pagoda Point","Kiliyur Falls","Botanical Garden"]
+},
+
+{
+"name": "Tharangambadi",
+"image": "assets/images/tharangambadi.jpg",
+"themes": ["Relaxed","Romantic","Cultural"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 7.2,
+"crowdLevel": 3,
+"partyLevel": 2,
+"adventureLevel": 2,
+"spiritualLevel": 3,
+"region": "Nagapattinam",
+"visitingSpots": ["Dansborg Fort","Zion Church","Beach","Lighthouse","Danish Streets"]
+},
+
+{
+"name": "Thanjavur",
+"image": "assets/images/thanjavur.jpg",
+"themes": ["Spiritual","Cultural"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 8.2,
+"crowdLevel": 5,
+"partyLevel": 2,
+"adventureLevel": 2,
+"spiritualLevel": 8,
+"region": "Delta Region",
+"visitingSpots": ["Big Temple","Maratha Palace","Gangaikonda Cholapuram","Art Gallery","Swamimalai"]
+},
+
+{
+"name": "Trichy",
+"image": "assets/images/trichy.jpg",
+"themes": ["Spiritual","Cultural"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 8.0,
+"crowdLevel": 6,
+"partyLevel": 3,
+"adventureLevel": 3,
+"spiritualLevel": 8,
+"region": "Central TN",
+"visitingSpots": ["Rockfort","Srirangam","Jambukeswarar Temple","Kallanai","Butterfly Park"]
+}, 
+
+{
+"name": "Karaikudi",
+"image": "assets/images/karaikudi.jpg",
+"themes": ["Cultural","Relaxed"],
+"budget": {"low":1200,"mid":3500,"luxury":5000},
+"popularity": 7.9,
+"crowdLevel": 4,
+"partyLevel": 2,
+"adventureLevel": 2,
+"spiritualLevel": 4,
+"region": "Chettinad",
+"visitingSpots": [
+  "Chettinad Mansions",
+  "Kanadukathan Palace",
+  "Athangudi Tiles Village",
+  "Pillaiyarpatti Temple",
+  "Chettinad Cuisine Trail"
+]
+},
+
+{
+"name": "Thoothukudi",
+"image": "assets/images/thoothukudi.jpg",
+"themes": ["Relaxed","Cultural"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 7.6,
+"crowdLevel": 4,
+"partyLevel": 3,
+"adventureLevel": 3,
+"spiritualLevel": 4,
+"region": "South TN",
+"visitingSpots": [
+  "Tuticorin Beach",
+  "Our Lady of Snows Basilica",
+  "Tiruchendur Temple",
+  "Manapad Beach",
+  "Salt Pans"
+]
+},
+
+{
+"name": "Valparai",
+"image": "assets/images/valparai.jpg",
+"themes": ["Relaxed","Adventure"],
+"budget": {"low":1500,"mid":4000,"luxury":5500},
+"popularity": 8.1,
+"crowdLevel": 3,
+"partyLevel": 1,
+"adventureLevel": 7,
+"spiritualLevel": 1,
+"region": "Coimbatore",
+"visitingSpots": [
+  "Tea Estates",
+  "Aliyar Dam",
+  "Sholayar Dam",
+  "Nallamudi Viewpoint",
+  "Monkey Falls"
+]
+},
+
+{
+"name": "Yelagiri",
+"image": "assets/images/yelagiri.jpg",
+"themes": ["Adventure","Romantic"],
+"budget": {"low":1200,"mid":3500,"luxury":5000},
+"popularity": 7.5,
+"crowdLevel": 4,
+"partyLevel": 2,
+"adventureLevel": 6,
+"spiritualLevel": 2,
+"region": "Vellore",
+"visitingSpots": [
+  "Punganoor Lake",
+  "Swamimalai Trek",
+  "Jalagamparai Falls",
+  "Nature Park",
+  "Velavan Temple"
+]
+},
+
+{
+"name": "Pondicherry",
+"image": "assets/images/pondicherry.jpg",
+"themes": ["Romantic","Party","Relaxed"],
+"budget": {"low":1500,"mid":4500,"luxury":7000},
+"popularity": 9.0,
+"crowdLevel": 7,
+"partyLevel": 8,
+"adventureLevel": 4,
+"spiritualLevel": 2,
+"region": "East Coast",
+"visitingSpots": [
+  "Promenade Beach",
+  "White Town",
+  "Auroville",
+  "Paradise Beach",
+  "Serenity Beach"
+]
+},
+
+{
+"name": "Nagapattinam",
+"image": "assets/images/nagapattinam.jpg",
+"themes": ["Relaxed","Spiritual"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 7.4,
+"crowdLevel": 3,
+"partyLevel": 1,
+"adventureLevel": 2,
+"spiritualLevel": 7,
+"region": "Delta Region",
+"visitingSpots": [
+  "Nagapattinam Beach",
+  "Velankanni Basilica",
+  "Soundararaja Perumal Temple",
+  "Point Calimere",
+  "Lighthouse"
+]
+},
+
+{
+"name": "Kanchipuram",
+"image": "assets/images/kanchipuram.jpg",
+"themes": ["Spiritual","Cultural"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 8.2,
+"crowdLevel": 6,
+"partyLevel": 2,
+"adventureLevel": 2,
+"spiritualLevel": 9,
+"region": "North TN",
+"visitingSpots": [
+  "Ekambareswarar Temple",
+  "Kamakshi Amman Temple",
+  "Varadaraja Perumal Temple",
+  "Silk Saree Centers",
+  "Kailasanathar Temple"
+]
+},
+
+{
+"name": "Chidambaram",
+"image": "assets/images/chidambaram.jpg",
+"themes": ["Spiritual","Cultural"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 7.8,
+"crowdLevel": 4,
+"partyLevel": 1,
+"adventureLevel": 3,
+"spiritualLevel": 8,
+"region": "Cuddalore",
+"visitingSpots": [
+  "Nataraja Temple",
+  "Pichavaram Mangroves",
+  "Thillai Kali Temple",
+  "Annamalai University",
+  "Beach Road"
+]
+},
+
+{
+"name": "Tirunelveli",
+"image": "assets/images/tirunelveli.jpg",
+"themes": ["Spiritual","Relaxed"],
+"budget": {"low":1200,"mid":3500,"luxury":5000},
+"popularity": 8.1,
+"crowdLevel": 4,
+"partyLevel": 2,
+"adventureLevel": 5,
+"spiritualLevel": 8,
+"region": "South TN",
+"visitingSpots": [
+  "Nellaiappar Temple",
+  "Agasthiyar Falls",
+  "Manimuthar Dam",
+  "Papanasam",
+  "Kalakad Sanctuary"
+]
+},
+
+{
+"name": "Srivilliputhur",
+"image": "assets/images/srivilliputhur.jpg",
+"themes": ["Spiritual","Nature"],
+"budget": {"low":1000,"mid":3000,"luxury":4500},
+"popularity": 7.7,
+"crowdLevel": 3,
+"partyLevel": 1,
+"adventureLevel": 4,
+"spiritualLevel": 9,
+"region": "Virudhunagar",
+"visitingSpots": [
+  "Andal Temple",
+  "Western Ghats Views",
+  "Grizzled Giant Squirrel Sanctuary",
+  "Shenbagathoppu",
+  "Temple Car Streets"
+]
+}
 ]

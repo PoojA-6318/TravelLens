@@ -19,10 +19,13 @@
     <div class="logo">TravelLens</div>
     <nav>
         <ul>
-            <li><a href="#featured">Explore</a></li>
+            <li><a href="#" id="exploreNav">Explore</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="auth.html">Login</a></li>
             <li><a href="auth.html" class="btn-nav">Sign Up</a></li>
+            <li id="profileItem" style="display:none;">
+                <a href="dashboard.html">👤</a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -31,8 +34,36 @@
     <div class="hero-content">
         <h1>Plan Smarter. Travel Around TamilNadu.</h1>
         <p>The Future of Travel Planning Starts Here. Plan Better. Travel Happier.</p>
-        <a href="auth.html" class="btn-primary" style="text-decoration: none;">Plan Your Trip</a>
+        <a href="#" id="heroPlanBtn" class="btn-primary" style="text-decoration: none;">Plan Your Trip</a>
     </div>
+</section>
+
+<section id="plannerSection" class="planner-section">
+
+    <div class="planner-content">
+        <h2>Plan Your Trip by Mood & Budget</h2>
+        <p>
+            Let TravelLens intelligently suggest destinations 
+            based on your travel mood and spending preference.
+        </p>
+
+        <div class="planner-features">
+            <div class="feature-box">
+                🌿 Mood-Based Suggestions
+            </div>
+            <div class="feature-box">
+                💰 Budget Smart Filtering
+            </div>
+            <div class="feature-box">
+                🧠 AI Travel Score
+            </div>
+        </div>
+
+        <a href="#" id="plannerBtn" class="btn-primary planner-btn" style="text-decoration: none;">
+            Start Smart Planning
+        </a>
+    </div>
+
 </section>
 
 <section class="featured" id="featured">
@@ -164,8 +195,84 @@
     <p>© 2026 TravelLens</p>
 </footer>
 
+<script>
+const user = localStorage.getItem("travelUser");
+
+const profileItem = document.getElementById("profileItem");
+const exploreNav = document.getElementById("exploreNav");
+const heroPlanBtn = document.getElementById("heroPlanBtn");
+const plannerBtn = document.getElementById("plannerBtn");
+
+const featuredSection = document.getElementById("featured");
+const plannerSection = document.getElementById("plannerSection");
+
+// Show profile icon if logged in
+if (user && profileItem) {
+    profileItem.style.display = "block";
+}
+
+// Smooth scroll function
+function smoothScroll(target) {
+    const offset = 90; // adjust if navbar height changes
+    const top = target.offsetTop - offset;
+
+    window.scrollTo({
+        top: top,
+        behavior: "smooth"
+    });
+}
+
+// Explore click
+if (exploreNav) {
+    exploreNav.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        if (user) {
+            smoothScroll(featuredSection);
+        } else {
+            window.location.href = "auth.html";
+        }
+    });
+}
+
+// Hero Plan button click
+if (heroPlanBtn) {
+    heroPlanBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        if (user) {
+            smoothScroll(plannerSection);
+        } else {
+            window.location.href = "auth.html";
+        }
+    });
+}
+
+// Start Smart Planning button (go to dashboard)
+if (plannerBtn) {
+    plannerBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        if (user) {
+            window.location.href = "dashboard.html";
+        } else {
+            window.location.href = "auth.html";
+        }
+    });
+}
+</script>
+
+<script>
+const viewAllBtn = document.getElementById("viewAllBtn");
+
+if (viewAllBtn) {
+    viewAllBtn.addEventListener("click", function() {
+        window.location.href = "more_places.html";
+    });
+}
+</script>
+
 <script src="js/storage.js"></script>
 <script src="js/ui-effects.js"></script>
-</body>
 </body>
 </html>

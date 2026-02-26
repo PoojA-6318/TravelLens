@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     padding: 20px 60px;
 
     display: flex;
@@ -11,7 +12,11 @@
     background: transparent;
     transition: 0.4s ease;
 
-    z-index: 2;   /* VERY IMPORTANT */
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+
+    z-index: 1000;
 }
 
 .navbar.scrolled {
@@ -20,11 +25,13 @@
 }
 
 
-.logo { font-weight: 700; color: white; }
+.logo { font-weight: 700; color: rgb(227, 231, 237);font-size: 20px;}
+
+.logo-dashboard { font-weight: 700; color: white;font-size: 50px; }
 
 nav ul { list-style: none; display: flex; gap: 30px; }
 
-nav a { text-decoration: none; color: white; }
+nav a { text-decoration: none; color: rgb(227,231,237); }
 
 /* ============================= */
 /* PRIMARY AUTH BUTTON STYLE     */
@@ -111,10 +118,18 @@ button:focus {
 
 .overlay {
     position: absolute;
+    left: 0;      /* ADD THIS */
+    right: 0;     /* ADD THIS */
     bottom: 0;
+
     padding: 20px;
-    width: 100%;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.2),
+        transparent
+    );
+
     color: white;
 }
 
@@ -287,3 +302,132 @@ button:focus {
     border: none !important;
     box-shadow: 0 10px 25px rgba(45, 212, 191, 0.35) !important;
 }
+
+/* ============================= */
+/* ===== DASHBOARD NAVBAR ===== */
+/* ============================= */
+
+/* ===== FULLY TRANSPARENT DASHBOARD NAVBAR ===== */
+
+.dashboard-navbar {
+    background: transparent !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+/* White text for dashboard */
+.dashboard-navbar .logo,
+.dashboard-navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Remove hover underline if any */
+.dashboard-navbar a:hover {
+    opacity: 0.8;
+}
+
+/* ===== MOOD BUTTON STYLING ===== */
+
+/* ===== PREMIUM MOOD BUTTON EFFECTS ===== */
+
+.mood-btn {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1E293B;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+/* Hover subtle lift */
+.mood-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Active selected mood */
+.mood-btn.active {
+    background: #60A5FA;
+    color: white;
+
+    transform: scale(1.08) translateY(-3px);
+
+    box-shadow: 
+        0 0 15px rgba(96, 165, 250, 0.6),
+        0 0 30px rgba(96, 165, 250, 0.4);
+
+    animation: pulseGlow 1.5s ease-in-out infinite;
+}
+
+/* Glow pulse animation */
+@keyframes pulseGlow {
+    0% {
+        box-shadow:
+            0 0 10px rgba(96, 165, 250, 0.6),
+            0 0 20px rgba(96, 165, 250, 0.3);
+    }
+    50% {
+        box-shadow:
+            0 0 20px rgba(96, 165, 250, 0.9),
+            0 0 40px rgba(96, 165, 250, 0.6);
+    }
+    100% {
+        box-shadow:
+            0 0 10px rgba(96, 165, 250, 0.6),
+            0 0 20px rgba(96, 165, 250, 0.3);
+    }
+}
+
+/* ===== TOP PICK BADGE ===== */
+
+.top-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: gold;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===== SCORE COLORS ===== */
+
+.score-high {
+    color: #22c55e; /* green */
+}
+
+.score-medium {
+    color: #f59e0b; /* orange */
+}
+
+.score-low {
+    color: #ef4444; /* red */
+}
+
+/* WHY TEXT */
+.why-text {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+/* ===== STATIC DASHBOARD HEADER ===== */
+
+.dashboard-header {
+    padding: 40px 60px 10px 60px;
+    background:transparent;
+}
+
+.dashboard-logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+

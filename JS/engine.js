@@ -1,47 +1,49 @@
 class TravelEngine {
-
-    constructor(data) {
-        this.data = data;
-    }
-
-    calculateMoodScore(item, selectedMood) {
-        return item.category === selectedMood ? 10 : 5;
-    }
-
-    calculateBudgetScore(itemCost, userBudget) {
-        if (!userBudget) return 5;
-        return itemCost <= userBudget ? 10 : 3;
-    }
-
-    calculateWeatherScore() {
-        // Placeholder until weather API is connected
-        return 7;
-    }
-
-    calculateFinalScore(item, selectedMood, userBudget) {
-
-        const moodScore = this.calculateMoodScore(item, selectedMood);
-        const budgetScore = this.calculateBudgetScore(item.cost, userBudget);
-        const weatherScore = this.calculateWeatherScore();
-        const popularityScore = item.popularity;
-
-        const finalScore =
-            (0.35 * moodScore) +
-            (0.25 * weatherScore) +
-            (0.20 * budgetScore) +
-            (0.20 * popularityScore);
-
-        return finalScore.toFixed(2);
+    constructor(destinations) {
+        this.destinations = destinations;
     }
 
     rankDestinations(selectedMood, userBudget) {
 
-        return this.data.map(item => {
+        userBudget = Number(userBudget);
+
+        return this.destinations.map(place => {
+
+            let score = 0;
+
+            // 1️⃣ Theme Match (40%)
+            if (place.themes.includes(selectedMood)) {
+                score += 40;
+            }
+
+            // 2️⃣ Budget Fit (25%)
+            const avgMidBudget = place.budget.mid || place.budget.low;
+            const budgetDifference = Math.abs(avgMidBudget - userBudget);
+            const budgetScore = Math.max(0, 25 - (budgetDifference / 300));
+            score += budgetScore;
+
+            // 3️⃣ Popularity (15%)
+            score += (place.popularity / 10) * 15;
+
+            // 4️⃣ Crowd Inverse (10%)
+            score += ((10 - place.crowdLevel) / 10) * 10;
+
+            // 5️⃣ Mood-Specific Bonus (10%)
+            if (selectedMood === "Adventure") {
+                score += (place.adventureLevel / 10) * 10;
+            }
+            if (selectedMood === "Spiritual") {
+                score += (place.spiritualLevel / 10) * 10;
+            }
+            if (selectedMood === "Party") {
+                score += (place.partyLevel / 10) * 10;
+            }
+
             return {
-                ...item,
-                score: this.calculateFinalScore(item, selectedMood, userBudget)
+                ...place,
+                score: score.toFixed(1)
             };
+
         }).sort((a, b) => b.score - a.score);
     }
-
 }

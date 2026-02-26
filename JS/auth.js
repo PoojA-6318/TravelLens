@@ -85,7 +85,7 @@ loginForm.addEventListener("submit", function(e) {
         localStorage.setItem("travelUser", email);
 
         // Redirect
-        window.location.href = "dashboard.html";
+        window.location.href = "index.html";
 
     } else {
         document.getElementById("loginError").innerText = "Invalid credentials";
