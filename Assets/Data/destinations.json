@@ -15,7 +15,7 @@
 
 {
 "name": "Kodaikanal",
-"image": "assets/images/kodaikanal.jpg",
+"image": "assets/images/kodai/kodaikanal.jpg",
 "themes": ["Relaxed","Romantic","Adventure"],
 "budget": {"low":1500,"mid":4000,"luxury":6000},
 "popularity": 8.5,

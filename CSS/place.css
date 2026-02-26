@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background-image:url("../assets/images/kodai/kodaikanal.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+    z-index:-1;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:4rem;
+    letter-spacing:3px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+    max-width:750px;
+}
+
+/* SECTION */
+.section-box{
+    width:90%;
+    margin:100px auto;
+    padding:50px;
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.08);
+    box-shadow:0 20px 60px rgba(0,0,0,0.7);
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 1s ease;
+}
+
+.section-box.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.3rem;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,0.12);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    transition:all 0.4s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.04);
+    background:rgba(255,255,255,0.2);
+    box-shadow:0 20px 60px rgba(0,0,0,0.8);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+/* WAVES */
+.wave-container{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:150px;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.wave{
+    position:absolute;
+    width:200%;
+    height:100%;
+    background:url("https://svgshare.com/i/13kA.svg");
+    background-size:cover;
+    opacity:0.4;
+    animation:waveMove 12s linear infinite;
+}
+
+.wave:nth-child(2){
+    opacity:0.6;
+    animation-duration:18s;
+    bottom:10px;
+}
+
+.wave:nth-child(3){
+    opacity:0.8;
+    animation-duration:25s;
+    bottom:20px;
+}
+
+@keyframes waveMove{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+}
