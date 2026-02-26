@@ -113,6 +113,7 @@ button:focus {
     position: absolute;
     bottom: 0;
     padding: 20px;
+    left: 0;             
     width: 100%;
     background: linear-gradient(transparent, rgba(0,0,0,0.7));
     color: white;
@@ -286,4 +287,49 @@ button:focus {
     outline: none !important;
     border: none !important;
     box-shadow: 0 10px 25px rgba(45, 212, 191, 0.35) !important;
+}
+
+
+.all-places {
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.all-places h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+.card-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.hidden {
+  display: none;
 }
