@@ -21,7 +21,10 @@ class TravelEngine {
     calculateFinalScore(item, selectedMood, userBudget) {
 
         const moodScore = this.calculateMoodScore(item, selectedMood);
-        const budgetScore = this.calculateBudgetScore(item.cost, userBudget);
+
+        // FIXED HERE
+        const budgetScore = this.calculateBudgetScore(item.budget_level * 100, userBudget);
+
         const weatherScore = this.calculateWeatherScore();
         const popularityScore = item.popularity;
 
@@ -42,6 +45,18 @@ class TravelEngine {
                 score: this.calculateFinalScore(item, selectedMood, userBudget)
             };
         }).sort((a, b) => b.score - a.score);
+    }
+
+    updateCollectiveIntel(selectedCategory) {
+        let stats = JSON.parse(localStorage.getItem('categoryInterests')) || {};
+        stats[selectedCategory] = (stats[selectedCategory] || 0) + 1;
+        localStorage.setItem('categoryInterests', JSON.stringify(stats));
+    }
+
+    getRecommendedCategory() {
+        let stats = JSON.parse(localStorage.getItem('categoryInterests')) || {};
+        // Returns the category with the most clicks
+        return Object.keys(stats).reduce((a, b) => stats[a] > stats[b] ? a : b, 'Relaxed');
     }
 
 }

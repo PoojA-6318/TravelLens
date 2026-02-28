@@ -290,13 +290,13 @@ button:focus {
 }
 
 
-.all-places {
+.allPlaces {
     padding: 80px 60px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.all-places h2 {
+.allPlaces h2 {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -331,5 +331,201 @@ button:focus {
     color: white;
 }
 .hidden {
-  display: none;
+    display: none !important;
+}
+/* 1. Modal Overlay (The background) */
+#districtModal.modal {
+    display: none; /* Controlled by JS */
+    position: fixed;
+    z-index: 2000; /* High z-index to stay on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Semi-transparent dark overlay */
+    backdrop-filter: blur(4px); /* Blurs the dashboard behind */
+    display: flex; /* Helps center the content box */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 2. Modal Content Box (The card) */
+#districtModal .modal-content {
+    background-color: #ffffff !important; /* Force white background */
+    color: #1a1a1a !important; /* Force dark text */
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 650px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    margin: auto; /* Centers it vertically/horizontally */
+}
+
+/* 3. Visibility Fixes for Headings & Text */
+#districtModal h2, 
+#districtModal h3 {
+    color: #1e293b !important; /* Dark blue/black for visibility */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#districtModal h2#modalTitle {
+    margin-top: 0;
+    border-bottom: 3px solid #60A5FA;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+#districtModal p, 
+#districtModal li {
+    color: #475569 !important; /* Slate gray for readability */
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+#districtModal ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#districtModal li::marker {
+    color: #60A5FA; /* Blue bullet points */
+}
+
+/* 4. Close Button Fix */
+#districtModal .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#districtModal .close-btn:hover {
+    color: #ef4444;
+}
+
+/* Fix the alignment and make it responsive */
+.recommendations .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Dynamic fitting */
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Fix the image scaling inside the card */
+.recommendations .card {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Only targets the modal when inside the Dashboard page */
+.dashboard-body #districtModal.modal {
+    display: none; 
+    position: fixed;
+    inset: 0; /* Shortcut for top/left/right/bottom: 0 */
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.85); /* Darker backdrop */
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+}
+
+/* This is the 'White Box' styling */
+.dashboard-body #districtModal .modal-content {
+    background: white !important;
+    padding: 40px;
+    border-radius: 24px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: #1e293b !important; /* Forces dark text for readability */
+}
+
+/* Heading visibility inside the dashboard modal */
+.dashboard-body #districtModal h2, 
+.dashboard-body #districtModal h3 {
+    color: #0f172a !important;
+    margin-bottom: 15px;
+}
+
+.dashboard-body #districtModal li {
+    color: #334155 !important;
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+/* 1. Make the grid responsive and centered */
+.recommendations .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 30px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* 2. Fix the Card Height and Image Scaling */
+.recommendations .card {
+    height: 400px; /* Increased height for a better look */
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 3. The most important part: Image fitting */
+.recommendations .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents the 'small landscape' look */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.recommendations .card:hover .card-img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* 4. Text Overlay Styling */
+.recommendations .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+    color: white;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.recommendations .overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.recommendations .overlay p {
+    margin: 5px 0 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
 }

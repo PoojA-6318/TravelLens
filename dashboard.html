@@ -11,6 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="dashboard-body">
 
 <header class="navbar">
@@ -72,63 +73,28 @@
 
 </section>
 
-<script src="js/engine.js"></script>
-<script>
+<!-- District Details Modal -->
+<div id="districtModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeDistrictDetails()">&times;</span>
+    
+    <h2 id="modalTitle"></h2>
+    <p><strong>Best Month:</strong> <span id="modalBestMonth"></span></p>
+    <p><strong>Event:</strong> <span id="modalEvent"></span></p>
 
-let selectedMood = null;
+    <h3>Famous Spots</h3>
+    <ul id="modalSpots"></ul>
 
-const moodButtons = document.querySelectorAll(".mood-btn");
-moodButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        selectedMood = btn.textContent;
-        moodButtons.forEach(b => b.style.background = "white");
-        btn.style.background = "#60A5FA";
-        btn.style.color = "white";
-    });
-});
+    <h3>Food Specialties</h3>
+    <ul id="modalFood"></ul>
 
-document.querySelector(".btn-primary").addEventListener("click", async () => {
+    <h3>Other Specialties</h3>
+    <ul id="modalOther"></ul>
+  </div>
+</div>
 
-    const budget = document.querySelector('input[type="number"]').value;
-
-    if (!selectedMood) {
-        alert("Please select a mood");
-        return;
-    }
-
-    const response = await fetch("assets/data/destinations.json");
-    const data = await response.json();
-
-    const engine = new TravelEngine(data);
-
-    const ranked = engine.rankDestinations(selectedMood, budget);
-
-    displayResults(ranked);
-
-});
-
-function displayResults(results) {
-
-    const container = document.querySelector(".recommendations .card-grid");
-    container.innerHTML = "";
-
-    results.forEach(item => {
-
-        const card = document.createElement("div");
-        card.classList.add("card");
-
-        card.innerHTML = `
-            <div class="overlay">
-                <h3>${item.name}</h3>
-                <p>Score: ${item.score}</p>
-            </div>
-        `;
-
-        container.appendChild(card);
-    });
-
-}
-</script>
-<script src="js/session.js"></script>
+<script src="JS/engine.js"></script>
+<script src="JS/session.js"></script>
+<script src="JS/dashboard.js"></script>
 </body>
 </html>

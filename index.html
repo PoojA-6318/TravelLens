@@ -186,17 +186,24 @@ const viewAllBtn = document.getElementById("viewAllBtn");
 const allPlacesSection = document.getElementById("allPlaces");
 
 viewAllBtn.addEventListener("click", async () => {
-
   allPlacesSection.classList.remove("hidden");
+
+  // Force the section padding to match your 'featured' section exactly
+  allPlacesSection.style.padding = "60px 60px"; 
 
   const response = await fetch("assets/data/destinations.json");
   const places = await response.json();
 
-  allPlacesSection.innerHTML = "<h2>All Tamil Nadu Destinations</h2>";
+  // We use margin-left: 0 and padding: 0 to stop the 'shift'
+  allPlacesSection.innerHTML = `
+    <div class="featured-container" style="margin-left: 0 !important; margin-right: auto !important; max-width: 1200px; padding: 0 !important;">
+        <h2 style="text-align:left; margin-bottom: 40px; margin-left: 0 !important;">All Tamil Nadu Destinations</h2>
+        <div id="dynamicContent"></div>
+    </div>`;
 
+  const dynamicContent = document.getElementById("dynamicContent");
   const grouped = {};
 
-  // Group by category
   places.forEach(place => {
     if (!grouped[place.category]) {
       grouped[place.category] = [];
@@ -205,32 +212,43 @@ viewAllBtn.addEventListener("click", async () => {
   });
 
   for (const category in grouped) {
-
+    const categoryDiv = document.createElement("div");
+    categoryDiv.style.textAlign = "left";
+    
+    // categoryTitle alignment
     const categoryTitle = document.createElement("h3");
     categoryTitle.textContent = category;
-    allPlacesSection.appendChild(categoryTitle);
+    categoryTitle.style.textAlign = "left";
+    categoryTitle.style.marginLeft = "0"; 
+    categoryTitle.style.marginTop = "40px";
+    categoryTitle.style.marginBottom = "20px";
+    categoryDiv.appendChild(categoryTitle);
 
     const grid = document.createElement("div");
     grid.classList.add("card-grid");
+    // Ensure the grid itself doesn't center its items
+    grid.style.justifyContent = "start"; 
 
     grouped[category].forEach(place => {
-
       const card = document.createElement("div");
       card.classList.add("card");
       card.style.backgroundImage = `url('${place.image}')`;
 
       card.innerHTML = `
         <div class="overlay">
-          <h3>${place.name}</h3>
+          <h3 style="text-align: left;">${place.name}</h3>
         </div>
       `;
-
       grid.appendChild(card);
     });
 
-    allPlacesSection.appendChild(grid);
+    categoryDiv.appendChild(grid);
+    dynamicContent.appendChild(categoryDiv);
   }
+  
+  allPlacesSection.scrollIntoView({ behavior: "smooth" });
 });
+
 </script>
 <!---->
 </body>

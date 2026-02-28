@@ -1,82 +1,469 @@
 [
   {
-    "name": "Ooty Lake",
-    "city": "Ooty",
-    "category": "Relaxed",
-    "cost": 200,
-    "popularity": 9,
-    "image": "Assets/Images/ooty.jpg"
+    "id": "ariyalur",
+    "name": "Ariyalur",
+    "category": "History",
+    "mood": "Educational",
+    "budget_level": 1,
+    "coordinates": { "lat": 11.1401, "lng": 79.0786 },
+    "famous_spots": ["Gangaikonda Cholapuram Temple", "Karaivetti Bird Sanctuary"],
+    "specialties": {
+      "food": ["Traditional Tamil Meals"],
+      "other": ["Limestone Industry"]
+    },
+    "best_month": "December",
+    "event": "Temple Festival",
+    "popularity": 5,
+    "image": "Assets/Images/ariyalur.jpg"
   },
   {
-    "name": "Doddabetta Peak Trek",
-    "city": "Ooty",
-    "category": "Adventure",
-    "cost": 300,
+    "id": "chengalpattu",
+    "name": "Chengalpattu",
+    "category": "History",
+    "mood": "Cultural",
+    "budget_level": 2,
+    "coordinates": { "lat": 12.6819, "lng": 79.9888 },
+    "famous_spots": ["Mahabalipuram Shore Temple", "Kovalam Beach"],
+    "specialties": {
+      "food": ["Seafood"],
+      "other": ["Stone Sculptures"]
+    },
+    "best_month": "January",
+    "event": "Dance Festival",
     "popularity": 8,
-    "image": "Assets/Images/ooty.jpg"
+    "image": "Assets/Images/chengalpattu.jpg"
   },
   {
-    "name": "Kodaikanal Lake",
-    "city": "Kodaikanal",
-    "category": "Relaxed",
-    "cost": 250,
+    "id": "chennai",
+    "name": "Chennai",
+    "category": "City",
+    "mood": "Vibrant",
+    "budget_level": 3,
+    "coordinates": { "lat": 13.0827, "lng": 80.2707 },
+    "famous_spots": ["Marina Beach", "Kapaleeshwarar Temple", "Chennai Nightlife (T. Nagar)"],
+    "specialties": {
+      "food": ["Filter Coffee", "Sundal"],
+      "other": ["Carnatic Music"]
+    },
+    "best_month": "January",
+    "event": "Chennai Music Season",
+    "popularity": 10,
+    "image": "Assets/Images/chennai.jpg"
+  },
+  {
+    "id": "coimbatore",
+    "name": "Coimbatore",
+    "category": "City",
+    "mood": "Modern",
+    "budget_level": 3,
+    "coordinates": { "lat": 11.0168, "lng": 76.9558 },
+    "famous_spots": ["Marudamalai Temple", "Black Thunder"],
+    "specialties": {
+      "food": ["Kovai Biriyani"],
+      "other": ["Textile Industry"]
+    },
+    "best_month": "December",
+    "event": "Car Festival",
+    "popularity": 8,
+    "image": "Assets/Images/coimbatore.jpg"
+  },
+  {
+    "id": "cuddalore",
+    "name": "Cuddalore",
+    "category": "Nature",
+    "mood": "Relaxed",
+    "budget_level": 2,
+    "coordinates": { "lat": 11.7447, "lng": 79.7680 },
+    "famous_spots": ["Silver Beach", "Pichavaram Mangroves"],
+    "specialties": {
+      "food": ["Seafood"],
+      "other": ["Mangrove Forest"]
+    },
+    "best_month": "November",
+    "event": "Beach Festival",
+    "popularity": 6,
+    "image": "Assets/Images/cuddalore.jpg"
+  },
+
+  {
+    "id": "dindigul",
+    "name": "Dindigul",
+    "category": "Nature",
+    "mood": "Romantic",
+    "budget_level": 3,
+    "coordinates": { "lat": 10.3673, "lng": 77.9803 },
+    "famous_spots": ["Kodaikanal Lake", "Pillar Rocks"],
+    "specialties": {
+      "food": ["Dindigul Biriyani"],
+      "other": ["Hill Station Views"]
+    },
+    "best_month": "April",
+    "event": "Summer Festival",
     "popularity": 9,
-    "image": "Assets/Images/kodaikanal.jpg"
+    "image": "Assets/Images/dindigul.jpg"
   },
+
   {
-    "name": "Meenakshi Amman Temple",
-    "city": "Madurai",
-    "category": "Spiritual",
-    "cost": 100,
+    "id": "erode",
+    "name": "Erode",
+    "category": "City",
+    "mood": "Cultural",
+    "budget_level": 2,
+    "coordinates": { "lat": 11.3410, "lng": 77.7172 },
+    "famous_spots": ["Bhavani Sangameswarar Temple"],
+    "specialties": {
+      "food": ["Turmeric-based Dishes"],
+      "other": ["Turmeric Market"]
+    },
+    "best_month": "January",
+    "event": "Temple Festival",
+    "popularity": 6,
+    "image": "Assets/Images/erode.jpg"
+  },
+
+  {
+    "id": "kanyakumari",
+    "name": "Kanyakumari",
+    "category": "Nature",
+    "mood": "Spiritual",
+    "budget_level": 2,
+    "coordinates": { "lat": 8.0883, "lng": 77.5385 },
+    "famous_spots": ["Kanyakumari Sunrise Point", "Vivekananda Rock Memorial"],
+    "specialties": {
+      "food": ["Seafood"],
+      "other": ["Confluence of Three Seas"]
+    },
+    "best_month": "December",
+    "event": "New Year Sunrise",
+    "popularity": 10,
+    "image": "Assets/Images/kanyakumari.jpg"
+  },
+
+  {
+    "id": "madurai",
+    "name": "Madurai",
+    "category": "History",
+    "mood": "Spiritual",
+    "budget_level": 1,
+    "coordinates": { "lat": 9.9252, "lng": 78.1198 },
+    "famous_spots": ["Meenakshi Amman Temple", "Thirumalai Nayak Mahal"],
+    "specialties": {
+      "food": ["Jigarthanda", "Bun Parotta"],
+      "other": ["Madurai Malli"]
+    },
+    "best_month": "January",
+    "event": "Chithirai Festival",
     "popularity": 10,
     "image": "Assets/Images/madurai.jpg"
   },
+
   {
-    "name": "Ramanathaswamy Temple",
-    "city": "Rameswaram",
+    "id": "nilgiris",
+    "name": "Ooty",
+    "category": "Nature",
+    "mood": "Relaxed",
+    "budget_level": 3,
+    "coordinates": { "lat": 11.4102, "lng": 76.6991 },
+    "famous_spots": ["Ooty Lake", "Botanical Garden", "Doddabetta Peak Trek"],
+    "specialties": {
+      "food": ["Homemade Chocolates", "Varkey"],
+      "other": ["Tea", "Eucalyptus Oil"]
+    },
+    "best_month": "May",
+    "event": "Flower Show",
+    "popularity": 9,
+    "image": "Assets/Images/ooty.jpg"
+  },
+
+  {
+    "id": "ramanathapuram",
+    "name": "Ramanathapuram",
     "category": "Spiritual",
-    "cost": 120,
+    "mood": "Sacred",
+    "budget_level": 2,
+    "coordinates": { "lat": 9.3716, "lng": 78.8308 },
+    "famous_spots": ["Ramanathaswamy Temple", "Dhanushkodi"],
+    "specialties": {
+      "food": ["Seafood"],
+      "other": ["Pilgrimage Tours"]
+    },
+    "best_month": "February",
+    "event": "Mahashivaratri",
     "popularity": 9,
-    "image": "Assets/Images/rameswaram.jpg"
+    "image": "Assets/Images/ramanathapuram.jpg"
   },
+
   {
-    "name": "Marina Beach",
-    "city": "Chennai",
-    "category": "Relaxed",
-    "cost": 50,
+    "id": "salem",
+    "name": "Salem",
+    "category": "Nature",
+    "mood": "Adventurous",
+    "budget_level": 2,
+    "coordinates": { "lat": 11.6643, "lng": 78.1460 },
+    "famous_spots": ["Yercaud Hills Trek", "Kiliyur Falls"],
+    "specialties": {
+      "food": ["Mango Dishes"],
+      "other": ["Steel Industry"]
+    },
+    "best_month": "March",
+    "event": "Summer Festival",
     "popularity": 8,
-    "image": "Assets/Images/chennai.jpg"
+    "image": "Assets/Images/salem.jpg"
+  },
+
+  {
+    "id": "namakkal",
+    "name": "Namakkal",
+    "category": "History",
+    "mood": "Cultural",
+    "budget_level": 2,
+    "coordinates": { "lat": 11.2213, "lng": 78.1652 },
+    "famous_spots": ["Namakkal Anjaneyar Temple", "Kolli Hills"],
+    "specialties": {
+      "food": ["Country Chicken Curry"],
+      "other": ["Poultry Farming"]
+    },
+    "best_month": "January",
+    "event": "Temple Festival",
+    "popularity": 6,
+    "image": "Assets/Images/namakkal.jpg"
   },
   {
-    "name": "Mahabalipuram Shore Temple",
-    "city": "Mahabalipuram",
-    "category": "Romantic",
-    "cost": 200,
-    "popularity": 8,
-    "image": "Assets/Images/mahabalipuram.jpg"
+    "id": "perambalur",
+    "name": "Perambalur",
+    "category": "Nature",
+    "mood": "Peaceful",
+    "budget_level": 1,
+    "coordinates": { "lat": 11.2333, "lng": 78.8833 },
+    "famous_spots": ["Ranjankudi Fort"],
+    "specialties": {
+      "food": ["Traditional Meals"],
+      "other": ["Agriculture"]
+    },
+    "best_month": "December",
+    "event": "Local Festival",
+    "popularity": 4,
+    "image": "Assets/Images/perambalur.jpg"
   },
   {
-    "name": "Yercaud Hills Trek",
-    "city": "Yercaud",
-    "category": "Adventure",
-    "cost": 250,
+    "id": "pudukkottai",
+    "name": "Pudukkottai",
+    "category": "History",
+    "mood": "Heritage",
+    "budget_level": 2,
+    "coordinates": { "lat": 10.3813, "lng": 78.8210 },
+    "famous_spots": ["Sittannavasal Cave", "Thirumayam Fort"],
+    "specialties": {
+      "food": ["Chettinad Cuisine"],
+      "other": ["Rock-cut Temples"]
+    },
+    "best_month": "January",
+    "event": "Temple Festival",
+    "popularity": 6,
+    "image": "Assets/Images/pudukkottai.jpg"
+  },
+  {
+    "id": "sivagangai",
+    "name": "Sivagangai",
+    "category": "History",
+    "mood": "Cultural",
+    "budget_level": 2,
+    "coordinates": { "lat": 9.8470, "lng": 78.4836 },
+    "famous_spots": ["Chettinad Mansions", "Pillayarpatti Temple"],
+    "specialties": {
+      "food": ["Chettinad Chicken"],
+      "other": ["Athangudi Tiles"]
+    },
+    "best_month": "February",
+    "event": "Cultural Festival",
     "popularity": 7,
-    "image": "Assets/Images/yercaud.jpg"
+    "image": "Assets/Images/sivagangai.jpg"
   },
   {
-    "name": "Kanyakumari Sunrise Point",
-    "city": "Kanyakumari",
-    "category": "Romantic",
-    "cost": 150,
+    "id": "thanjavur",
+    "name": "Thanjavur",
+    "category": "History",
+    "mood": "Spiritual",
+    "budget_level": 2,
+    "coordinates": { "lat": 10.7870, "lng": 79.1378 },
+    "famous_spots": ["Brihadeeswarar Temple", "Thanjavur Palace"],
+    "specialties": {
+      "food": ["Thanjavur Elai Sappadu"],
+      "other": ["Tanjore Paintings"]
+    },
+    "best_month": "January",
+    "event": "Natyanjali Festival",
     "popularity": 9,
-    "image": "Assets/Images/kanyakumari.jpg"
+    "image": "Assets/Images/thanjavur.jpg"
   },
   {
-    "name": "Chennai Nightlife (T. Nagar)",
-    "city": "Chennai",
-    "category": "Party",
-    "cost": 500,
+    "id": "theni",
+    "name": "Theni",
+    "category": "Nature",
+    "mood": "Adventurous",
+    "budget_level": 2,
+    "coordinates": { "lat": 10.0104, "lng": 77.4768 },
+    "famous_spots": ["Meghamalai", "Suruli Falls"],
+    "specialties": {
+      "food": ["Fresh Grapes"],
+      "other": ["Plantations"]
+    },
+    "best_month": "October",
+    "event": "Harvest Festival",
     "popularity": 7,
-    "image": "Assets/Images/chennai.jpg"
+    "image": "Assets/Images/theni.jpg"
+  },
+  {
+    "id": "thoothukudi",
+    "name": "Thoothukudi",
+    "category": "Coastal",
+    "mood": "Relaxed",
+    "budget_level": 2,
+    "coordinates": { "lat": 8.7642, "lng": 78.1348 },
+    "famous_spots": ["Tuticorin Beach", "Our Lady of Snows Basilica"],
+    "specialties": {
+      "food": ["Macaroons"],
+      "other": ["Pearl Fishing"]
+    },
+    "best_month": "December",
+    "event": "Church Festival",
+    "popularity": 6,
+    "image": "Assets/Images/thoothukudi.jpg"
+  },
+  {
+    "id": "tiruchirappalli",
+    "name": "Tiruchirappalli",
+    "category": "History",
+    "mood": "Spiritual",
+    "budget_level": 2,
+    "coordinates": { "lat": 10.7905, "lng": 78.7047 },
+    "famous_spots": ["Rockfort Temple", "Srirangam Temple"],
+    "specialties": {
+      "food": ["Puliyodarai"],
+      "other": ["Temple Architecture"]
+    },
+    "best_month": "January",
+    "event": "Vaikunta Ekadasi",
+    "popularity": 8,
+    "image": "Assets/Images/trichy.jpg"
+  },
+  {
+    "id": "tirunelveli",
+    "name": "Tirunelveli",
+    "category": "Nature",
+    "mood": "Spiritual",
+    "budget_level": 2,
+    "coordinates": { "lat": 8.7139, "lng": 77.7567 },
+    "famous_spots": ["Nellaiappar Temple", "Courtallam Falls"],
+    "specialties": {
+      "food": ["Iruttu Kadai Halwa"],
+      "other": ["Waterfalls"]
+    },
+    "best_month": "July",
+    "event": "Aadi Festival",
+    "popularity": 8,
+    "image": "Assets/Images/tirunelveli.jpg"
+  },
+  {
+    "id": "tiruppur",
+    "name": "Tiruppur",
+    "category": "City",
+    "mood": "Industrial",
+    "budget_level": 2,
+    "coordinates": { "lat": 11.1085, "lng": 77.3411 },
+    "famous_spots": ["Avinashi Temple"],
+    "specialties": {
+      "food": ["South Indian Meals"],
+      "other": ["Textile Hub"]
+    },
+    "best_month": "December",
+    "event": "Temple Festival",
+    "popularity": 6,
+    "image": "Assets/Images/tiruppur.jpg"
+  },
+  {
+    "id": "tiruvallur",
+    "name": "Tiruvallur",
+    "category": "Spiritual",
+    "mood": "Sacred",
+    "budget_level": 2,
+    "coordinates": { "lat": 13.1439, "lng": 79.9089 },
+    "famous_spots": ["Veera Raghava Perumal Temple"],
+    "specialties": {
+      "food": ["Traditional Prasadam"],
+      "other": ["Temple Heritage"]
+    },
+    "best_month": "January",
+    "event": "Brahmotsavam",
+    "popularity": 6,
+    "image": "Assets/Images/tiruvallur.jpg"
+  },
+  {
+    "id": "tiruvannamalai",
+    "name": "Tiruvannamalai",
+    "category": "Spiritual",
+    "mood": "Devotional",
+    "budget_level": 2,
+    "coordinates": { "lat": 12.2253, "lng": 79.0747 },
+    "famous_spots": ["Arunachaleswarar Temple"],
+    "specialties": {
+      "food": ["Temple Prasadam"],
+      "other": ["Girivalam"]
+    },
+    "best_month": "November",
+    "event": "Karthigai Deepam",
+    "popularity": 9,
+    "image": "Assets/Images/tiruvannamalai.jpg"
+  },
+  {
+    "id": "vellore",
+    "name": "Vellore",
+    "category": "History",
+    "mood": "Educational",
+    "budget_level": 2,
+    "coordinates": { "lat": 12.9165, "lng": 79.1325 },
+    "famous_spots": ["Vellore Fort", "Golden Temple Sripuram"],
+    "specialties": {
+      "food": ["Ambur Biriyani"],
+      "other": ["Medical Tourism"]
+    },
+    "best_month": "December",
+    "event": "Temple Festival",
+    "popularity": 7,
+    "image": "Assets/Images/vellore.jpg"
+  },
+  {
+    "id": "viluppuram",
+    "name": "Viluppuram",
+    "category": "History",
+    "mood": "Cultural",
+    "budget_level": 2,
+    "coordinates": { "lat": 11.9401, "lng": 79.4861 },
+    "famous_spots": ["Gingee Fort"],
+    "specialties": {
+      "food": ["Local Tamil Cuisine"],
+      "other": ["Historic Forts"]
+    },
+    "best_month": "January",
+    "event": "Temple Festival",
+    "popularity": 6,
+    "image": "Assets/Images/viluppuram.jpg"
+  },
+  {
+    "id": "virudhunagar",
+    "name": "Virudhunagar",
+    "category": "History",
+    "mood": "Traditional",
+    "budget_level": 1,
+    "coordinates": { "lat": 9.5851, "lng": 77.9579 },
+    "famous_spots": ["Srivilliputhur Temple"],
+    "specialties": {
+      "food": ["Kothu Parotta"],
+      "other": ["Fireworks Industry"]
+    },
+    "best_month": "January",
+    "event": "Temple Festival",
+    "popularity": 6,
+    "image": "Assets/Images/virudhunagar.jpg"
   }
 ]
