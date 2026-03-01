@@ -1,7 +1,7 @@
 [
 {
 "name": "Ooty",
-"image": "assets/images/ooty.jpg",
+"image": "assets/images/ooty/ooty.jpg",
 "themes": ["Relaxed","Romantic","Adventure"],
 "budget": {"low":1500,"mid":4500,"luxury":6000},
 "popularity": 8.7,
