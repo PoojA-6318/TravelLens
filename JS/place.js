@@ -171,6 +171,7 @@ function generateCards(sectionId, items) {
 // Load Place Based on URL
 // ===============================
 function loadPlace() {
+  
   const params = new URLSearchParams(window.location.search);
   const placeId = params.get("destination");
 
@@ -183,7 +184,7 @@ function loadPlace() {
   document.getElementById("place-title").textContent = selectedPlace.name;
   document.getElementById("place-description").textContent =
     selectedPlace.description;
-
+  document.title = selectedPlace.name;
   generateCards("morning-section", selectedPlace.sections.morning);
   generateCards("afternoon-section", selectedPlace.sections.afternoon);
   generateCards("evening-section", selectedPlace.sections.evening);
