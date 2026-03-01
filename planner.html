@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelLens Planner</title>
+  <link rel="stylesheet" href="CSS/planner.css">
+</head>
+<body>
+
+  <header class="planner-header">
+    <h1>🌍 TravelLens Itinerary Planner</h1>
+  </header>
+
+  <section class="planner-form">
+    <label>Choose Destination:</label>
+    <select id="destinationSelect">
+      <option value="">-- Select Destination --</option>
+      <option value="Ooty">Ooty</option>
+      <option value="Kodaikanal">Kodaikanal</option>
+      <option value="Madurai">Madurai</option>
+      <option value="Rameswaram">Rameswaram</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Mahabalipuram">Mahabalipuram</option>
+      <option value="Yercaud">Yercaud</option>
+      <option value="Kanyakumari">Kanyakumari</option>
+    </select>
+
+    <label>Number of Days:</label>
+    <input type="number" id="daysInput" min="1" max="7" value="2">
+
+    <button onclick="generateItinerary()">Generate Itinerary</button>
+  </section>
+
+  <section id="itineraryContainer"></section>
+
+  <section id="tripSummary" class="summary"></section>
+
+  <div class="print-btn-container">
+    <button onclick="window.print()">🖨 Download / Print</button>
+  </div>
+
+  <script src="js/planner.js"></script>
+</body>
+</html>

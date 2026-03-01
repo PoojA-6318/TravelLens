@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
 {
 "name": "Ooty",
 "image": "assets/images/ooty.jpg",
@@ -338,4 +339,86 @@
   "Temple Car Streets"
 ]
 }
+=======
+  {
+    "name": "Ooty Lake",
+    "city": "Ooty",
+    "category": "Relaxed",
+    "cost": 200,
+    "popularity": 9,
+    "image": "Assets/Images/ooty.jpg"
+  },
+  {
+    "name": "Doddabetta Peak Trek",
+    "city": "Ooty",
+    "category": "Adventure",
+    "cost": 300,
+    "popularity": 8,
+    "image": "Assets/Images/ooty.jpg"
+  },
+  {
+    "name": "Kodaikanal Lake",
+    "city": "Kodaikanal",
+    "category": "Relaxed",
+    "cost": 250,
+    "popularity": 9,
+    "image": "Assets/Images/kodaikanal.jpg"
+  },
+  {
+    "name": "Meenakshi Amman Temple",
+    "city": "Madurai",
+    "category": "Spiritual",
+    "cost": 100,
+    "popularity": 10,
+    "image": "Assets/Images/madurai.jpg"
+  },
+  {
+    "name": "Ramanathaswamy Temple",
+    "city": "Rameswaram",
+    "category": "Spiritual",
+    "cost": 120,
+    "popularity": 9,
+    "image": "Assets/Images/rameswaram.jpg"
+  },
+  {
+    "name": "Marina Beach",
+    "city": "Chennai",
+    "category": "Relaxed",
+    "cost": 50,
+    "popularity": 8,
+    "image": "Assets/Images/chennai.jpg"
+  },
+  {
+    "name": "Mahabalipuram Shore Temple",
+    "city": "Mahabalipuram",
+    "category": "Romantic",
+    "cost": 200,
+    "popularity": 8,
+    "image": "Assets/Images/mahabalipuram.jpg"
+  },
+  {
+    "name": "Yercaud Hills Trek",
+    "city": "Yercaud",
+    "category": "Adventure",
+    "cost": 250,
+    "popularity": 7,
+    "image": "Assets/Images/yercaud.jpg"
+  },
+  {
+    "name": "Kanyakumari Sunrise Point",
+    "city": "Kanyakumari",
+    "category": "Romantic",
+    "cost": 150,
+    "popularity": 9,
+    "image": "Assets/Images/kanyakumari.jpg"
+  },
+  {
+    "name": "Chennai Nightlife (T. Nagar)",
+    "city": "Chennai",
+    "category": "Party",
+    "cost": 500,
+    "popularity": 7,
+    "image": "Assets/Images/chennai.jpg"
+  }
+>>>>>>> b6a5b3b24e7725cf7d4769c96e1ea1385c9646bb
 ]
