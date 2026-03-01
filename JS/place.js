@@ -20,6 +20,7 @@ const places = [
   {
     id: "kodaikanal",
     name: "Kodaikanal",
+    heroImage: "assets/images/kodai/kodaikanal.jpg",
     description:
       "The Princess of Hill Stations — where mist rolls over valleys, pine forests whisper stories, and time slows down beside Kodai Lake.",
 
@@ -142,6 +143,135 @@ const places = [
         }
       ]
     }
+  },
+  {
+    id: "Ooty",
+    name: "Ooty",
+    heroImage: "assets/images/ooty/ooty.jpg",
+    description:
+      "Queen of the Nilgiris — rolling tea estates, cool mountain air, and colonial charm wrapped in misty blue hills.",
+
+    sections: {
+
+      morning: [
+        {
+          title: "Ooty Lake",
+          image: "assets/images/ooty/lake.jpg",
+          text: "Start your morning with boating in the peaceful lake."
+        },
+        {
+          title: "Botanical Garden",
+          image: "assets/images/ooty/botanical-garden.jpg",
+          text: "Walk through beautifully maintained gardens and rare plants."
+        },
+        {
+          title: "Doddabetta Peak",
+          image: "assets/images/ooty/doddabetta.jpg",
+          text: "Highest peak in the Nilgiris with panoramic hill views."
+        }
+      ],
+
+      afternoon: [
+        {
+          title: "Tea Museum",
+          image: "assets/images/ooty/tea-museum.jpg",
+          text: "Learn how Nilgiri tea is processed and enjoy fresh samples."
+        },
+        {
+          title: "Rose Garden",
+          image: "assets/images/ooty/rose-garden.jpg",
+          text: "Thousands of colorful rose varieties on terraced slopes."
+        },
+        {
+          title: "Pykara Falls",
+          image: "assets/images/ooty/pykara.jpg",
+          text: "Scenic waterfall surrounded by lush greenery."
+        }
+      ],
+
+      evening: [
+        {
+          title: "Nilgiri Mountain Railway",
+          image: "assets/images/ooty/train.jpg",
+          text: "Experience the iconic toy train ride through the hills."
+        },
+        {
+          title: "Thread Garden",
+          image: "assets/images/ooty/thread-garden.jpg",
+          text: "Artificial flowers made entirely of thread — unique attraction."
+        },
+        {
+          title: "Charing Cross Market",
+          image: "assets/images/ooty/market.jpg",
+          text: "Evening shopping for local chocolates and handmade goods."
+        }
+      ],
+
+      hidden: [
+        {
+          title: "Emerald Lake",
+          image: "assets/images/ooty/emerald.jpg",
+          text: "A peaceful lake away from tourist crowds."
+        },
+        {
+          title: "Avalanche Lake",
+          image: "assets/images/ooty/avalanche.jpg",
+          text: "Crystal clear waters surrounded by mountains."
+        },
+        {
+          title: "Glenmorgan",
+          image: "assets/images/ooty/glenmorgan.jpg",
+          text: "Less explored viewpoint with breathtaking valley views."
+        },
+        {
+          title: "Needle Rock View Point",
+          image: "assets/images/ooty/needle-rock.jpg",
+          text: "Sharp cliff viewpoint offering stunning sunset scenery."
+        }
+      ],
+
+      stay: [
+        {
+          title: "Luxury Hill Resorts",
+          image: "assets/images/ooty/resort.jpg",
+          text: "Premium resorts with valley-facing balconies."
+        },
+        {
+          title: "Colonial Heritage Hotels",
+          image: "assets/images/ooty/heritage.jpg",
+          text: "British-era styled stays with vintage charm."
+        },
+        {
+          title: "Cozy Homestays",
+          image: "assets/images/ooty/homestay.jpg",
+          text: "Comfortable and affordable mountain stays."
+        }
+      ],
+
+      food: [
+        {
+          title: "Homemade Chocolates",
+          image: "assets/images/ooty/chocolate.jpg",
+          text: "Ooty is famous for rich handmade chocolates."
+        },
+        {
+          title: "Nilgiri Tea",
+          image: "assets/images/ooty/tea.jpg",
+          text: "Fresh aromatic tea directly from plantations."
+        },
+        {
+          title: "Varkey Biscuits",
+          image: "assets/images/ooty/varkey.jpg",
+          text: "Crispy layered biscuits loved by visitors."
+        },
+        {
+          title: "Eucalyptus Oil",
+          image: "assets/images/ooty/oil.jpg",
+          text: "Natural essential oil from Nilgiri plantations."
+        }
+      ]
+
+    }
   }
 ];
 
@@ -184,7 +314,12 @@ function loadPlace() {
   document.getElementById("place-title").textContent = selectedPlace.name;
   document.getElementById("place-description").textContent =
     selectedPlace.description;
+
   document.title = selectedPlace.name;
+
+  const hero = document.getElementById("hero-section");
+  hero.style.backgroundImage = `url(${selectedPlace.heroImage})`;
+
   generateCards("morning-section", selectedPlace.sections.morning);
   generateCards("afternoon-section", selectedPlace.sections.afternoon);
   generateCards("evening-section", selectedPlace.sections.evening);
