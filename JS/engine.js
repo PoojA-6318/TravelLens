@@ -47,3 +47,119 @@ class TravelEngine {
         }).sort((a, b) => b.score - a.score);
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+
+    let selectedMood = null;
+
+    const moodButtons = document.querySelectorAll(".mood-btn");
+    const analyzeBtn = document.getElementById("analyzeBtn");
+    const budgetInput = document.getElementById("budgetInput");
+
+    // 🔥 Mood Selection
+    moodButtons.forEach(btn => {
+        btn.addEventListener("click", function () {
+
+            // Remove active from all
+            moodButtons.forEach(b => b.classList.remove("active"));
+
+            // Add active to clicked
+            this.classList.add("active");
+
+            // Store mood
+            selectedMood = this.textContent.trim();
+
+            console.log("Selected Mood:", selectedMood);
+        });
+    });
+
+    // 🔥 Analyze Button
+    analyzeBtn.addEventListener("click", async function () {
+
+        if (!selectedMood) {
+            alert("Please select a mood.");
+            return;
+        }
+
+        const budget = budgetInput.value;
+
+        if (!budget || budget <= 0) {
+            alert("Please enter a valid budget.");
+            return;
+        }
+
+        const response = await fetch("assets/data/destinations.json");
+        const data = await response.json();
+
+        const engine = new TravelEngine(data);
+        const ranked = engine.rankDestinations(selectedMood, budget);
+
+        displayResults(ranked);
+    });
+
+});
+
+function displayResults(results) {
+
+    const container = document.querySelector(".recommendations .card-grid");
+    container.innerHTML = "";
+
+    results.forEach((item, index) => {
+
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        // Set background image dynamically
+        card.style.backgroundImage = `url('${item.image}')`;
+        card.style.backgroundSize = "cover";
+        card.style.backgroundPosition = "center";
+        card.style.backgroundRepeat = "no-repeat";
+
+        // Determine score color
+        let scoreClass = "score-low";
+        if (item.score >= 80) scoreClass = "score-high";
+        else if (item.score >= 60) scoreClass = "score-medium";
+
+        // Top Pick Badge
+        const badge = index === 0 
+            ? `<div class="top-badge">⭐ Top Pick</div>` 
+            : "";
+
+        card.innerHTML = `
+            ${badge}
+            <div class="overlay">
+                <h3>${item.name}</h3>
+                <p class="smart-score ${scoreClass}">
+                    Smart Score: <span class="score-value" data-score="${item.score}">0</span>/100
+                </p>
+                <p class="why-text">
+                    Best suited for your selected mood and budget.
+                </p>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+
+    animateScores();
+}
+
+function animateScores() {
+
+    const scoreElements = document.querySelectorAll(".score-value");
+
+    scoreElements.forEach(el => {
+
+        const target = Number(el.getAttribute("data-score"));
+        let current = 0;
+
+        const interval = setInterval(() => {
+            current += 1;
+            el.textContent = current;
+
+            if (current >= target) {
+                clearInterval(interval);
+            }
+        }, 15);
+
+    });
+}
