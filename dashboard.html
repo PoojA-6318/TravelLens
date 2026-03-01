@@ -11,6 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="dashboard-body">
 
 <div class="dashboard-header">
@@ -65,9 +66,16 @@
 
 </section>
 
-<script src="js/engine.js"></script>
-<script>
+<!-- District Details Modal -->
+<div id="districtModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeDistrictDetails()">&times;</span>
+    
+    <h2 id="modalTitle"></h2>
+    <p><strong>Best Month:</strong> <span id="modalBestMonth"></span></p>
+    <p><strong>Event:</strong> <span id="modalEvent"></span></p>
 
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
 
     let selectedMood = null;
@@ -182,5 +190,21 @@ function animateScores() {
 }
 </script>
 <script src="js/session.js"></script>
+=======
+    <h3>Famous Spots</h3>
+    <ul id="modalSpots"></ul>
+
+    <h3>Food Specialties</h3>
+    <ul id="modalFood"></ul>
+
+    <h3>Other Specialties</h3>
+    <ul id="modalOther"></ul>
+  </div>
+</div>
+
+<script src="JS/engine.js"></script>
+<script src="JS/session.js"></script>
+<script src="JS/dashboard.js"></script>
+>>>>>>> f7e330330f754d65c5bcee8084ead4d9d4b3d1e3
 </body>
 </html>

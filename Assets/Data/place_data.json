@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "Kodaikanal": {
     "heroImage": "assets/images/kodai/kodaikanal.jpg",
@@ -60,67 +59,5 @@
   { "name": "Wooden Handicrafts", "description": "Hand-carved local crafts" }
 ]
   }
-=======
-{
-  "Kodaikanal": {
-    "heroImage": "assets/images/kodai/kodaikanal.jpg",
-    "tagline": "Where Mist Meets Memory",
-
-    "morning": {
-      "title": "Morning Serenity",
-      "description": "Wake up to mist rolling over Kodai Lake. The silent hills and crisp mountain air create the perfect start to your journey.",
-      "image": "assets/images/kodai/morning.jpg",
-      "spots": ["Kodai Lake", "Coaker's Walk", "Bryant Park", "Upper Lake View"]
-    },
-
-    "afternoon": {
-      "title": "Afternoon Exploration",
-      "description": "Explore pine forests, trek scenic cliffs, and witness breathtaking viewpoints carved into the hills.",
-      "image": "assets/images/kodai/afternoon.jpg",
-      "spots": ["Pine Forest", "Pillar Rocks", "Dolphin’s Nose", "Green Valley View"]
-    },
-
-    "goldenHour": {
-      "title": "Golden Hour Moments",
-      "description": "As the sky turns golden, Kodai transforms into a dreamy escape of glowing cafés and peaceful sunsets.",
-      "image": "assets/images/kodai/evening.jpg",
-      "spots": ["Sunset View Point", "Silent Valley View"]
-    },
-
-    "moreSpots": [
-  { "name": "Bryant Park", "image": "assets/images/kodai/bryant.jpg" },
-  { "name": "Silver Cascade Falls", "image": "assets/images/kodai/silver.jpg" },
-  { "name": "Pine Forest", "image": "assets/images/kodai/pine.jpg" },
-  { "name": "Dolphin's Nose", "image": "assets/images/kodai/dolphin.jpg" },
-  { "name": "Pillar Rocks", "image": "assets/images/kodai/pillar.jpg" },
-  { "name": "Green Valley View", "image": "assets/images/kodai/greenvalley.jpg" },
-  { "name": "Berijam Lake", "image": "assets/images/kodai/berijam.jpg" },
-  { "name": "Kurinji Andavar Temple", "image": "assets/images/kodai/temple.jpg" },
-  { "name": "Guna Caves", "image": "assets/images/kodai/guna.jpg" },
-  { "name": "La Salette Church", "image": "assets/images/kodai/church.jpg" }
-],
-
-    "stay": [
-  { "name": "The Tamara Kodai", "type": "Luxury Resort" },
-  { "name": "Sterling Kodai Valley", "type": "Premium Resort" },
-  { "name": "Villa Retreat", "type": "Boutique Hotel" },
-  { "name": "Green Pastures", "type": "Valley View Hotel" },
-  { "name": "Kodai Homescape", "type": "Cozy Homestay" },
-  { "name": "Hilltop Towers", "type": "Budget Stay" },
-  { "name": "Valley Villa Retreat", "type": "Private Villa" },
-  { "name": "Woodstock Resort", "type": "Nature Stay" }
-],
-
-    "souvenirs": [
-  { "name": "Homemade Chocolates", "description": "Locally crafted artisan chocolates" },
-  { "name": "Organic Honey", "description": "Fresh mountain honey" },
-  { "name": "Eucalyptus Oil", "description": "Natural oil from hill plantations" },
-  { "name": "Homemade Cheese", "description": "Farm-fresh dairy products" },
-  { "name": "Strawberry Jam", "description": "Locally grown berries" },
-  { "name": "Handwoven Shawls", "description": "Warm woollen textiles" },
-  { "name": "Herbal Teas", "description": "Hill-grown aromatic teas" },
-  { "name": "Wooden Handicrafts", "description": "Hand-carved local crafts" }
-]
-  }
->>>>>>> b6a5b3b24e7725cf7d4769c96e1ea1385c9646bb
 }
+
