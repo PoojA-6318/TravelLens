@@ -89,6 +89,5 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    /* adjust darkness */
     z-index: -1;
 }
