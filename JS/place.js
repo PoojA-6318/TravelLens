@@ -296,15 +296,18 @@ const places = [
       ],
       hidden: [
         { title: "Manjakuttai View Point", image: "assets/images/yercaud/manjakuttai.jpg", text: "A secluded spot for spectacular sunrise and valley views." },
-        { title: "Bear's Cave", image: "assets/images/yercaud/cave.jpg", text: "A historic cave located near the Norton’s Bungalow." }
+        { title: "Bear's Cave", image: "assets/images/yercaud/cave.jpg", text: "A historic cave located near the Norton’s Bungalow." },
+        { title: "Emerald View Point", image: "assets/images/yercaud/emerald.jpg", text: "A hidden viewpoint offering stunning vistas of the emerald valleys." }
       ],
       stay: [
         { title: "Hilltop Resorts", image: "assets/images/yercaud/resort.jpg", text: "Stay in luxury villas overlooking the coffee estates." },
-        { title: "Eco-Friendly Cottages", image: "assets/images/yercaud/cottage.jpg", text: "Nature-centric stays deep within the woods." }
+        { title: "Eco-Friendly Cottages", image: "assets/images/yercaud/cottage.jpg", text: "Nature-centric stays deep within the woods." },
+        { title: "Budget Homestays", image: "assets/images/yercaud/homestay.jpg", text: "Affordable local hospitality with home-cooked meals." }
       ],
       food: [
         { title: "Fresh Coffee", image: "assets/images/yercaud/coffee-drink.jpg", text: "Strong, aromatic brews from locally grown beans." },
-        { title: "Spiced Corn", image: "assets/images/yercaud/corn.jpg", text: "A popular lake-side snack for the chilly weather." }
+        { title: "Spiced Corn", image: "assets/images/yercaud/corn.jpg", text: "A popular lake-side snack for the chilly weather." },
+        { title: "Homemade Jams", image: "assets/images/yercaud/jam.jpg", text: "Delicious jams made from locally grown fruits." }
       ]
     }
   },
@@ -557,24 +560,33 @@ const places = [
     sections: {
       morning: [
         { title: "Dansborg Fort", image: "assets/images/tharangambadi/fort.jpg", text: "Explore the second-largest Danish fort ever built." },
-        { title: "New Jerusalem Church", image: "assets/images/tharangambadi/church.jpg", text: "A beautiful 18th-century church with unique colonial architecture." }
+        { title: "New Jerusalem Church", image: "assets/images/tharangambadi/church.jpg", text: "A beautiful 18th-century church with unique colonial architecture." },
+        { title: "Old Lighthouse", image: "assets/images/tharangambadi/lighthouse.jpg", text: "Climb to the top for panoramic views of the coastline." }
       ],
       afternoon: [
         { title: "Maritime Museum", image: "assets/images/tharangambadi/museum.jpg", text: "Discover Danish artifacts and old navigational tools." },
-        { title: "Ziegenbalg House", image: "assets/images/tharangambadi/printing.jpg", text: "Visit the home of the man who brought the first printing press to India." }
+        { title: "Ziegenbalg House", image: "assets/images/tharangambadi/printing.jpg", text: "Visit the home of the man who brought the first printing press to India." },
+        { title: "Coromandel Coastline", image: "assets/images/tharangambadi/coast.jpg", text: "Take a leisurely walk along the serene beaches and watch local fishermen at work." },
       ],
       evening: [
         { title: "Tranquebar Beach", image: "assets/images/tharangambadi/beach.jpg", text: "Walk along the ozone-rich shore by the ancient fort walls." },
-        { title: "Masilamani Nathar Temple", image: "assets/images/tharangambadi/temple.jpg", text: "A 700-year-old temple partially claimed by the sea." }
+        { title: "Masilamani Nathar Temple", image: "assets/images/tharangambadi/temple.jpg", text: "A 700-year-old temple partially claimed by the sea." },
+        { title: "Evening Market", image: "assets/images/tharangambadi/market.jpg", text: "Browse stalls selling local handicrafts and fresh seafood." }
       ],
       hidden: [
-        { title: "The Danish Cemetery", image: "assets/images/tharangambadi/cemetery.jpg", text: "A silent record of the Danish officers and traders from the 1700s." }
+        { title: "The Danish Cemetery", image: "assets/images/tharangambadi/cemetery.jpg", text: "A silent record of the Danish officers and traders from the 1700s." },
+        { title: "Sundaram Beach", image: "assets/images/tharangambadi/sundaram.jpg", text: "A quiet, less-visited beach perfect for solitude and sunset views." },
+        { title: "Coromandel Crafts", image: "assets/images/tharangambadi/crafts.jpg", text: "Handmade seashell jewelry and coir products by local artisans." },
       ],
       stay: [
-        { title: "Bungalow on the Beach", image: "assets/images/tharangambadi/stay.jpg", text: "A heritage stay offering high ceilings and sea views." }
+        { title: "Bungalow on the Beach", image: "assets/images/tharangambadi/stay.jpg", text: "A heritage stay offering high ceilings and sea views." },
+        { title: "Tranquebar Heritage Hotel", image: "assets/images/tharangambadi/heritage-hotel.jpg", text: "A restored Danish mansion with colonial charm." },
+        { title: "Eco-Friendly Cottages", image: "assets/images/tharangambadi/cottage.jpg", text: "Sustainable stays surrounded by nature and history." }
       ],
       food: [
-        { title: "Fresh Catch Seafood", image: "assets/images/tharangambadi/seafood.jpg", text: "Fisherman-style curries made with the day's fresh catch." }
+        { title: "Fresh Catch Seafood", image: "assets/images/tharangambadi/seafood.jpg", text: "Fisherman-style curries made with the day's fresh catch." },
+        { title: "Danish Pastries", image: "assets/images/tharangambadi/pastry.jpg", text: "Try the local twist on classic Danish baked goods at the town bakery." },
+        { title: "Coastal Spices", image: "assets/images/tharangambadi/spices.jpg", text: "Buy aromatic blends of spices that define the coastal cuisine." }
       ]
     }
   },
@@ -701,25 +713,34 @@ const places = [
     sections: {
       morning: [
         { title: "Chettinad Mansions", image: "assets/images/karaikudi/mansion.jpg", text: "Tour the palatial homes featuring Burmese teak and Italian marble." },
-        { title: "Athangudi Tile Factory", image: "assets/images/karaikudi/tiles.jpg", text: "Watch artisans create handmade, eco-friendly geometric tiles." }
+        { title: "Athangudi Tile Factory", image: "assets/images/karaikudi/tiles.jpg", text: "Watch artisans create handmade, eco-friendly geometric tiles." },
+        { title: "Local Market", image: "assets/images/karaikudi/market.jpg", text: "Experience the vibrant morning market with fresh produce and spices." }
       ],
       afternoon: [
         { title: "Kandukathan Palace", image: "assets/images/karaikudi/palace.jpg", text: "A visual feast of architectural grandeur and vintage luxury." },
-        { title: "Antiques Market", image: "assets/images/karaikudi/antiques.jpg", text: "Browse through rare Tanjore paintings, old brass, and enamelware." }
+        { title: "Antiques Market", image: "assets/images/karaikudi/antiques.jpg", text: "Browse through rare Tanjore paintings, old brass, and enamelware." },
+        { title: "Chettinad Museum", image: "assets/images/karaikudi/museum.jpg", text: "Discover the history and culture of the Chettiar community." }
       ],
       evening: [
         { title: "Koppudai Nayaki Amman Temple", image: "assets/images/karaikudi/temple.jpg", text: "Experience the spiritual energy of this historic local temple." },
-        { title: "Handloom Weaving Centre", image: "assets/images/karaikudi/weaving.jpg", text: "See how the famous Kandangi cotton sarees are woven." }
+        { title: "Handloom Weaving Centre", image: "assets/images/karaikudi/weaving.jpg", text: "See how the famous Kandangi cotton sarees are woven." },
+        { title: "Evening Street Food", image: "assets/images/karaikudi/street-food.jpg", text: "Savor local snacks like murukku and kara sev from street vendors." }
       ],
       hidden: [
-        { title: "Thirumayam Fort", image: "assets/images/karaikudi/fort.jpg", text: "A 17th-century rock fortress with stunning vantage points." }
+        { title: "Thirumayam Fort", image: "assets/images/karaikudi/fort.jpg", text: "A 17th-century rock fortress with stunning vantage points." },
+        { title: "Sittanavasal Caves", image: "assets/images/karaikudi/caves.jpg", text: "Ancient Jain rock-cut caves with exquisite frescoes." },
+        { title: "Pillayarpatti Temple", image: "assets/images/karaikudi/pillayarpatti.jpg", text: "A unique rock-cut temple dedicated to Lord Ganesha." },
+        { title: "Karaikudi Lake", image: "assets/images/karaikudi/lake.jpg", text: "A serene spot for birdwatching and sunset views." }
       ],
       stay: [
-        { title: "Heritage Palatial Stays", image: "assets/images/karaikudi/stay.jpg", text: "Live like a Zamindar in restored Chettiar mansions." }
+        { title: "Heritage Palatial Stays", image: "assets/images/karaikudi/stay.jpg", text: "Live like a Zamindar in restored Chettiar mansions." },
+        { title: "Boutique Hotels", image: "assets/images/karaikudi/boutique.jpg", text: "Modern comforts with traditional aesthetics." },
+        { title: "Farm Stays", image: "assets/images/karaikudi/farm.jpg", text: "Stay on a working farm and learn about traditional agriculture." }
       ],
       food: [
         { title: "Chettinad Chicken", image: "assets/images/karaikudi/food.jpg", text: "Taste the authentic, spice-rich flavors of world-famous cuisine." },
-        { title: "Kuzhi Paniyaram", image: "assets/images/karaikudi/snack.jpg", text: "Savory rice-lentil dumplings served with spicy chutneys." }
+        { title: "Kuzhi Paniyaram", image: "assets/images/karaikudi/snack.jpg", text: "Savory rice-lentil dumplings served with spicy chutneys." },
+        { title: "Karaikudi Mutton", image: "assets/images/karaikudi/mutton.jpg", text: "A fiery, slow-cooked mutton dish that’s a local favorite." },
       ]
     }
   },
@@ -846,24 +867,38 @@ const places = [
     sections: {
       morning: [
         { title: "Velankanni Basilica", image: "assets/images/nagapattinam/church.jpg", text: "Visit the renowned 'Lourdes of the East' shrine nearby." },
-        { title: "Nagore Dargah", image: "assets/images/nagapattinam/dargah.jpg", text: "A 500-year-old spiritual center and architectural marvel." }
+        { title: "Nagore Dargah", image: "assets/images/nagapattinam/dargah.jpg", text: "A 500-year-old spiritual center and architectural marvel." },
+        { title: "Kayarohanaswami Temple", image: "assets/images/nagapattinam/temple2.jpg", text: "An ancient Shiva temple with a unique blend of Dravidian and Chola architecture." }
       ],
       afternoon: [
         { title: "Nagapattinam Museum", image: "assets/images/nagapattinam/museum.jpg", text: "View bronze idols and artifacts from the Chola period." },
-        { title: "Salt Pans", image: "assets/images/nagapattinam/salt.jpg", text: "Witness the unique landscape of coastal salt production." }
+        { title: "Salt Pans", image: "assets/images/nagapattinam/salt.jpg", text: "Witness the unique landscape of coastal salt production." },
+        { title: "Fishing Harbor", image: "assets/images/nagapattinam/harbor.jpg", text: "Experience the bustling activity of local fishermen and their colorful boats." }
       ],
       evening: [
         { title: "Nagapattinam Beach", image: "assets/images/nagapattinam/beach.jpg", text: "A quiet evening walk along the Bay of Bengal." },
-        { title: "Soundararaja Perumal", image: "assets/images/nagapattinam/temple.jpg", text: "An ancient Vishnu temple with a massive towering Gopuram." }
+        { title: "Soundararaja Perumal", image: "assets/images/nagapattinam/temple.jpg", text: "An ancient Vishnu temple with a massive towering Gopuram." },
+        { title: "Evening Aarti", image: "assets/images/nagapattinam/aarti.jpg", text: "Experience the spiritual energy of the evening rituals at the temples." }
       ],
       hidden: [
-        { title: "Point Calimere", image: "assets/images/nagapattinam/wildlife.jpg", text: "A sanctuary for blackbucks and migratory flamingos." }
+        { title: "Point Calimere", image: "assets/images/nagapattinam/wildlife.jpg", text: "A sanctuary for blackbucks and migratory flamingos." },
+        { title: "Poompuhar Beach", image: "assets/images/nagapattinam/poompuhar.jpg", text: "A serene beach with a rich history as an ancient port city." },
+        { title: "Sikkal Singaravelan Temple", image: "assets/images/nagapattinam/sikkal.jpg", text: "A unique temple where Lord Murugan is worshipped in both his fierce and benevolent forms." },
+        { title: "Tharangampadi Lighthouse", image: "assets/images/nagapattinam/lighthouse.jpg", text: "Climb the historic lighthouse for panoramic views of the coastline." }
       ],
       stay: [
-        { title: "Beachside Lodges", image: "assets/images/nagapattinam/stay.jpg", text: "Simple and accessible stays close to the spiritual sites." }
+        { title: "Beachside Lodges", image: "assets/images/nagapattinam/stay.jpg", text: "Simple and accessible stays close to the spiritual sites." },
+        { title: "Heritage Hotels", image: "assets/images/nagapattinam/heritage.jpg", text: "Experience traditional hospitality in restored colonial-era buildings." },
+        { title: "Eco-Resorts", image: "assets/images/nagapattinam/eco-resort.jpg", text: "Sustainable stays surrounded by nature and local culture." }
+
       ],
       food: [
-        { title: "Dry Fish Curries", image: "assets/images/nagapattinam/dryfish.jpg", text: "A local specialty known for its intense and unique flavors." }
+        { title: "Dry Fish Curries", image: "assets/images/nagapattinam/dryfish.jpg", text: "A local specialty known for its intense and unique flavors." },
+        { title: "Karaikudi Mutton", image: "assets/images/nagapattinam/mutton.jpg", text: "A fiery, slow-cooked mutton dish that’s a local favorite." },
+        { title: "Prawn Masala", image: "assets/images/nagapattinam/prawn.jpg", text: "Fresh prawns cooked in a spicy, tangy masala sauce." },
+        { title: "Thalapakatti Biryani", image: "assets/images/nagapattinam/biryani.jpg", text: "A world-famous biryani known for its unique blend of spices and flavors." },
+        { title: "Kadalai Mittai", image: "assets/images/nagapattinam/peanut-candy.jpg", text: "A sweet treat made from roasted peanuts and jaggery, perfect for a quick energy boost." },
+        { title: "Seashell Pickles", image: "assets/images/nagapattinam/seashell-pickle.jpg", text: "A unique local delicacy made from the abundant seashells found along the coast." }
       ]
     }
   },
@@ -990,24 +1025,34 @@ const places = [
     sections: {
       morning: [
         { title: "Nataraja Temple", image: "assets/images/chidambaram/nataraja.jpg", text: "The temple where Shiva is worshipped in his form as the Cosmic Dancer." },
-        { title: "Thillai Kali Amman", image: "assets/images/chidambaram/kali.jpg", text: "A powerful temple dedicated to the guardian goddess of the town." }
+        { title: "Thillai Kali Amman", image: "assets/images/chidambaram/kali.jpg", text: "A powerful temple dedicated to the guardian goddess of the town." },
+        { title: "Sthala Vriksha", image: "assets/images/chidambaram/vriksha.jpg", text: "The sacred fig tree believed to be the original site of Shiva's cosmic dance." }
       ],
       afternoon: [
         { title: "Pichavaram Mangroves", image: "assets/images/chidambaram/mangrove.jpg", text: "The world's second-largest mangrove forest, accessible by boat." },
-        { title: "Annamalai University", image: "assets/images/chidambaram/uni.jpg", text: "Explore the sprawling, historic campus of this famed institution." }
+        { title: "Annamalai University", image: "assets/images/chidambaram/uni.jpg", text: "Explore the sprawling, historic campus of this famed institution." },
+        { title: "Sankara Mutt", image: "assets/images/chidambaram/mutt.jpg", text: "A serene spiritual center founded by Adi Shankaracharya." }
       ],
       evening: [
         { title: "Temple Tank", image: "assets/images/chidambaram/tank.jpg", text: "Watch the rituals and chants reflect in the sacred waters." },
-        { title: "Shopping for Silk", image: "assets/images/chidambaram/silk.jpg", text: "Chidambaram is known for its exquisite traditional cotton and silk." }
+        { title: "Shopping for Silk", image: "assets/images/chidambaram/silk.jpg", text: "Chidambaram is known for its exquisite traditional cotton and silk." },
+        { title: "Evening Aarti", image: "assets/images/chidambaram/aarti.jpg", text: "Experience the spiritual energy of the evening rituals at the temple." }
       ],
       hidden: [
-        { title: "Vaitheeswaran Koil", image: "assets/images/chidambaram/nadi.jpg", text: "Located nearby, famous for its ancient Nadi Astrology palm leaves." }
+        { title: "Vaitheeswaran Koil", image: "assets/images/chidambaram/nadi.jpg", text: "Located nearby, famous for its ancient Nadi Astrology palm leaves." },
+        { title: "Thillai Nataraja Dance Festival", image: "assets/images/chidambaram/dance.jpg", text: "If visiting in December, witness the world-renowned classical dance festival held in the temple." },
+        { title: "Chidambaram Market", image: "assets/images/chidambaram/market.jpg", text: "A bustling local market where you can find everything from fresh produce to traditional handicrafts." },
+         { title: "Sthala Vriksha", image: "assets/images/chidambaram/vriksha.jpg", text: "The sacred fig tree believed to be the original site of Shiva's cosmic dance." }
       ],
       stay: [
-        { title: "Spiritual Retreats", image: "assets/images/chidambaram/retreat.jpg", text: "Traditional lodges that offer a quiet, meditative atmosphere." }
+        { title: "Spiritual Retreats", image: "assets/images/chidambaram/retreat.jpg", text: "Traditional lodges that offer a quiet, meditative atmosphere." },
+        { title: "Heritage Hotels", image: "assets/images/chidambaram/hotel.jpg", text: "Experience local hospitality in charming, heritage-style accommodations." },
+        { title: "Budget Stays", image: "assets/images/chidambaram/budget.jpg", text: "Affordable guesthouses and lodges for travelers on a budget." }
       ],
       food: [
-        { title: "Temple Prasadam", image: "assets/images/chidambaram/food.jpg", text: "Taste the sacred Pongal and Tamarind rice served in the temple." }
+        { title: "Temple Prasadam", image: "assets/images/chidambaram/food.jpg", text: "Taste the sacred Pongal and Tamarind rice served in the temple." },
+        { title: "South Indian Thali", image: "assets/images/chidambaram/thali.jpg", text: "A traditional meal served on a banana leaf with a variety of dishes." },
+        { title: "Filter Coffee", image: "assets/images/chidambaram/coffee.jpg", text: "Enjoy a cup of strong, aromatic South Indian filter coffee." }
       ]
     }
   },
