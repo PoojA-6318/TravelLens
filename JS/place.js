@@ -835,7 +835,6 @@ const places = [
           image: "Images/stone-statue.jpg",
           text: "Authentic miniature stone carvings made by descendants of the Pallava sculptors."
         }
->>>>>>> bef314458ea2980ef995c0c515652e9365f107aa
       ]
     }
   },
@@ -1239,7 +1238,6 @@ const places = [
           image: "Images/tribal-crafts.jpg",
           text: "Traditional bamboo baskets and decorative items handmade by local highland craftsmen."
         }
->>>>>>> bef314458ea2980ef995c0c515652e9365f107aa
       ]
     }
   }
