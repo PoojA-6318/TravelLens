@@ -71,7 +71,7 @@ body::before{
 
 .card-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); /* Need to adjust in such a way that it lets only max three to come in 1 line */
     gap:30px;
 }
 
@@ -94,7 +94,7 @@ body::before{
 
 .card img{
     width:100%;
-    height:180px;
+    height: 260px;           /* originally: 180px */
     object-fit:cover;
     border-radius:15px;
     margin-bottom:15px;
