@@ -307,7 +307,9 @@ const places = [
       food: [
         { title: "Fresh Coffee", image: "assets/images/yercaud/coffee-drink.jpg", text: "Strong, aromatic brews from locally grown beans." },
         { title: "Spiced Corn", image: "assets/images/yercaud/corn.jpg", text: "A popular lake-side snack for the chilly weather." },
-        { title: "Homemade Jams", image: "assets/images/yercaud/jam.jpg", text: "Delicious jams made from locally grown fruits." }
+        { title: "Homemade Jams", image: "assets/images/yercaud/jam.jpg", text: "Delicious jams made from locally grown fruits." },
+        { title: "Organic Spices", image: "assets/images/yercaud/spices.jpg", text: "Buy fresh, organic pepper and cardamom from local farmers." },
+        { title: "Shevaroy Honey", image: "assets/images/yercaud/honey.jpg", text: "Pure honey harvested from the wildflowers of the Shevaroy hills." }
       ]
     }
   },
@@ -741,6 +743,9 @@ const places = [
         { title: "Chettinad Chicken", image: "assets/images/karaikudi/food.jpg", text: "Taste the authentic, spice-rich flavors of world-famous cuisine." },
         { title: "Kuzhi Paniyaram", image: "assets/images/karaikudi/snack.jpg", text: "Savory rice-lentil dumplings served with spicy chutneys." },
         { title: "Karaikudi Mutton", image: "assets/images/karaikudi/mutton.jpg", text: "A fiery, slow-cooked mutton dish that’s a local favorite." },
+        { title: "Chettinad Pickles", image: "assets/images/karaikudi/pickle.jpg", text: "Spicy, tangy pickles made from local fruits and vegetables." },
+        { title: "Kandangi Sarees", image: "assets/images/karaikudi/saree.jpg", text: "Handwoven cotton sarees with vibrant colors and traditional patterns." },
+        { title: "Chettinad Spices", image: "assets/images/karaikudi/spices.jpg", text: "Buy aromatic blends of spices that define the region’s cuisine." }
       ]
     }
   },
@@ -1052,7 +1057,10 @@ const places = [
       food: [
         { title: "Temple Prasadam", image: "assets/images/chidambaram/food.jpg", text: "Taste the sacred Pongal and Tamarind rice served in the temple." },
         { title: "South Indian Thali", image: "assets/images/chidambaram/thali.jpg", text: "A traditional meal served on a banana leaf with a variety of dishes." },
-        { title: "Filter Coffee", image: "assets/images/chidambaram/coffee.jpg", text: "Enjoy a cup of strong, aromatic South Indian filter coffee." }
+        { title: "Filter Coffee", image: "assets/images/chidambaram/coffee.jpg", text: "Enjoy a cup of strong, aromatic South Indian filter coffee." },
+        { title: "Local Sweets", image: "assets/images/chidambaram/sweets.jpg", text: "Try traditional sweets like Mysore Pak and Laddu from local sweet shops." },
+        { title: "Street Food", image: "assets/images/chidambaram/street-food.jpg", text: "Sample local street food like Vada, Samosa, and Pani Puri from vendors around the temple." },
+        { title: "Handicrafts", image: "assets/images/chidambaram/handicrafts.jpg", text: "Buy traditional handicrafts and souvenirs made by local artisans." }
       ]
     }
   },
