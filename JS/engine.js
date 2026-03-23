@@ -1,3 +1,25 @@
+const weatherCityMap = {
+    Kodaikanal: "Kodaikanal",
+    Ooty: "Udhagamandalam",
+    Yercaud: "Yercaud",
+    Madurai: "Madurai",
+    Kanchipuram: "Kanchipuram",
+    Tharangambadi: "Tharangambadi",
+    Kanyakumari: "Kanyakumari",
+    Karaikudi: "Karaikudi",
+    Mahabalipuram: "Mahabalipuram",
+    Nagapattinam: "Nagapattinam",
+    Pondicherry: "Puducherry",
+    Chidambaram: "Chidambaram",
+    Rameswaram: "Rameswaram",
+    Yelagiri: "Yelagiri",
+    Trichy: "Tiruchirappalli",
+    Thoothukudi: "Tuticorin",
+    Tirunelveli: "Tirunelveli",
+    Thanjavur: "Thanjavur",
+    Srivilliputhur: "Srivilliputhur",
+    Valparai: "Valparai"
+};
 class TravelEngine {
     constructor(destinations) {
         this.destinations = destinations;
@@ -47,6 +69,26 @@ class TravelEngine {
         }).sort((a, b) => b.score - a.score);
     }
 }
+async function fetchWeather(city) {
+    const apiKey = "496e4bd2463640b3fb6da50ec726344f"; 
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},IN&appid=${apiKey}&units=metric`;
+
+    try {
+        const res = await fetch(url);
+        const data = await res.json();
+
+        const temp = data.main.temp;
+        const condition = data.weather[0].main;
+
+        const weatherBox = document.querySelector(".info-card:first-child p");
+
+        weatherBox.textContent = `${temp}°C • ${condition}`;
+
+    } catch (err) {
+        console.error("Weather error:", err);
+    }
+}
 document.addEventListener("DOMContentLoaded", function () {
 
     let selectedMood = null;
@@ -94,6 +136,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const ranked = engine.rankDestinations(selectedMood, budget);
 
         displayResults(ranked);
+
+        // 🔥 Get correct API city name
+        const apiCity = weatherCityMap[ranked[0].name] || ranked[0].name;
+
+        // 🌤 Fetch weather
+        fetchWeather(apiCity);
     });
 
 });

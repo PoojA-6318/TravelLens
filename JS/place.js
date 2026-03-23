@@ -145,6 +145,778 @@ const places = [
     }
   },
   {
+  id: "Trichy",
+  name: "Trichy",
+  heroImage: "assets/images/trichy/hero.jpg",
+  description:
+    "The Temple City of Tamil Nadu — where ancient rock forts rise above the plains, sacred rivers flow beside timeless shrines, and history echoes through every street.",
+
+  sections: {
+
+    morning: [
+      {
+        title: "Rockfort Temple",
+        image: "assets/images/trichy/rockfort.jpg",
+        text: "Climb the iconic rock fort for breathtaking sunrise views over the city."
+      },
+      {
+        title: "Ucchi Pillayar Temple",
+        image: "assets/images/trichy/ucchi-pillayar.jpg",
+        text: "A sacred hilltop shrine offering panoramic views and spiritual calm."
+      },
+      {
+        title: "Sri Ranganathaswamy Temple",
+        image: "assets/images/trichy/srirangam.jpg",
+        text: "One of the largest functioning Hindu temples in the world."
+      }
+    ],
+
+    afternoon: [
+      {
+        title: "Kallanai (Grand Anicut)",
+        image: "assets/images/trichy/kallanai.jpg",
+        text: "An ancient dam built by the Cholas over the Cauvery River."
+      },
+      {
+        title: "Jambukeswarar Temple",
+        image: "assets/images/trichy/thiruvanaikaval.jpg",
+        text: "A powerful Shiva temple representing the element of water."
+      },
+      {
+        title: "St. Joseph’s Church",
+        image: "assets/images/trichy/st-joseph.jpg",
+        text: "A serene colonial-era church with stunning architecture."
+      }
+    ],
+
+    evening: [
+      {
+        title: "Mukkombu (Upper Anicut)",
+        image: "assets/images/trichy/mukkombu.jpg",
+        text: "A peaceful riverside spot perfect for relaxing evenings."
+      },
+      {
+        title: "Butterfly Park",
+        image: "assets/images/trichy/butterfly-park.jpg",
+        text: "A colorful park showcasing native butterfly species."
+      },
+      {
+        title: "Cauvery River View",
+        image: "assets/images/trichy/cauvery.jpg",
+        text: "Watch the sunset along the calm and flowing Cauvery riverbanks."
+      }
+    ],
+
+    hidden: [
+      {
+        title: "Puliyancholai Waterfalls",
+        image: "assets/images/trichy/puliyancholai.jpg",
+        text: "A hidden natural escape at the foothills of Kolli Hills."
+      },
+      {
+        title: "Viralimalai Murugan Temple",
+        image: "assets/images/trichy/viralimalai.jpg",
+        text: "Hill temple known for peacocks and scenic views."
+      },
+      {
+        title: "Government Museum",
+        image: "assets/images/trichy/museum.jpg",
+        text: "Explore archaeological artifacts and ancient sculptures."
+      },
+      {
+        title: "Samanar Hills",
+        image: "assets/images/trichy/samanar-hills.jpg",
+        text: "Ancient Jain caves with inscriptions carved into stone."
+      }
+    ],
+
+    stay: [
+      {
+        title: "Luxury Riverfront Hotels",
+        image: "assets/images/trichy/luxury-hotel.jpg",
+        text: "Premium stays offering comfort near major temples."
+      },
+      {
+        title: "Business Class Hotels",
+        image: "assets/images/trichy/business-hotel.jpg",
+        text: "Comfortable accommodations in the city center."
+      },
+      {
+        title: "Budget Lodges",
+        image: "assets/images/trichy/budget-lodge.jpg",
+        text: "Affordable stays for pilgrims and backpackers."
+      }
+    ],
+
+    food: [
+      {
+        title: "Traditional South Indian Meals",
+        image: "assets/images/trichy/meals.jpg",
+        text: "Authentic Tamil Nadu meals served on banana leaves."
+      },
+      {
+        title: "Murukku & Local Snacks",
+        image: "assets/images/trichy/snacks.jpg",
+        text: "Crispy traditional snacks loved by locals."
+      },
+      {
+        title: "Temple Prasadam",
+        image: "assets/images/trichy/prasadam.jpg",
+        text: "Sacred offerings from the famous temples."
+      },
+      {
+        title: "Filter Coffee",
+        image: "assets/images/trichy/filter-coffee.jpg",
+        text: "Strong and aromatic South Indian filter coffee."
+      }
+    ]
+
+  }
+},
+  {
+  id: "Tirunelveli",
+  name: "Tirunelveli",
+  heroImage: "assets/images/tirunelveli/hero.jpg",
+  description:
+    "Land of flowing Tamirabarani, majestic temples, and legendary halwa — Tirunelveli blends spirituality, nature, and timeless Tamil culture.",
+
+  sections: {
+
+    morning: [
+      {
+        title: "Nellaiappar Temple",
+        image: "assets/images/tirunelveli/nellaiappar.jpg",
+        text: "A grand twin temple dedicated to Shiva and Parvati, known for its musical pillars."
+      },
+      {
+        title: "Kanthimathi Amman Shrine",
+        image: "assets/images/tirunelveli/kanthimathi.jpg",
+        text: "Sacred shrine within the temple complex radiating divine energy."
+      },
+      {
+        title: "Tamirabarani River",
+        image: "assets/images/tirunelveli/tamirabarani.jpg",
+        text: "Start your day by the serene riverbanks flowing through the district."
+      }
+    ],
+
+    afternoon: [
+      {
+        title: "Courtallam Falls",
+        image: "assets/images/tirunelveli/courtallam.jpg",
+        text: "Famous therapeutic waterfalls surrounded by lush greenery."
+      },
+      {
+        title: "Manimuthar Dam",
+        image: "assets/images/tirunelveli/manimuthar.jpg",
+        text: "Scenic dam offering peaceful views and fresh mountain breeze."
+      },
+      {
+        title: "Papanasam Dam",
+        image: "assets/images/tirunelveli/papanasam.jpg",
+        text: "Beautiful reservoir nestled in the Western Ghats."
+      }
+    ],
+
+    evening: [
+      {
+        title: "Agasthiyar Falls",
+        image: "assets/images/tirunelveli/agasthiyar.jpg",
+        text: "A serene waterfall perfect for relaxing evening visits."
+      },
+      {
+        title: "Ariyanayagipuram Temple",
+        image: "assets/images/tirunelveli/ariyanayagipuram.jpg",
+        text: "Historic temple with intricate architecture."
+      },
+      {
+        title: "Nellai Town Market",
+        image: "assets/images/tirunelveli/market.jpg",
+        text: "Explore the lively streets filled with local flavors and culture."
+      }
+    ],
+
+    hidden: [
+      {
+        title: "Kalakad Wildlife Sanctuary",
+        image: "assets/images/tirunelveli/kalakad.jpg",
+        text: "A biodiversity hotspot rich in flora and fauna."
+      },
+      {
+        title: "Mundanthurai Tiger Reserve",
+        image: "assets/images/tirunelveli/mundanthurai.jpg",
+        text: "Part of the Kalakad-Mundanthurai Tiger Reserve."
+      },
+      {
+        title: "Koonthankulam Bird Sanctuary",
+        image: "assets/images/tirunelveli/koonthankulam.jpg",
+        text: "Seasonal paradise for migratory birds."
+      },
+      {
+        title: "Krishnapuram Temple",
+        image: "assets/images/tirunelveli/krishnapuram.jpg",
+        text: "Known for stunning stone carvings and sculptures."
+      }
+    ],
+
+    stay: [
+      {
+        title: "Riverfront Resorts",
+        image: "assets/images/tirunelveli/resort.jpg",
+        text: "Comfortable stays near nature and waterfalls."
+      },
+      {
+        title: "City Hotels",
+        image: "assets/images/tirunelveli/hotel.jpg",
+        text: "Convenient accommodations in the heart of Nellai."
+      },
+      {
+        title: "Budget Lodges",
+        image: "assets/images/tirunelveli/lodge.jpg",
+        text: "Affordable options for pilgrims and travelers."
+      }
+    ],
+
+    food: [
+      {
+        title: "Tirunelveli Halwa",
+        image: "assets/images/tirunelveli/halwa.jpg",
+        text: "World-famous wheat halwa that melts in your mouth."
+      },
+      {
+        title: "Sodhi Kuzhambu",
+        image: "assets/images/tirunelveli/sodhi.jpg",
+        text: "Traditional coconut milk-based curry unique to the region."
+      },
+      {
+        title: "Parotta & Salna",
+        image: "assets/images/tirunelveli/parotta.jpg",
+        text: "Soft layered parotta served with spicy salna."
+      },
+      {
+        title: "Banana Chips",
+        image: "assets/images/tirunelveli/chips.jpg",
+        text: "Crispy homemade snacks perfect for travel."
+      }
+    ]
+
+  }
+},
+  {
+  id: "Thoothukudi",
+  name: "Thoothukudi",
+  heroImage: "assets/images/thoothukudi/hero.jpg",
+  description:
+    "The Pearl City of Tamil Nadu — where the Bay of Bengal meets ancient ports, sacred churches, salt pans, and rich maritime history.",
+
+  sections: {
+
+    morning: [
+      {
+        title: "Our Lady of Snows Basilica",
+        image: "assets/images/thoothukudi/basilica.jpg",
+        text: "A historic coastal church known for its stunning architecture and spiritual significance."
+      },
+      {
+        title: "Thoothukudi Beach",
+        image: "assets/images/thoothukudi/beach.jpg",
+        text: "Enjoy a peaceful sunrise along the calm Bay of Bengal shoreline."
+      },
+      {
+        title: "Harbour View Point",
+        image: "assets/images/thoothukudi/harbour.jpg",
+        text: "Watch ships dock and experience the city’s bustling port life."
+      }
+    ],
+
+    afternoon: [
+      {
+        title: "Tuticorin Port",
+        image: "assets/images/thoothukudi/port.jpg",
+        text: "One of India’s major ports with deep maritime heritage."
+      },
+      {
+        title: "Salt Pans",
+        image: "assets/images/thoothukudi/salt-pans.jpg",
+        text: "Vast white salt fields reflecting the blazing afternoon sun."
+      },
+      {
+        title: "Roche Park",
+        image: "assets/images/thoothukudi/roche-park.jpg",
+        text: "A scenic seafront park perfect for relaxing strolls."
+      }
+    ],
+
+    evening: [
+      {
+        title: "Pearl City Beach Walk",
+        image: "assets/images/thoothukudi/evening-beach.jpg",
+        text: "Experience a breezy sunset along the shoreline."
+      },
+      {
+        title: "Manapad Beach",
+        image: "assets/images/thoothukudi/manapad.jpg",
+        text: "A serene coastal village with dramatic cliffs and church views."
+      },
+      {
+        title: "Sangu Muthumariamman Temple",
+        image: "assets/images/thoothukudi/muthumariamman.jpg",
+        text: "A sacred temple symbolizing the spiritual roots of the region."
+      }
+    ],
+
+    hidden: [
+      {
+        title: "Vembar Beach",
+        image: "assets/images/thoothukudi/vembar.jpg",
+        text: "A lesser-known beach offering quiet coastal beauty."
+      },
+      {
+        title: "Korkai Ancient Port",
+        image: "assets/images/thoothukudi/korkai.jpg",
+        text: "Historic Pandyan-era port known for pearl fishing."
+      },
+      {
+        title: "Kalugumalai",
+        image: "assets/images/thoothukudi/kalugumalai.jpg",
+        text: "Ancient rock-cut temples and Jain monuments carved in stone."
+      },
+      {
+        title: "Srivaikuntam Temple",
+        image: "assets/images/thoothukudi/srivaikuntam.jpg",
+        text: "A beautiful Vishnu temple along the Tamirabarani River."
+      }
+    ],
+
+    stay: [
+      {
+        title: "Seafront Hotels",
+        image: "assets/images/thoothukudi/seafront-hotel.jpg",
+        text: "Comfortable stays overlooking the Bay of Bengal."
+      },
+      {
+        title: "Business Hotels",
+        image: "assets/images/thoothukudi/business-hotel.jpg",
+        text: "Modern accommodations near the port and city center."
+      },
+      {
+        title: "Budget Lodges",
+        image: "assets/images/thoothukudi/lodge.jpg",
+        text: "Affordable stays for short coastal trips."
+      }
+    ],
+
+    food: [
+      {
+        title: "Macaroons",
+        image: "assets/images/thoothukudi/macaroons.jpg",
+        text: "Famous Tuticorin macaroons made from cashew and egg white."
+      },
+      {
+        title: "Seafood Specials",
+        image: "assets/images/thoothukudi/seafood.jpg",
+        text: "Fresh fish, prawns, and crab dishes from the coast."
+      },
+      {
+        title: "Karupatti Mittai",
+        image: "assets/images/thoothukudi/karupatti.jpg",
+        text: "Traditional palm jaggery sweets unique to the region."
+      },
+      {
+        title: "Banana Chips",
+        image: "assets/images/thoothukudi/chips.jpg",
+        text: "Crispy salted chips perfect as travel snacks."
+      }
+    ]
+
+  }
+},
+  {
+  id: "Valparai",
+  name: "Valparai",
+  heroImage: "assets/images/valparai/hero.jpg",
+  description:
+    "A mist-covered hill retreat in the Anamalai ranges — endless tea estates, winding ghat roads, wildlife sightings, and peaceful mountain air.",
+
+  sections: {
+
+    morning: [
+      {
+        title: "Tea Estates",
+        image: "assets/images/valparai/tea-estates.jpg",
+        text: "Wake up to golden sunlight falling over endless green plantations."
+      },
+      {
+        title: "Loam’s View Point",
+        image: "assets/images/valparai/loams-view.jpg",
+        text: "View the famous 40 hairpin bends from this scenic spot."
+      },
+      {
+        title: "Nallamudi Viewpoint",
+        image: "assets/images/valparai/nallamudi.jpg",
+        text: "Panoramic sunrise views over the Western Ghats."
+      }
+    ],
+
+    afternoon: [
+      {
+        title: "Aliyar Dam",
+        image: "assets/images/valparai/aliyar-dam.jpg",
+        text: "A scenic reservoir at the foothills of Valparai."
+      },
+      {
+        title: "Monkey Falls",
+        image: "assets/images/valparai/monkey-falls.jpg",
+        text: "Refreshing waterfall stop on the ghat road."
+      },
+      {
+        title: "Balaji Temple",
+        image: "assets/images/valparai/balaji-temple.jpg",
+        text: "A beautifully maintained private temple amidst greenery."
+      }
+    ],
+
+    evening: [
+      {
+        title: "Sholayar Dam",
+        image: "assets/images/valparai/sholayar.jpg",
+        text: "Enjoy the calm waters and sunset reflections."
+      },
+      {
+        title: "Grass Hills",
+        image: "assets/images/valparai/grass-hills.jpg",
+        text: "Rolling green hills with rare wildlife sightings."
+      },
+      {
+        title: "Tea Factory Visit",
+        image: "assets/images/valparai/tea-factory.jpg",
+        text: "See how fresh tea leaves are processed."
+      }
+    ],
+
+    hidden: [
+      {
+        title: "Chinna Kallar",
+        image: "assets/images/valparai/chinna-kallar.jpg",
+        text: "One of the wettest places in India with lush forest trails."
+      },
+      {
+        title: "Koolangal River",
+        image: "assets/images/valparai/koolangal.jpg",
+        text: "A quiet riverside picnic spot."
+      },
+      {
+        title: "Karumalai",
+        image: "assets/images/valparai/karumalai.jpg",
+        text: "Remote tea estate landscapes perfect for photography."
+      },
+      {
+        title: "Anamalai Tiger Reserve Edge",
+        image: "assets/images/valparai/tiger-reserve.jpg",
+        text: "Spot lion-tailed macaques and exotic birds."
+      }
+    ],
+
+    stay: [
+      {
+        title: "Tea Estate Bungalows",
+        image: "assets/images/valparai/estate-bungalow.jpg",
+        text: "Stay inside heritage plantation homes."
+      },
+      {
+        title: "Eco Resorts",
+        image: "assets/images/valparai/eco-resort.jpg",
+        text: "Nature-focused stays with valley views."
+      },
+      {
+        title: "Budget Hill Lodges",
+        image: "assets/images/valparai/lodge.jpg",
+        text: "Affordable options for backpackers."
+      }
+    ],
+
+    food: [
+      {
+        title: "Fresh Estate Tea",
+        image: "assets/images/valparai/tea.jpg",
+        text: "Directly sourced aromatic mountain tea."
+      },
+      {
+        title: "Homestyle Tamil Meals",
+        image: "assets/images/valparai/meals.jpg",
+        text: "Simple and comforting South Indian cuisine."
+      },
+      {
+        title: "Homemade Chocolates",
+        image: "assets/images/valparai/chocolate.jpg",
+        text: "Locally made sweet treats."
+      },
+      {
+        title: "Pepper & Spice Products",
+        image: "assets/images/valparai/spices.jpg",
+        text: "Fresh hill-grown spices to take home."
+      }
+    ]
+  }
+},
+  {
+  id: "Srivilliputhur",
+  name: "Srivilliputhur",
+  heroImage: "assets/images/srivilliputhur/hero.jpg",
+  description:
+    "Sacred town of Andal — towering temple gopurams, divine hymns, and serene temple streets echoing centuries of devotion.",
+
+  sections: {
+
+    morning: [
+      {
+        title: "Andal Temple",
+        image: "assets/images/srivilliputhur/andal-temple.jpg",
+        text: "Iconic temple dedicated to Goddess Andal."
+      },
+      {
+        title: "Rajagopuram",
+        image: "assets/images/srivilliputhur/rajagopuram.jpg",
+        text: "The tallest temple tower in Tamil Nadu."
+      },
+      {
+        title: "Temple Streets Walk",
+        image: "assets/images/srivilliputhur/temple-street.jpg",
+        text: "Experience the calm spiritual morning atmosphere."
+      }
+    ],
+
+    afternoon: [
+      {
+        title: "Grizzled Giant Squirrel Sanctuary",
+        image: "assets/images/srivilliputhur/sanctuary.jpg",
+        text: "Wildlife reserve home to rare giant squirrels."
+      },
+      {
+        title: "Western Ghats Foothills",
+        image: "assets/images/srivilliputhur/ghats.jpg",
+        text: "Scenic hill landscapes around the town."
+      },
+      {
+        title: "Local Heritage Houses",
+        image: "assets/images/srivilliputhur/heritage.jpg",
+        text: "Traditional Tamil architecture and homes."
+      }
+    ],
+
+    evening: [
+      {
+        title: "Temple Evening Aarti",
+        image: "assets/images/srivilliputhur/aarti.jpg",
+        text: "Witness the divine evening rituals."
+      },
+      {
+        title: "Town Market",
+        image: "assets/images/srivilliputhur/market.jpg",
+        text: "Local shopping for sweets and souvenirs."
+      },
+      {
+        title: "Village Countryside Walk",
+        image: "assets/images/srivilliputhur/countryside.jpg",
+        text: "Peaceful rural scenery during sunset."
+      }
+    ],
+
+    hidden: [
+      {
+        title: "Madavar Vilagam",
+        image: "assets/images/srivilliputhur/madavar.jpg",
+        text: "Historic locality tied to temple traditions."
+      },
+      {
+        title: "Sathuragiri Hills (Nearby)",
+        image: "assets/images/srivilliputhur/sathuragiri.jpg",
+        text: "Sacred trekking destination."
+      },
+      {
+        title: "Local Sweet Shops",
+        image: "assets/images/srivilliputhur/sweets.jpg",
+        text: "Famous Srivilliputhur palkova."
+      },
+      {
+        title: "Rural Temple Shrines",
+        image: "assets/images/srivilliputhur/shrine.jpg",
+        text: "Small but spiritually rich temples."
+      }
+    ],
+
+    stay: [
+      {
+        title: "Pilgrim Guest Houses",
+        image: "assets/images/srivilliputhur/guesthouse.jpg",
+        text: "Simple and comfortable temple stays."
+      },
+      {
+        title: "Town Hotels",
+        image: "assets/images/srivilliputhur/hotel.jpg",
+        text: "Convenient accommodation near temple."
+      },
+      {
+        title: "Budget Lodges",
+        image: "assets/images/srivilliputhur/lodge.jpg",
+        text: "Affordable short stays."
+      }
+    ],
+
+    food: [
+      {
+        title: "Srivilliputhur Palkova",
+        image: "assets/images/srivilliputhur/palkova.jpg",
+        text: "World-famous milk sweet from this town."
+      },
+      {
+        title: "Traditional Tiffin",
+        image: "assets/images/srivilliputhur/tiffin.jpg",
+        text: "Idli, dosa and pongal with temple-style flavors."
+      },
+      {
+        title: "Banana Leaf Meals",
+        image: "assets/images/srivilliputhur/meals.jpg",
+        text: "Authentic Tamil vegetarian meals."
+      },
+      {
+        title: "Local Snacks",
+        image: "assets/images/srivilliputhur/snacks.jpg",
+        text: "Crunchy homemade savory treats."
+      }
+    ]
+  }
+},
+  {
+  id: "Thanjavur",
+  name: "Thanjavur",
+  heroImage: "assets/images/thanjavur/hero.jpg",
+  description:
+    "The cultural capital of Tamil Nadu — land of the magnificent Brihadeeswarar Temple, classical arts, bronze sculptures, and Chola grandeur.",
+
+  sections: {
+
+    morning: [
+      {
+        title: "Brihadeeswarar Temple",
+        image: "assets/images/thanjavur/big-temple.jpg",
+        text: "UNESCO World Heritage monument built by Raja Raja Chola."
+      },
+      {
+        title: "Temple Courtyard",
+        image: "assets/images/thanjavur/courtyard.jpg",
+        text: "Massive stone architecture glowing in morning light."
+      },
+      {
+        title: "Sivaganga Park",
+        image: "assets/images/thanjavur/sivaganga.jpg",
+        text: "Relax near the temple tank."
+      }
+    ],
+
+    afternoon: [
+      {
+        title: "Thanjavur Palace",
+        image: "assets/images/thanjavur/palace.jpg",
+        text: "Explore royal artifacts and Maratha-era history."
+      },
+      {
+        title: "Art Gallery",
+        image: "assets/images/thanjavur/art-gallery.jpg",
+        text: "Bronze idols and ancient sculptures."
+      },
+      {
+        title: "Saraswathi Mahal Library",
+        image: "assets/images/thanjavur/library.jpg",
+        text: "One of Asia’s oldest libraries."
+      }
+    ],
+
+    evening: [
+      {
+        title: "Temple Sunset View",
+        image: "assets/images/thanjavur/sunset.jpg",
+        text: "Golden hues over the Big Temple."
+      },
+      {
+        title: "Local Handicraft Shops",
+        image: "assets/images/thanjavur/handicrafts.jpg",
+        text: "Traditional Thanjavur paintings and dolls."
+      },
+      {
+        title: "Cultural Performances",
+        image: "assets/images/thanjavur/dance.jpg",
+        text: "Classical Bharatanatyam and music recitals."
+      }
+    ],
+
+    hidden: [
+      {
+        title: "Darasuram Temple",
+        image: "assets/images/thanjavur/darasuram.jpg",
+        text: "Airavatesvara Temple — another Chola masterpiece."
+      },
+      {
+        title: "Swamimalai",
+        image: "assets/images/thanjavur/swamimalai.jpg",
+        text: "Famous for bronze sculpture making."
+      },
+      {
+        title: "Grand Anaicut (Nearby)",
+        image: "assets/images/thanjavur/kallanai.jpg",
+        text: "Ancient Chola dam on the Cauvery."
+      },
+      {
+        title: "Village Paddy Fields",
+        image: "assets/images/thanjavur/paddy.jpg",
+        text: "Lush green rice fields surrounding the delta."
+      }
+    ],
+
+    stay: [
+      {
+        title: "Heritage Hotels",
+        image: "assets/images/thanjavur/heritage.jpg",
+        text: "Royal-style stays reflecting Chola history."
+      },
+      {
+        title: "City Hotels",
+        image: "assets/images/thanjavur/hotel.jpg",
+        text: "Comfortable modern accommodations."
+      },
+      {
+        title: "Budget Lodges",
+        image: "assets/images/thanjavur/lodge.jpg",
+        text: "Affordable pilgrim-friendly stays."
+      }
+    ],
+
+    food: [
+      {
+        title: "Thanjavur Meals",
+        image: "assets/images/thanjavur/meals.jpg",
+        text: "Authentic delta-style vegetarian feast."
+      },
+      {
+        title: "Puliyodarai",
+        image: "assets/images/thanjavur/puliyodarai.jpg",
+        text: "Traditional tamarind rice."
+      },
+      {
+        title: "Sweet Poli",
+        image: "assets/images/thanjavur/poli.jpg",
+        text: "Delicious stuffed sweet flatbread."
+      },
+      {
+        title: "Filter Coffee",
+        image: "assets/images/thanjavur/coffee.jpg",
+        text: "Classic strong South Indian coffee."
+      }
+    ]
+  }
+},
+
+  {
     id: "Ooty",
     name: "Ooty",
     heroImage: "assets/images/ooty/ooty.jpg",
