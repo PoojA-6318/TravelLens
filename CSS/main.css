@@ -515,7 +515,7 @@ body {
 
 .dashboard-body {
     min-height: 100vh;   /* instead of height */
-    background-image: url('../assets/images/dashboard.jpg');
+    background-image: url('../assets/images/weather/dashboard.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,7 +524,7 @@ body {
 
 .dashboard-bg {
     min-height: 100vh;
-    background: url('../assets/images/dashboard.jpg') center/cover no-repeat;
+    background: url('../assets/images/weather/dashboard.jpg') center/cover no-repeat;
 }
 
 /* Dark overlay for readability */

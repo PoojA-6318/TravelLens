@@ -32,22 +32,21 @@ class TravelEngine {
         return this.destinations.map(place => {
 
             let score = 0;
-
-            // 1️⃣ Theme Match (40%)
+            // 1️⃣ Theme Match (reduce)
             if (place.themes.includes(selectedMood)) {
-                score += 40;
+                score += 25;   // was 40 ❌
             }
 
-            // 2️⃣ Budget Fit (25%)
-            const avgMidBudget = place.budget.mid || place.budget.low;
+            // 2️⃣ Budget Fit (FIXED)
+            const avgMidBudget = place.budget?.mid || place.budget?.low || 0;
             const budgetDifference = Math.abs(avgMidBudget - userBudget);
             const budgetScore = Math.max(0, 25 - (budgetDifference / 300));
             score += budgetScore;
 
-            // 3️⃣ Popularity (15%)
-            score += (place.popularity / 10) * 15;
+            // 3️⃣ Popularity (reduce heavily)
+            score += (place.popularity / 10) * 8;   // was 15 ❌
 
-            // 4️⃣ Crowd Inverse (10%)
+            // 4️⃣ Crowd (keep)
             score += ((10 - place.crowdLevel) / 10) * 10;
 
             // 5️⃣ Mood-Specific Bonus (10%)
@@ -61,34 +60,100 @@ class TravelEngine {
                 score += (place.partyLevel / 10) * 10;
             }
 
+            // 🎲 Random variation (VERY IMPORTANT)
+            score += Math.random() * 10;
+
             return {
                 ...place,
-                score: score.toFixed(1)
+                score: Number(score.toFixed(1))
             };
 
         }).sort((a, b) => b.score - a.score);
     }
 }
 async function fetchWeather(city) {
-    const apiKey = "496e4bd2463640b3fb6da50ec726344f"; 
+
+    const apiKey = "496e4bd2463640b3fb6da50ec726344f";
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},IN&appid=${apiKey}&units=metric`;
 
     try {
+
         const res = await fetch(url);
         const data = await res.json();
 
+        if (!data.main) {
+            console.error("Weather API failed:", data);
+            return;
+        }
         const temp = data.main.temp;
         const condition = data.weather[0].main;
+        const body = document.querySelector(".dashboard-body");
+
+        if(condition.includes("Rain"))
+            body.style.backgroundImage = "url('assets/images/weather/rain.jpg')";
+
+        else if(condition.includes("Cloud"))
+            body.style.backgroundImage = "url('assets/images/weather/cloud.jpg')";
+
+        else if(condition.includes("Clear"))
+            body.style.backgroundImage = "url('assets/images/weather/sunny.jpg')";
+
+        else
+            body.style.backgroundImage = "url('assets/images/weather/dashboard.jpg')";
+
+        let icon = "☀️";
+
+        if (condition.includes("Cloud")) icon = "☁️";
+        else if (condition.includes("Rain")) icon = "🌧️";
+        else if (condition.includes("Mist") || condition.includes("Fog")) icon = "🌫️";
+        else if (condition.includes("Clear")) icon = "☀️";
 
         const weatherBox = document.querySelector(".info-card:first-child p");
 
-        weatherBox.textContent = `${temp}°C • ${condition}`;
+        weatherBox.innerHTML = `${icon} ${temp}°C • ${condition}`;
 
     } catch (err) {
-        console.error("Weather error:", err);
+        console.log(err);
     }
+
 }
+function getBestSeason(place){
+
+    const hillStations = [
+        "Ooty","Kodaikanal","Yercaud","Valparai","Yelagiri"
+    ];
+
+    const coastal = [
+        "Pondicherry","Nagapattinam","Thoothukudi",
+        "Kanyakumari","Mahabalipuram","Tharangambadi"
+    ];
+
+    const templeCities = [
+        "Madurai","Rameswaram","Chidambaram",
+        "Kanchipuram","Thanjavur","Trichy",
+        "Srivilliputhur"
+    ];
+
+    const natureMixed = [
+        "Tirunelveli","Karaikudi"
+    ];
+
+    if(hillStations.includes(place))
+        return "Best time: October – June";
+
+    if(coastal.includes(place))
+        return "Best time: November – February";
+
+    if(templeCities.includes(place))
+        return "Best time: November – March";
+
+    if(natureMixed.includes(place))
+        return "Best time: October – February";
+
+    return "Best time: October – March";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
 
     let selectedMood = null;
@@ -113,37 +178,44 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Selected Mood:", selectedMood);
         });
     });
-
-    // 🔥 Analyze Button
+     // 🔥 Analyze Button
     analyzeBtn.addEventListener("click", async function () {
 
-        if (!selectedMood) {
-            alert("Please select a mood.");
-            return;
+    const loader = document.getElementById("loadingSpinner");
+    loader.classList.remove("hidden");
+
+    try {
+            if (!selectedMood) {
+                alert("Please select a mood.");
+                return;
+            }
+
+            const budget = budgetInput.value;
+
+            if (!budget || budget <= 0) {
+                alert("Please enter a valid budget.");
+                return;
+            }
+
+            const response = await fetch("assets/data/destinations.json");
+            const data = await response.json();
+
+            const engine = new TravelEngine(data);
+            const ranked = engine.rankDestinations(selectedMood, budget);
+
+            displayResults(ranked);
+
+            const apiCity = weatherCityMap[ranked[0].name] || ranked[0].name;
+            fetchWeather(apiCity);
+
+        } 
+        catch (err) {
+            console.error("ERROR:", err);
+        } 
+        finally {
+            loader.classList.add("hidden");
         }
-
-        const budget = budgetInput.value;
-
-        if (!budget || budget <= 0) {
-            alert("Please enter a valid budget.");
-            return;
-        }
-
-        const response = await fetch("assets/data/destinations.json");
-        const data = await response.json();
-
-        const engine = new TravelEngine(data);
-        const ranked = engine.rankDestinations(selectedMood, budget);
-
-        displayResults(ranked);
-
-        // 🔥 Get correct API city name
-        const apiCity = weatherCityMap[ranked[0].name] || ranked[0].name;
-
-        // 🌤 Fetch weather
-        fetchWeather(apiCity);
     });
-
 });
 
 function displayResults(results) {
@@ -151,7 +223,7 @@ function displayResults(results) {
     const container = document.querySelector(".recommendations .card-grid");
     container.innerHTML = "";
 
-    results.forEach((item, index) => {
+    results.slice(0,6).forEach((item, index) => {
 
         const card = document.createElement("div");
         card.classList.add("card");
@@ -180,7 +252,8 @@ function displayResults(results) {
                     Smart Score: <span class="score-value" data-score="${item.score}">0</span>/100
                 </p>
                 <p class="why-text">
-                    Best suited for your selected mood and budget.
+                    Best suited for your mood and budget. <br>
+                    ${getBestSeason(item.name)}
                 </p>
             </div>
         `;
