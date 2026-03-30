@@ -1,46 +1,35 @@
-const urlParams = new URLSearchParams(window.location.search);
-const selectedPlace = urlParams.get("place");
+document.addEventListener("DOMContentLoaded", () => {
 
-// ✅ ONLY ONE DOMContentLoaded
-document.addEventListener("DOMContentLoaded", async () => {
+  const dropdown =
+    document.getElementById("destinationSelect");
 
-  const dropdown = document.getElementById("destinationSelect");
+  // Fill dropdown from place.js
 
-  try {
-    const response = await fetch("assets/data/destinations.json");
-    const data = await response.json();
+  places.forEach(place => {
 
-    dropdown.innerHTML = `<option value="">-- Select Destination --</option>`;
+    const option =
+      document.createElement("option");
 
-    data.sort((a, b) => a.name.localeCompare(b.name));
+    option.value = place.name;
+    option.textContent = place.name;
 
-    data.forEach(place => {
-      const option = document.createElement("option");
-      option.value = place.name;
-      option.textContent = place.name;
-      dropdown.appendChild(option);
-    });
+    dropdown.appendChild(option);
 
-    if (selectedPlace) {
-      dropdown.value = selectedPlace;
-    }
-
-  } catch (error) {
-    console.error("Error loading destinations:", error);
-  }
+  });
 
 });
-async function generateItinerary() {
-  let destination = document.getElementById("destinationSelect").value;
-  // If user came from dashboard, auto-fill
-  if (!destination && selectedPlace) {
-    destination = selectedPlace;
-    document.getElementById("destinationSelect").value = selectedPlace;
-  }
-  
+
+
+
+function generateItinerary() {
+
+  const destination = document.getElementById("destinationSelect").value;
+
   const days = parseInt(document.getElementById("days").value);
-  const container = document.getElementById("itineraryContainer");
-  const summary = document.getElementById("tripSummary");
+
+  const container = document.getElementById("itinerary-output");
+
+  const summary = document.getElementById("trip-summary");
 
   if (!destination || days < 1) {
     alert("Please select destination and valid number of days.");
@@ -48,53 +37,223 @@ async function generateItinerary() {
   }
 
   container.innerHTML = "";
-  summary.innerHTML = "";
+  
 
-  const response = await fetch("assets/data/attractions.json");
-  const data = await response.json();
+  const placeData = places.find(p => p.name === destination);
 
-  // Filter attractions by city
-  const filtered = data
-    .filter(place => place.city === destination)
-    .sort((a, b) => b.popularity - a.popularity);
-
-  if (filtered.length === 0) {
-    container.innerHTML = "<p>No attractions found.</p>";
+  if (!placeData) {
+    container.innerHTML = "<p>❌ Place not found.</p>";
     return;
   }
 
-  let index = 0;
-  let totalCost = 0;
-  let totalAttractions = 0;
+  const morning = placeData.sections.morning || [];
 
-  for (let day = 1; day <= days; day++) {
-    let dayHTML = `
+  const afternoon = placeData.sections.afternoon || [];
+
+  const evening = placeData.sections.evening || [];
+
+  const hidden = placeData.sections.hidden || [];
+
+  const food = placeData.sections.food || [];
+
+  const stay = placeData.sections.stay || [];
+
+  const maxDays = Math.min(morning.length, afternoon.length, evening.length);
+
+  const finalDays = Math.min(days, maxDays);
+
+
+
+  // 🌅 DAY-WISE ITINERARY
+  for (let day = 1; day <= finalDays; day++) {
+
+    const m = morning[day - 1];
+    const a = afternoon[day - 1];
+    const e = evening[day - 1];
+
+    container.innerHTML += `
+
       <div class="day-card">
-        <h3>Day ${day} – ${destination}</h3>
-        <ul>
+
+        <h2 class="day-title"> ✨ Day ${day} – ${destination} </h2>
+
+        <div class="time-block">
+          <h3>🌅 Morning</h3>
+          <img src="${m.image}" class="place-img">
+          <p class="place-title"> ${m.title} </p>
+          <p class="place-desc"> ${m.text} </p>
+        </div>
+
+        <div class="time-block">
+          <h3>☀️ Afternoon</h3>
+          <img src="${a.image}" class="place-img">
+          <p class="place-title"> ${a.title} </p>
+          <p class="place-desc"> ${a.text} </p>
+        </div>
+
+        <div class="time-block">
+          <h3>🌇 Evening</h3>
+          <img src="${e.image}" class="place-img">
+          <p class="place-title"> ${e.title} </p>
+          <p class="place-desc"> ${e.text} </p>
+        </div>
+      </div>
     `;
-
-    // 3 attractions per day
-    for (let i = 0; i < 3; i++) {
-      const place = filtered[index % filtered.length];
-      dayHTML += `
-        <li>
-          <strong>${place.name}</strong> 
-          (${place.category}) – ₹${place.cost}
-        </li>
-      `;
-      totalCost += place.cost;
-      totalAttractions++;
-      index++;
-    }
-
-    dayHTML += `</ul></div>`;
-    container.innerHTML += dayHTML;
   }
 
-  summary.innerHTML = `
-    Trip Summary:
-    <br>Total Attractions: ${totalAttractions}
-    <br>Estimated Total Cost: ₹${totalCost}
-  `;
+
+
+  // 🧭 HIDDEN GEMS
+
+  if (hidden.length > 0) {
+
+    let hiddenHTML = "";
+
+    hidden.forEach(place => {
+
+      hiddenHTML += `
+
+        <div class="mini-card">
+
+          <img src="${place.image}"
+               class="mini-img">
+
+          <p class="mini-title">
+            ${place.title}
+          </p>
+
+        </div>
+
+      `;
+
+    });
+
+    container.innerHTML += `
+
+      <div class="extra-section">
+
+        <h2>🧭 Hidden Gems to Explore</h2>
+
+        <div class="mini-grid">
+          ${hiddenHTML}
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+
+
+  // 🍜 FOOD
+
+  if (food.length > 0) {
+
+    let foodHTML = "";
+
+    food.forEach(item => {
+
+      foodHTML += `
+
+        <div class="mini-card">
+
+          <img src="${item.image}"
+               class="mini-img">
+
+          <p class="mini-title">
+            ${item.title}
+          </p>
+
+        </div>
+
+      `;
+
+    });
+
+    container.innerHTML += `
+
+      <div class="extra-section">
+
+        <h2>🍜 Must-Try Food</h2>
+
+        <div class="mini-grid">
+          ${foodHTML}
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+
+
+  // 🏨 STAY
+
+  if (stay.length > 0) {
+
+    let stayHTML = "";
+
+    stay.forEach(item => {
+
+      stayHTML += `
+
+        <div class="mini-card">
+
+          <img src="${item.image}"
+               class="mini-img">
+
+          <p class="mini-title">
+            ${item.title}
+          </p>
+
+        </div>
+
+      `;
+
+    });
+
+    container.innerHTML += `
+
+      <div class="extra-section">
+
+        <h2>🏨 Recommended Stay</h2>
+
+        <div class="mini-grid">
+          ${stayHTML}
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+  // 💰 TRIP SUMMARY
+
+summary.innerHTML = `
+
+  <div class="summary-card">
+
+    <h2>💰 Trip Summary</h2>
+
+    <p>
+      📅 Total Days: ${finalDays}
+    </p>
+
+    <p>
+      💸 Estimated Budget:
+      ₹${finalDays * 1500}
+    </p>
+
+    <p>
+      ✨ Memories Created:
+      Infinite
+    </p>
+
+  </div>
+
+`;
+
 }
