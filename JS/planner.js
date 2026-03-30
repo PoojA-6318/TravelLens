@@ -1,11 +1,8 @@
-async function generateItinerary() {
-  let destination = document.getElementById("destinationSelect").value;
-  // If user came from dashboard, auto-fill
-  if (!destination && selectedPlace) {
-    destination = selectedPlace;
-    document.getElementById("destinationSelect").value = selectedPlace;
-  }
-  document.addEventListener("DOMContentLoaded", async () => {
+const urlParams = new URLSearchParams(window.location.search);
+const selectedPlace = urlParams.get("place");
+
+// ✅ ONLY ONE DOMContentLoaded
+document.addEventListener("DOMContentLoaded", async () => {
 
   const dropdown = document.getElementById("destinationSelect");
 
@@ -13,13 +10,10 @@ async function generateItinerary() {
     const response = await fetch("assets/data/destinations.json");
     const data = await response.json();
 
-    // Clear dropdown
     dropdown.innerHTML = `<option value="">-- Select Destination --</option>`;
 
-    // 🔥 Sort alphabetically (premium feel)
     data.sort((a, b) => a.name.localeCompare(b.name));
 
-    // 🔥 Insert all 20 destinations
     data.forEach(place => {
       const option = document.createElement("option");
       option.value = place.name;
@@ -27,21 +21,26 @@ async function generateItinerary() {
       dropdown.appendChild(option);
     });
 
-    // 🔥 Auto-select if coming from dashboard
     if (selectedPlace) {
       dropdown.value = selectedPlace;
     }
 
-    } catch (error) {
-      console.error("Error loading destinations:", error);
-    }
+  } catch (error) {
+    console.error("Error loading destinations:", error);
+  }
 
-  });
-  const days = parseInt(document.getElementById("daysInput").value);
+});
+async function generateItinerary() {
+  let destination = document.getElementById("destinationSelect").value;
+  // If user came from dashboard, auto-fill
+  if (!destination && selectedPlace) {
+    destination = selectedPlace;
+    document.getElementById("destinationSelect").value = selectedPlace;
+  }
+  
+  const days = parseInt(document.getElementById("days").value);
   const container = document.getElementById("itineraryContainer");
   const summary = document.getElementById("tripSummary");
-  const urlParams = new URLSearchParams(window.location.search);
-  const selectedPlace = urlParams.get("place");
 
   if (!destination || days < 1) {
     alert("Please select destination and valid number of days.");
@@ -99,22 +98,3 @@ async function generateItinerary() {
     <br>Estimated Total Cost: ₹${totalCost}
   `;
 }
-document.addEventListener("DOMContentLoaded", async () => {
-  const dropdown = document.getElementById("destinationSelect");
-
-  const response = await fetch("assets/data/destinations.json");
-  const data = await response.json();
-
-  // Fill dropdown
-  data.forEach(place => {
-    const option = document.createElement("option");
-    option.value = place.name;
-    option.textContent = place.name;
-    dropdown.appendChild(option);
-  });
-
-  // Auto-select if redirected
-  if (selectedPlace) {
-    dropdown.value = selectedPlace;
-  }
-});
