@@ -96,7 +96,9 @@ function displayResults(results) {
             </div>
         `;
 
-        card.onclick = () => openDistrictDetails(item.id);
+        card.onclick = () => {
+            window.location.href = `planner.html?place=${encodeURIComponent(item.name)}`;
+        };
 
         container.appendChild(card);
     });

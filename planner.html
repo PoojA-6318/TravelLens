@@ -7,38 +7,35 @@
 </head>
 <body>
 
-  <header class="planner-header">
-    <h1>🌍 TravelLens Itinerary Planner</h1>
-  </header>
+  <div class="planner-container">
 
-  <section class="planner-form">
-    <label>Choose Destination:</label>
-    <select id="destinationSelect">
-      <option value="">-- Select Destination --</option>
-      <option value="Ooty">Ooty</option>
-      <option value="Kodaikanal">Kodaikanal</option>
-      <option value="Madurai">Madurai</option>
-      <option value="Rameswaram">Rameswaram</option>
-      <option value="Chennai">Chennai</option>
-      <option value="Mahabalipuram">Mahabalipuram</option>
-      <option value="Yercaud">Yercaud</option>
-      <option value="Kanyakumari">Kanyakumari</option>
-    </select>
+    <h1>✨ Plan Your <span>Perfect Trip</span></h1>
 
-    <label>Number of Days:</label>
-    <input type="number" id="daysInput" min="1" max="7" value="2">
+    <div class="planner-card">
 
-    <button onclick="generateItinerary()">Generate Itinerary</button>
-  </section>
+      <div class="input-group">
+        <label>Destination</label>
+        <select id="destinationSelect">
+          <option value="">-- Select Destination --</option>
+        </select>
+      </div>
 
-  <section id="itineraryContainer"></section>
+      <div class="input-group">
+        <label>Number of Days</label>
+        <input type="number" id="days" min="1" value="2">
+      </div>
 
-  <section id="tripSummary" class="summary"></section>
+      <button onclick="generateItinerary()">
+        🚀 Generate Itinerary
+      </button>
 
-  <div class="print-btn-container">
-    <button onclick="window.print()">🖨 Download / Print</button>
+    </div>
+
+    <div id="itinerary-output"></div>
+
   </div>
 
-  <script src="js/planner.js"></script>
+  <script src="planner.js"></script>
+
 </body>
 </html>
