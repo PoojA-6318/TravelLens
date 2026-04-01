@@ -1088,7 +1088,7 @@ const places = [
   {
     id: "madurai",
     name: "Madurai",
-    heroImage: "assets/images/Madurai/Madurai.jpg",
+    heroImage: "assets/images/Madurai/madurai.jpg",
     description: "Experience the soul of Tamil Nadu where history is etched in stone and spirituality fills the air.",
         
     sections: {
