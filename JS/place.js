@@ -1845,107 +1845,102 @@ const places = [
       morning: [
         {
           title: "🌅 Agni Theertham",
-          image: "Images/agni-theertham.jpg",
+          image: "Assets/Images/Rameswaram/Agnitheertham.jfif",
           text: "Begin with a holy dip at sunrise in the calm, sacred waters of the Palk Strait."
         },
         {
           title: "🕉️ Ramanathaswamy Temple",
-          image: "Images/ramanathaswamy.jpg",
+          image: "Assets/Images/Rameswaram/Ramanathaswamy Temple.jpg",
           text: "Witness the morning rituals within the world's longest and most majestic temple corridor."
         },
         {
           title: "🏺 22 Holy Theerthams",
-          image: "Images/holy-wells.jpg",
+          image: "Assets/Images/Rameswaram/Well.jfif",
           text: "A spiritual cleansing ritual through 22 sacred wells, each with water of a different temperature and taste."
         }
       ],
       afternoon: [
         {
           title: "🚂 Pamban Bridge",
-          image: "Images/pamban-bridge.jpg",
+          image: "Assets/Images/Rameswaram/Pamban Bridge.jpg",
           text: "Marvel at the century-old engineering feat connecting the island to mainland India over the blue sea."
         },
         {
           title: "🚀 Kalam Memorial",
-          image: "Images/kalam-house.jpg",
+          image: "Assets/Images/Rameswaram/Kalam Memorial.webp",
           text: "Explore the life and legacy of India's 'Missile Man' and former President, Dr. APJ Abdul Kalam."
         }
       ],
       evening: [
         {
           title: "🏹 Dhanushkodi Tip",
-          image: "Images/dhanushkodi-beach.jpg",
+          image: "Assets/Images/Rameswaram/Dhanushkodi Tip.webp",
           text: "Watch the sunset where the Indian Ocean and Bay of Bengal meet at this hauntingly beautiful ghost town."
         },
         {
           title: "🌉 Indira Gandhi Bridge",
-          image: "Images/road-bridge-sunset.jpg",
+          image: "Assets/Images/Rameswaram/Indhira Gandhi Bridge.jpg",
           text: "Enjoy a panoramic view of the vast blue ocean as the sky turns into a canvas of gold at dusk."
         }
       ],
       hidden: [
         {
-          title: "🏚️ The Ghost Town",
-          image: "Images/ghost-town.jpg",
-          text: "Explore the atmospheric remains of a once-flourishing town reclaimed by the sea in 1964."
-        },
-        {
           title: "⛪ Dhanushkodi Church",
-          image: "Images/dhanushkodi-church.jpg",
+          image: "Assets/Images/Rameswaram/Dhanushkodi.jpeg",
           text: "The hauntingly beautiful ruins of a stone church standing defiantly against the salty sea breeze."
         },
         {
           title: "⛰️ Gandhamadana Parvatham",
-          image: "Images/gandhamadana.jpg",
+          image: "Assets/Images/Rameswaram/Gandamadana Parvatham.jpg",
           text: "The highest point on the island, housing the footprints of Lord Rama and a bird's-eye view of the coast."
         },
         {
           title: "🌊 Arichal Munai",
-          image: "Images/arichal-munai.jpg",
+          image: "Assets/Images/Rameswaram/Arichal Munai.jfif",
           text: "The literal edge of the land where the mystical Rama Setu (Adam's Bridge) is said to begin."
         }
       ],
       stay: [
         {
-          title: "🏨 Daivik Hotels",
-          image: "Images/daivik.jpg",
+          title: "🏨 Daiwik Hotels",
+          image: "Assets/Images/Rameswaram/Daiwik Hotels.jpg",
           text: "A refined, themed stay designed specifically for the modern spiritual traveler."
         },
         {
           title: "🌊 Hyatt Place",
-          image: "Images/hyatt-rameswaram.jpg",
+          image: "Assets/Images/Rameswaram/Hyatt Place.avif",
           text: "Luxury and contemporary comfort located just minutes from the sacred temple complex."
         }
       ],
       food: [
         {
           title: "🐟 Island Fish Fry",
-          image: "Images/fish-fry.jpg",
+          image: "Assets/Images/Rameswaram/Fish Fry.jpg",
           text: "Freshly caught local seafood marinated in traditional, fiery Tamil spice blends."
         },
         {
           title: "🍚 Temple Puliyodharai",
-          image: "Images/temple-puliyodharai.jpg",
+          image: "Assets/Images/Rameswaram/Temple Puliyodharai.jpg",
           text: "The iconic, tangy tamarind rice served as sacred prasadam in the shadows of the gopurams."
         },
         {
           title: "🥥 Gulf Coconuts",
-          image: "Images/tender-coconut.jpg",
+          image: "Assets/Images/Rameswaram/Gulf Coconuts.webp",
           text: "Refreshing, sweet tender coconut water harvested from the island's vast coastal groves."
         },
         {
           title: "🐚 Sacred Conchs",
-          image: "Images/conch.jpg",
+          image: "Assets/Images/Rameswaram/Sacred Conch.jfif",
           text: "Hand-engraved ritual shells and rare conchs sourced from the surrounding Gulf of Mannar."
         },
         {
           title: "📿 Temple Rudraksha",
-          image: "Images/rudraksha.jpg",
+          image: "Assets/Images/Rameswaram/Temple Rudraksha.webp",
           text: "Authentic prayer beads and spiritual artifacts blessed at the Ramanathaswamy shrine."
         },
         {
           title: "🏺 Handmade Artifacts",
-          image: "Images/terracotta.jpg",
+          image: "Assets/Images/Rameswaram/Terracotta lamp.jpg",
           text: "Traditional terracotta lamps and intricate palm leaf crafts created by local island artisans."
         }
       ]
