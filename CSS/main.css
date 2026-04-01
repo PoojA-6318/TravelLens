@@ -702,3 +702,14 @@ body {
 .planner-btn:hover::before {
     left: 100%;
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px); /* fixed width */
+  justify-content: right; /* 🔥 THIS IS THE KEY */
+  gap: 25px;
+}
+
+.featured{
+    padding: 60px 20px;
+}
