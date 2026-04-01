@@ -29,7 +29,7 @@
 
 {
 "name": "Madurai",
-"image": "assets/images/madurai.jpg",
+"image": "assets/images/madurai/madurai.jpg",
 "themes": ["Spiritual","Cultural","Relaxed"],
 "budget": {"low":1200,"mid":3500,"luxury":5000},
 "popularity": 8.3,
@@ -43,7 +43,7 @@
 
 {
 "name": "Rameswaram",
-"image": "assets/images/rameswaram.jpg",
+"image": "assets/images/Rameswaram/rameswaram.jpg",
 "themes": ["Spiritual","Relaxed","Adventure"],
 "budget": {"low":1200,"mid":3500,"luxury":5000},
 "popularity": 8.0,
@@ -85,7 +85,7 @@
 
 {
 "name": "Yercaud",
-"image": "assets/images/yercaud.jpg",
+"image": "assets/images/yercaud/yercaud.jpg",
 "themes": ["Relaxed","Romantic","Adventure"],
 "budget": {"low":1200,"mid":3500,"luxury":5000},
 "popularity": 7.8,
@@ -99,7 +99,7 @@
 
 {
 "name": "Tharangambadi",
-"image": "assets/images/tharangambadi.jpg",
+"image": "assets/images/tharangambadi/tharangambadi.jpg",
 "themes": ["Relaxed","Romantic","Cultural"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 7.2,
@@ -113,7 +113,7 @@
 
 {
 "name": "Thanjavur",
-"image": "assets/images/thanjavur.jpg",
+"image": "assets/images/thanjavur/thanjavur.jpg",
 "themes": ["Spiritual","Cultural"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 8.2,
@@ -127,7 +127,7 @@
 
 {
 "name": "Trichy",
-"image": "assets/images/trichy.jpg",
+"image": "assets/images/trichy/trichy.jpg",
 "themes": ["Spiritual","Cultural"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 8.0,
@@ -141,7 +141,7 @@
 
 {
 "name": "Karaikudi",
-"image": "assets/images/karaikudi.jpg",
+"image": "assets/images/karaikudi/karaikudi.jpg",
 "themes": ["Cultural","Relaxed"],
 "budget": {"low":1200,"mid":3500,"luxury":5000},
 "popularity": 7.9,
@@ -161,7 +161,7 @@
 
 {
 "name": "Thoothukudi",
-"image": "assets/images/thoothukudi.jpg",
+"image": "assets/images/thoothukudi/thoothukudi.jpg",
 "themes": ["Relaxed","Cultural"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 7.6,
@@ -181,7 +181,7 @@
 
 {
 "name": "Valparai",
-"image": "assets/images/valparai.jpg",
+"image": "assets/images/valparai/valparai.jpg",
 "themes": ["Relaxed","Adventure"],
 "budget": {"low":1500,"mid":4000,"luxury":5500},
 "popularity": 8.1,
@@ -241,7 +241,7 @@
 
 {
 "name": "Nagapattinam",
-"image": "assets/images/nagapattinam.jpg",
+"image": "assets/images/nagapattinam/nagapattinam.jpg",
 "themes": ["Relaxed","Spiritual"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 7.4,
@@ -261,7 +261,7 @@
 
 {
 "name": "Kanchipuram",
-"image": "assets/images/kanchipuram.jpg",
+"image": "assets/images/Kanchipuram/kanchipuram.jpg",
 "themes": ["Spiritual","Cultural"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 8.2,
@@ -281,7 +281,7 @@
 
 {
 "name": "Chidambaram",
-"image": "assets/images/chidambaram.jpg",
+"image": "assets/images/chidambaram/chidambaram.jpg",
 "themes": ["Spiritual","Cultural"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 7.8,
@@ -301,7 +301,7 @@
 
 {
 "name": "Tirunelveli",
-"image": "assets/images/tirunelveli.jpg",
+"image": "assets/images/tirunelveli/tirunelveli.jpg",
 "themes": ["Spiritual","Relaxed"],
 "budget": {"low":1200,"mid":3500,"luxury":5000},
 "popularity": 8.1,
@@ -321,7 +321,7 @@
 
 {
 "name": "Srivilliputhur",
-"image": "assets/images/srivilliputhur.jpg",
+"image": "assets/images/srivilliputhur/srivilliputhur.jpg",
 "themes": ["Spiritual","Nature"],
 "budget": {"low":1000,"mid":3000,"luxury":4500},
 "popularity": 7.7,

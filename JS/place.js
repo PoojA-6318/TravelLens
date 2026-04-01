@@ -147,7 +147,7 @@ const places = [
   {
   id: "Trichy",
   name: "Trichy",
-  heroImage: "assets/images/trichy/hero.jpg",
+  heroImage: "assets/images/trichy/trichy.jpg",
   description:
     "The Temple City of Tamil Nadu — where ancient rock forts rise above the plains, sacred rivers flow beside timeless shrines, and history echoes through every street.",
 
@@ -790,7 +790,7 @@ const places = [
   {
   id: "Thanjavur",
   name: "Thanjavur",
-  heroImage: "assets/images/thanjavur/hero.jpg",
+  heroImage: "assets/images/thanjavur/thanjavur.jpg",
   description:
     "The cultural capital of Tamil Nadu — land of the magnificent Brihadeeswarar Temple, classical arts, bronze sculptures, and Chola grandeur.",
 
@@ -1088,7 +1088,7 @@ const places = [
   {
     id: "madurai",
     name: "Madurai",
-    heroImage: "assets/images/Madurai/madurai.jpg",
+    heroImage: "assets/images/madurai.jpg",
     description: "Experience the soul of Tamil Nadu where history is etched in stone and spirituality fills the air.",
         
     sections: {
