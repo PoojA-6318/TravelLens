@@ -25,6 +25,36 @@ const places = [
     description:
       "The Princess of Hill Stations — where mist rolls over valleys, pine forests whisper stories, and time slows down beside Kodai Lake.",
 
+    fees: {
+      generalInfo: "Entry fees vary by attraction. Most temples are free.",
+      parking: "Parking fees range from ₹30-50 for cars",
+      cards: [
+        {
+          title: "Kodai Lake",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Boating extra: ₹100-300"
+        },
+        {
+          title: "Coaker's Walk",
+          entryFee: "₹10",
+          parkingFee: "₹30",
+          notes: "Camera: ₹25"
+        },
+        {
+          title: "Bryant Park",
+          entryFee: "₹30",
+          parkingFee: "₹50",
+          notes: "Kids: ₹15"
+        },
+        {
+          title: "Pine Forest",
+          entryFee: "Free",
+          parkingFee: "₹40",
+            notes: ""
+        }
+      ]
+    },
     sections: {
       morning: [
         {
@@ -152,6 +182,66 @@ const places = [
   description:
     "The Temple City of Tamil Nadu — where ancient rock forts rise above the plains, sacred rivers flow beside timeless shrines, and history echoes through every street.",
 
+  fees: {
+    generalInfo: "Most temples are free. Nominal fees at ASI monuments.",
+    parking: "Parking fees range from ₹30-50 for cars",
+    cards: [
+      {
+        title: "Rockfort Temple",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "344 steps to climb"
+      },
+      {
+        title: "Ucchi Pillayar Temple",
+        entryFee: "Free",
+        parkingFee: "Included",
+        notes: "Inside Rockfort complex"
+      },
+      {
+        title: "Sri Ranganathaswamy Temple",
+        entryFee: "Free",
+        parkingFee: "₹50",
+        notes: "World's largest functioning temple"
+      },
+      {
+        title: "Kallanai (Grand Anicut)",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Ancient Chola dam"
+      },
+      {
+        title: "Jambukeswarar Temple",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Water element temple"
+      },
+      {
+        title: "St. Joseph's Church",
+        entryFee: "Free",
+        parkingFee: "₹20",
+        notes: "Colonial-era church"
+      },
+      {
+        title: "Mukkombu (Upper Anicut)",
+        entryFee: "₹10",
+        parkingFee: "₹40",
+        notes: "Boating extra"
+      },
+      {
+        title: "Butterfly Park",
+        entryFee: "₹20",
+        parkingFee: "₹30",
+        notes: "Kids: ₹10"
+      },
+      {
+        title: "Government Museum",
+        entryFee: "₹15",
+        parkingFee: "₹30",
+        notes: "Camera: ₹50"
+      }
+    ]
+  },
   sections: {
 
     morning: [
@@ -281,6 +371,54 @@ const places = [
   description:
     "Land of flowing Tamirabarani, majestic temples, and legendary halwa — Tirunelveli blends spirituality, nature, and timeless Tamil culture.",
 
+  fees: {
+    generalInfo: "Temple entry is free. Waterfalls may have seasonal fees.",
+    parking: "Parking fees range from ₹30-50",
+    cards: [
+      {
+        title: "Nellaiappar Temple",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Musical pillars attraction"
+      },
+      {
+        title: "Courtallam Falls",
+        entryFee: "₹20",
+        parkingFee: "₹50",
+        notes: "Seasonal - best during monsoon"
+      },
+      {
+        title: "Manimuthar Dam",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Picnic spot"
+      },
+      {
+        title: "Papanasam Dam",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Western Ghats view"
+      },
+      {
+        title: "Agasthiyar Falls",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Trek required"
+      },
+      {
+        title: "Kalakad Wildlife Sanctuary",
+        entryFee: "₹50",
+        parkingFee: "₹50",
+        notes: "Guide fee extra"
+      },
+      {
+        title: "Koonthankulam Bird Sanctuary",
+        entryFee: "₹20",
+        parkingFee: "₹30",
+        notes: "Best Nov-Feb"
+      }
+    ]
+  },
   sections: {
 
     morning: [
@@ -409,7 +547,55 @@ const places = [
   heroImage: "assets/images/thoothukudi/hero.jpg",
   description:
     "The Pearl City of Tamil Nadu — where the Bay of Bengal meets ancient ports, sacred churches, salt pans, and rich maritime history.",
-
+  fees: {
+    generalInfo: "Most attractions are free. Churches and beaches have no entry fee.",
+    parking: "Parking fees range from ₹30-40",
+    cards: [
+      {
+        title: "Our Lady of Snows Basilica",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Historic coastal church"
+      },
+      {
+        title: "Thoothukudi Beach",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Sunrise view"
+      },
+      {
+        title: "Tuticorin Port",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "View from outside"
+      },
+      {
+        title: "Salt Pans",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Photography spot"
+      },
+      {
+        title: "Manapad Beach",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Church viewpoint"
+      },
+      {
+        title: "Kalugumalai",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Rock-cut temples"
+      },
+      {
+        title: "Roche Park",
+        entryFee: "₹10",
+        parkingFee: "₹30",
+        notes: "Seafront park"
+      }
+    ]
+  },
+  
   sections: {
 
     morning: [
@@ -539,6 +725,61 @@ const places = [
   description:
     "A mist-covered hill retreat in the Anamalai ranges — endless tea estates, winding ghat roads, wildlife sightings, and peaceful mountain air.",
 
+  fees: {
+    generalInfo: "Tea estates are free. Wildlife sanctuaries have entry fees.",
+    parking: "Parking fees range from ₹30-50",
+    cards: [
+      {
+        title: "Tea Estates",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Factory visit: ₹50"
+      },
+      {
+        title: "Loam's View Point",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "40 hairpin bends view"
+      },
+      {
+        title: "Nallamudi Viewpoint",
+        entryFee: "₹20",
+        parkingFee: "₹40",
+        notes: "Sunrise viewpoint"
+      },
+      {
+        title: "Aliyar Dam",
+        entryFee: "₹10",
+        parkingFee: "₹40",
+        notes: "Park entry extra"
+      },
+      {
+        title: "Monkey Falls",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Seasonal waterfall"
+      },
+      {
+        title: "Sholayar Dam",
+        entryFee: "Free",
+        parkingFee: "₹40",
+        notes: "Permit may be needed"
+      },
+      {
+        title: "Anamalai Tiger Reserve",
+        entryFee: "₹100",
+        parkingFee: "₹50",
+        notes: "Guide mandatory"
+      },
+      {
+        title: "Grass Hills",
+        entryFee: "₹50",
+        parkingFee: "₹40",
+        notes: "Trek required"
+      }
+    ]
+  },
+
   sections: {
 
     morning: [
@@ -666,6 +907,37 @@ const places = [
   heroImage: "assets/images/srivilliputhur/hero.jpg",
   description:
     "Sacred town of Andal — towering temple gopurams, divine hymns, and serene temple streets echoing centuries of devotion.",
+
+  fees: {
+    generalInfo: "Temple entry is free. Sanctuary has nominal fees.",
+    parking: "Parking fees range from ₹30-40",
+    cards: [
+      {
+        title: "Andal Temple",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Famous Vaishnavite temple"
+      },
+      {
+        title: "Rajagopuram",
+        entryFee: "Free",
+        parkingFee: "Included",
+        notes: "Tallest temple tower in TN"
+      },
+      {
+        title: "Grizzled Squirrel Sanctuary",
+        entryFee: "₹30",
+        parkingFee: "₹40",
+        notes: "Rare giant squirrels"
+      },
+      {
+        title: "Sathuragiri Hills",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Sacred trekking spot"
+      }
+    ]
+  },
 
   sections: {
 
@@ -795,6 +1067,49 @@ const places = [
   description:
     "The cultural capital of Tamil Nadu — land of the magnificent Brihadeeswarar Temple, classical arts, bronze sculptures, and Chola grandeur.",
 
+  fees: {
+    generalInfo: "UNESCO temple free. Palace and museum have entry fees.",
+    parking: "Parking fees range from ₹40-50",
+    cards: [
+      {
+        title: "Brihadeeswarar Temple",
+        entryFee: "Free",
+        parkingFee: "₹50",
+        notes: "UNESCO World Heritage"
+      },
+      {
+        title: "Thanjavur Palace",
+        entryFee: "₹50",
+        parkingFee: "₹40",
+        notes: "Camera: ₹50"
+      },
+      {
+        title: "Art Gallery",
+        entryFee: "Included",
+        parkingFee: "Included",
+        notes: "Inside palace complex"
+      },
+      {
+        title: "Saraswathi Mahal Library",
+        entryFee: "₹20",
+        parkingFee: "Included",
+        notes: "Ancient manuscripts"
+      },
+      {
+        title: "Darasuram Temple",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "UNESCO Chola temple"
+      },
+      {
+        title: "Swamimalai",
+        entryFee: "Free",
+        parkingFee: "₹30",
+        notes: "Bronze making center"
+      }
+    ]
+  },
+
   sections: {
 
     morning: [
@@ -923,6 +1238,61 @@ const places = [
     heroImage: "assets/images/ooty/ooty.jpg",
     description:
       "Queen of the Nilgiris — rolling tea estates, cool mountain air, and colonial charm wrapped in misty blue hills.",
+    
+    fees: {
+      generalInfo: "Gardens and lake have entry fees. Most viewpoints are free.",
+      parking: "Parking fees range from ₹40-60",
+      cards: [
+        {
+          title: "Ooty Lake",
+          entryFee: "₹10",
+          parkingFee: "₹50",
+          notes: "Boating: ₹100-300"
+        },
+        {
+          title: "Botanical Garden",
+          entryFee: "₹30",
+          parkingFee: "₹60",
+          notes: "Camera: ₹30"
+        },
+        {
+          title: "Doddabetta Peak",
+          entryFee: "₹10",
+          parkingFee: "₹40",
+          notes: "Telescope: ₹20"
+        },
+        {
+          title: "Tea Museum",
+          entryFee: "₹20",
+          parkingFee: "₹40",
+          notes: "Free tea tasting"
+        },
+        {
+          title: "Rose Garden",
+          entryFee: "₹30",
+          parkingFee: "₹50",
+          notes: "Thousands of roses"
+        },
+        {
+          title: "Pykara Falls",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Boat house: ₹100"
+        },
+        {
+          title: "Nilgiri Mountain Railway",
+          entryFee: "₹150-500",
+          parkingFee: "N/A",
+          notes: "Toy train ticket"
+        },
+        {
+          title: "Avalanche Lake",
+          entryFee: "₹50",
+          parkingFee: "₹40",
+          notes: "Permit required"
+        }
+      ]
+    },
 
     sections: {
 
@@ -1051,6 +1421,56 @@ const places = [
     name: "Yercaud",
     heroImage: "assets/images/yercaud/yercaud.jpg",
     description: "Nestled in the Shevaroy Hills, Yercaud offers quiet orange groves, coffee plantations, and trekking trails away from the bustle.",
+    
+    fees: {
+      generalInfo: "Most attractions have minimal entry fees. Lake and gardens are main paid spots.",
+      parking: "Parking fees range from ₹30-40",
+      cards: [
+        {
+          title: "Yercaud Lake",
+          entryFee: "₹10",
+          parkingFee: "₹40",
+          notes: "Boating: ₹100-200"
+        },
+        {
+          title: "Anna Park",
+          entryFee: "₹15",
+          parkingFee: "₹30",
+          notes: "Japanese-style garden"
+        },
+        {
+          title: "Lady's Seat",
+          entryFee: "₹10",
+          parkingFee: "₹30",
+          notes: "Telescope: ₹10"
+        },
+        {
+          title: "Kiliyur Falls",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Trek required"
+        },
+        {
+          title: "Pagoda Point",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Sunset viewpoint"
+        },
+        {
+          title: "Botanical Garden",
+          entryFee: "₹20",
+          parkingFee: "₹40",
+          notes: "Kurinji flowers"
+        },
+        {
+          title: "Shevaroy Temple",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Cave temple"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         { title: "Yercaud Lake", image: "assets/images/yercaud/lake.jpg", text: "Enjoy a peaceful pedal boat ride on the emerald waters of Big Lake." },
@@ -1091,13 +1511,51 @@ const places = [
     name: "Madurai",
     heroImage: "assets/images/Madurai/Madurai_home.jpg",
     description: "Experience the soul of Tamil Nadu where history is etched in stone and spirituality fills the air.",
-        
+    
+    fees: {
+      generalInfo: "Temple entry is free. Palace and museum have entry fees.",
+      parking: "Parking fees range from ₹30-50",
+      cards: [
+        {
+          title: "Meenakshi Temple",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Special darshan: ₹100 (Under Renovation)"
+        },
+        {
+          title: "Thirumalai Nayakkar Palace",
+          entryFee: "₹50",
+          parkingFee: "₹30",
+          notes: "Camera: ₹50, Video: ₹200"
+        },
+        {
+          title: "Gandhi Memorial Museum",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Donation welcome"
+        },
+        {
+          title: "Teppakulam Temple Tank",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Float festival in Jan-Feb"
+        },
+        {
+          title: "Alagar Kovil",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Hill temple"
+        }
+      ]
+    },    
+
     sections: {
       morning: [
         {
           title: "Meenakshi Temple",
           image: "assets/images/Madurai/Madurai.jpg",
-          text: "Marvel at the towering gopurams adorned with thousands of colorful deities."
+          text: "Marvel at the towering gopurams adorned with thousands of colorful deities.",
+          status: "under-renovation"
         },
         {
           title: "Thirumalai Nayakkar Palace",
@@ -1220,108 +1678,164 @@ const places = [
   {
     id: "kanchipuram",
     name: "Kanchipuram",
-    heroImage: "Assets/Images/kanchipuram.jpg",
+    heroImage: "Assets/Images/Kanchipuram/kanchipuram.jpg",
     description: "A sacred landscape where the rhythmic clack of silk looms meets the eternal echoes of Vedic chants.",
+    
+    fees: {
+      generalInfo: "Most temples are free. ASI monuments have minimal fees.",
+      parking: "Parking fees range from ₹30-40",
+      cards: [
+        {
+          title: "Ekambareswarar Temple",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "3500-year-old mango tree"
+        },
+        {
+          title: "Kamakshi Amman Temple",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Shakti peetham"
+        },
+        {
+          title: "Kailasanathar Temple",
+          entryFee: "₹10",
+          parkingFee: "₹30",
+          notes: "ASI monument"
+        },
+        {
+          title: "Varadharaja Perumal",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "100-pillar hall"
+        },
+        {
+          title: "Vedanthangal Sanctuary",
+          entryFee: "₹25",
+          parkingFee: "₹50",
+          notes: "Camera: ₹25"
+        },
+        {
+          title: "Alamparai Fort",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Mughal-era ruins"
+        },
+        {
+          title: "Silk Weaving Centers",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Watch saree weaving"
+        },
+        {
+          title: "Kanchi Kudil",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Heritage museum"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         {
           title: "🕉️ Ekambareswarar Temple",
-          image: "Images/ekambareswarar.jpg",
+          image: "Assets/Images/Kanchipuram/Ekambareswarar Temple.jfif",
           text: "Visit the Earth element temple and the 3,500-year-old mango tree in the morning light."
         },
         {
           title: "🛕 Kamakshi Amman",
-          image: "Images/kamakshi-amman.jpg",
+          image: "Assets/Images/Kanchipuram/Kamakshi Amman Temple.webp",
           text: "Seek blessings at the ultimate seat of Shakti in one of the city's most spiritually vibrant shrines."
         },
         {
           title: "📜 Vaikunda Perumal",
-          image: "Images/vaikunda-perumal.jpg",
+          image: "Assets/Images/Kanchipuram/Vaikunda Perumal.jpg",
           text: "Explore the 8th-century Pallava inscriptions and unique three-tiered sanctum at dawn."
         }
       ],
       afternoon: [
         {
           title: "🧵 Silk Weaving Centers",
-          image: "Images/silk-weaving.jpg",
+          image: "Assets/Images/Kanchipuram/Silk Weaving.jfif",
           text: "Watch master weavers transform pure mulberry silk and zari into world-famous Kanchipuram sarees."
         },
         {
           title: "🎨 Kanchi Kudil",
-          image: "Images/kanchi-kudil.jpg",
+          image: "Assets/Images/Kanchipuram/Kanchi Kudil.jpg",
           text: "Step back in time at this heritage house showcasing the traditional lifestyle of old Kanchipuram."
         }
       ],
       evening: [
         {
           title: "🌆 Kailasanathar Temple",
-          image: "Images/kailasanathar-sunset.jpg",
+          image: "Assets/Images/Kanchipuram/Kailasanathar Temple.jfif",
           text: "Experience the sunset glow against the oldest sandstone structure in the city."
         },
         {
           title: "🕯️ Temple Corridors",
-          image: "Images/evening-aarati.jpg",
+          image: "Assets/Images/Kanchipuram/Temple corridor.avif",
           text: "Walk through the illuminated pillars as the evening bells signal the start of night rituals."
         }
       ],
       hidden: [
         {
           title: "🐘 Varadharaja Perumal",
-          image: "Images/varadharaja-perumal.jpg",
+          image: "Assets/Images/Kanchipuram/Sri Varadharaja Perumal.jfif",
           text: "Marvel at the 100-pillar hall and the intricately carved monolithic chain of this Vishnu temple."
         },
         {
           title: "🐦 Vedanthangal Sanctuary",
-          image: "Images/vedanthangal.jpg",
+          image: "Assets/Images/Kanchipuram/Vedanthangal Lake.jfif",
           text: "A short drive to one of India's oldest bird sanctuaries, home to thousands of migratory species."
         },
         {
           title: "🛡️ Alamparai Fort",
-          image: "Images/alamparai-fort.jpg",
+          image: "Assets/Images/Kanchipuram/Alamparai fort.avif",
           text: "The ruins of a Mughal-era fort overlooking the sea, offering a quiet escape into history."
         },
         {
           title: "🏺 Devarajaswamy Temple",
-          image: "Images/devarajaswamy.jpg",
+          image: "Assets/Images/Kanchipuram/Devarajaswami Temple.jfif",
           text: "Explore the massive temple tank and the legendary Athi Varadar wooden idol kept underwater."
         }
       ],
       stay: [
         {
           title: "🏨 Regency Kanchipuram",
-          image: "Images/grt-regency.jpg",
+          image: "Assets/Images/Kanchipuram/Regency Hotel.jfif",
           text: "Modern luxury situated in the heart of the temple district."
         },
         {
           title: "🏡 Babylon Resort",
-          image: "Images/babylon-resort.jpg",
+          image: "Assets/Images/Kanchipuram/Babylon.jpg",
           text: "A serene getaway offering peaceful surroundings away from the city bustle."
         }
       ],
       food: [
         {
           title: "🍲 Kanchipuram Idli",
-          image: "Images/kanchi-idli.jpg",
+          image: "Assets/Images/Kanchipuram/Kanchipuram Idli.jpg",
           text: "Distinctly spiced with pepper, ginger, and cumin, steamed in dried Mantharai leaves."
         },
         {
           title: "🍚 Temple Pongal",
-          image: "Images/sakkarai-pongal.jpg",
+          image: "Assets/Images/Kanchipuram/Pongal.jfif",
           text: "Rich, jaggery-infused sweet rice prepared in traditional brass pots."
         },
         {
           title: "👗 Handwoven Silks",
-          image: "Images/silk-saree.jpg",
+          image: "Assets/Images/Kanchipuram/Silk Saree.jfif",
           text: "Invest in a legendary Kanchipuram silk saree with pure gold zari work."
         },
         {
           title: "🛍️ Silk Accessories",
-          image: "Images/kanchi-accessories.jpg",
+          image: "Assets/Images/Kanchipuram/Ekambareswarar Temple.jfif",
           text: "Traditional silk clutches and scarves that carry the city's weaving heritage."
         },
         {
             title: "🪘 Brass Artifacts",
-            image: "Images/brass-idols.jpg",
+            image: "Assets/Images/Kanchipuram/Brass artifact.jfif",
             text: "Exquisitely crafted temple lamps and divine idols from local metal smiths."
         }
       ]
@@ -1332,6 +1846,50 @@ const places = [
     name: "Tharangambadi",
     heroImage: "assets/images/tharangambadi/tranquebar.jpg",
     description: "A former Danish colony known as Tranquebar, where history meets the Coromandel Coast in a quiet, breezy embrace.",
+
+    fees: {
+      generalInfo: "Danish fort has nominal fee. Churches are free.",
+      parking: "Parking fees range from ₹20-30",
+      cards: [
+        {
+          title: "Dansborg Fort",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Museum inside"
+        },
+        {
+          title: "New Jerusalem Church",
+          entryFee: "Free",
+          parkingFee: "₹20",
+          notes: "18th-century church"
+        },
+        {
+          title: "Old Lighthouse",
+          entryFee: "₹10",
+          parkingFee: "Included",
+          notes: "Climb fee"
+        },
+        {
+          title: "Maritime Museum",
+          entryFee: "₹15",
+          parkingFee: "₹30",
+          notes: "Danish artifacts"
+        },
+        {
+          title: "Ziegenbalg House",
+          entryFee: "Free",
+          parkingFee: "₹20",
+          notes: "First printing press"
+        },
+        {
+          title: "Danish Cemetery",
+          entryFee: "Free",
+          parkingFee: "₹20",
+          notes: "1700s graves"
+        }
+      ]
+    },
+
     sections: {
       morning: [
         { title: "Dansborg Fort", image: "assets/images/tharangambadi/fort.jpg", text: "Explore the second-largest Danish fort ever built." },
@@ -1370,6 +1928,62 @@ const places = [
     name: "Kanyakumari",
     heroImage: "Assets/Images/kanyakumari.jpg",
     description: "The southernmost tip of India where the Arabian Sea, Bay of Bengal, and Indian Ocean merge into a single horizon.",
+    
+    fees: {
+      generalInfo: "Temple free. Ferry to rock memorial has combined fee.",
+      parking: "Parking fees range from ₹30-50",
+      cards: [
+        {
+          title: "Triveni Sangam",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Three seas meeting point"
+        },
+        {
+          title: "Kumari Amman Temple",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Ancient seaside temple"
+        },
+        {
+          title: "Vivekananda Rock",
+          entryFee: "₹50",
+          parkingFee: "₹50",
+          notes: "Ferry: ₹50 extra"
+        },
+        {
+          title: "Thiruvalluvar Statue",
+          entryFee: "₹30",
+          parkingFee: "Included",
+          notes: "Combined ferry: ₹80"
+        },
+        {
+          title: "Padmanabhapuram Palace",
+          entryFee: "₹70",
+          parkingFee: "₹50",
+          notes: "Camera: ₹50"
+        },
+        {
+          title: "Mathur Aqueduct",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Asia's tallest trough bridge"
+        },
+        {
+          title: "Gandhi Memorial",
+          entryFee: "₹5",
+          parkingFee: "₹30",
+          notes: "Sun rays on Oct 2"
+        },
+        {
+          title: "Vattakottai Fort",
+          entryFee: "₹10",
+          parkingFee: "₹30",
+          notes: "18th-century fort"
+        }
+      ]
+    },
+
     sections: {
       morning: [
         {
@@ -1485,6 +2099,56 @@ const places = [
     name: "Karaikudi",
     heroImage: "assets/images/karaikudi/chettinad.jpg",
     description: "Grand mansions, intricate wood carvings, and world-famous spicy cuisine define this cultural capital.",
+    
+    fees: {
+      generalInfo: "Mansion visits have fees. Museums and factories are nominal.",
+      parking: "Parking fees range from ₹30-40",
+      cards: [
+        {
+          title: "Chettinad Mansions",
+          entryFee: "₹50-200",
+          parkingFee: "₹40",
+          notes: "Depends on mansion"
+        },
+        {
+          title: "Athangudi Tile Factory",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Watch tile making"
+        },
+        {
+          title: "Kandukathan Palace",
+          entryFee: "₹30",
+          parkingFee: "₹40",
+          notes: "Architectural grandeur"
+        },
+        {
+          title: "Chettinad Museum",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Chettiar history"
+        },
+        {
+          title: "Pillayarpatti Temple",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Rock-cut Ganesha"
+        },
+        {
+          title: "Thirumayam Fort",
+          entryFee: "₹10",
+          parkingFee: "₹30",
+          notes: "17th-century fort"
+        },
+        {
+          title: "Sittanavasal Caves",
+          entryFee: "₹10",
+          parkingFee: "₹30",
+          notes: "Jain frescoes"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         { title: "Chettinad Mansions", image: "assets/images/karaikudi/mansion.jpg", text: "Tour the palatial homes featuring Burmese teak and Italian marble." },
@@ -1527,6 +2191,56 @@ const places = [
     name: "Mahabalipuram",
     heroImage: "Assets/Images/mahabalipuram.jpg",
     description: "A timeless gallery of rock-cut marvels and monolithic whispers carved along the shores of the Coromandel Coast.",
+    
+    fees: {
+      generalInfo: "ASI monuments have combined ticket. Beach is free.",
+      parking: "Parking fees range from ₹40-50",
+      cards: [
+        {
+          title: "Shore Temple",
+          entryFee: "₹40",
+          parkingFee: "₹50",
+          notes: "ASI monument"
+        },
+        {
+          title: "Five Rathas",
+          entryFee: "₹40",
+          parkingFee: "Included",
+          notes: "Same ticket as Shore Temple"
+        },
+        {
+          title: "Arjuna's Penance",
+          entryFee: "Included",
+          parkingFee: "Included",
+          notes: "Part of monument complex"
+        },
+        {
+          title: "Krishna's Butterball",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Natural boulder"
+        },
+        {
+          title: "Old Lighthouse",
+          entryFee: "₹20",
+          parkingFee: "₹40",
+          notes: "Rock-cut lighthouse"
+        },
+        {
+          title: "Tiger Cave",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Open-air shrine"
+        },
+        {
+          title: "Seashell Museum",
+          entryFee: "₹50",
+          parkingFee: "₹40",
+          notes: "Kids: ₹30"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         {
@@ -1642,6 +2356,50 @@ const places = [
     name: "Nagapattinam",
     heroImage: "assets/images/nagapattinam/coast.jpg",
     description: "A historic port town that serves as a gateway to spiritual centers and pristine coastal escapes.",
+    
+    fees: {
+      generalInfo: "Places of worship are free. Sanctuary has nominal fee.",
+      parking: "Parking fees range from ₹30-50",
+      cards: [
+        {
+          title: "Velankanni Basilica",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Lourdes of the East"
+        },
+        {
+          title: "Nagore Dargah",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "500-year-old shrine"
+        },
+        {
+          title: "Point Calimere",
+          entryFee: "₹30",
+          parkingFee: "₹50",
+          notes: "Bird sanctuary"
+        },
+        {
+          title: "Nagapattinam Beach",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Quiet beach"
+        },
+        {
+          title: "Nagapattinam Museum",
+          entryFee: "₹15",
+          parkingFee: "₹30",
+          notes: "Chola bronzes"
+        },
+        {
+          title: "Poompuhar Beach",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Ancient port town"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         { title: "Velankanni Basilica", image: "assets/images/nagapattinam/church.jpg", text: "Visit the renowned 'Lourdes of the East' shrine nearby." },
@@ -1685,111 +2443,161 @@ const places = [
     name: "Pondicherry",
     heroImage: "Assets/Images/pondicherry.jpg",
     description: "Where French elegance meets Indian soul amidst mustard-yellow walls and bougainvillea-shaded streets.",
+    
+    fees: {
+      generalInfo: "Ashram and churches free. Auroville visitor center has fee.",
+      parking: "Parking fees range from ₹40-50",
+      cards: [
+        {
+          title: "Matrimandir",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Requires appointment"
+        },
+        {
+          title: "Auroville",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Visitor center: ₹50"
+        },
+        {
+          title: "Sri Aurobindo Ashram",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Peaceful atmosphere"
+        },
+        {
+          title: "Pondicherry Museum",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Camera: ₹50"
+        },
+        {
+          title: "Rock Beach",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Promenade walk"
+        },
+        {
+          title: "Chunnambar Boat House",
+          entryFee: "₹20",
+          parkingFee: "₹40",
+          notes: "Paradise Beach ferry: ₹150"
+        },
+        {
+          title: "Immaculate Conception",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "300-year-old cathedral"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         {
           title: "🧘 Matrimandir",
-          image: "Images/auroville-matrimandir.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Begin with a silent meditation at the golden sphere of the 'City of Dawn' in Auroville."
         },
         {
           title: "🥖 White Town Walk",
-          image: "Images/french-bakery.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Enjoy fresh croissants and café au lait in the charming cobbled streets of the French Quarter."
         },
         {
           title: "🌊 Rock Beach",
-          image: "Images/promenade-morning.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "A morning stroll along the 1.5km promenade as the spray of the Bay of Bengal hits the rocks."
         }
       ],
       afternoon: [
         {
           title: "🛶 Chunnambar Boat House",
-          image: "Images/chunnambar.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Sail through the backwaters to reach the pristine white sands of Paradise Beach."
         },
         {
           title: "🏛️ Pondicherry Museum",
-          image: "Images/pondy-museum.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Explore rare bronze statues and artifacts from the Arikamedu Roman settlement."
         }
       ],
       evening: [
         {
           title: "💡 Goubert Avenue",
-          image: "Images/french-quarter-night.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Experience the transformation of the promenade into a vibrant, vehicle-free walking zone."
         },
         {
           title: "🕯️ Sri Aurobindo Ashram",
-          image: "Images/auro-ashram.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Find quietude and spiritual reflection at the floral-adorned Samadhi of the Mother and Sri Aurobindo."
         }
       ],
       hidden: [
         {
           title: "⛪ Immaculate Conception",
-          image: "Images/immaculate-conception.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "A stunning 300-year-old cathedral featuring majestic blue and white Baroque architecture."
         },
         {
           title: "🐘 Manakula Vinayagar",
-          image: "Images/manakula-vinayagar.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "An ancient Ganesha temple famous for its golden chariot and vibrant ceiling paintings."
         },
         {
           title: "🗼 The New Lighthouse",
-          image: "Images/light-house.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Get a bird's-eye view of the coastline and the grid-patterned streets of the town."
         },
         {
           title: "🎨 Bharathi Park",
-          image: "Images/art-gallery.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Visit the 'Aayi Mandapam', a brilliant white monument at the heart of the Government Park."
         }
       ],
       stay: [
         {
           title: "🏨 Palais de Mahe",
-          image: "Images/palais-de-mahe.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "A French-style boutique hotel with grand arches and yellow ochre terraces."
         },
         {
           title: "🏡 Radisson Resort",
-          image: "Images/radisson-pondy.jpg",
+          image: "Assets/Images/Pondicherry/pizza.jfif",
           text: "Luxury villas by the sea with direct access to private beach stretches."
         }
       ],
       food: [
         {
           title: "🍕 Wood-Fired Pizza",
-          image: "Images/wood-fired-pizza.jpg",
+          image: "Assets/Images/Pondicherry/Pizza.jfif",
           text: "Authentic Italian pizzas crafted by the global residents of Auroville."
         },
         {
           title: "🥘 Pondy Creole",
-          image: "Images/creole-cuisine.jpg",
+          image: "Assets/Images/Pondicherry/Creole.webp",
           text: "A unique fusion of French culinary techniques with South Indian spices."
         },
         {
           title: "🍦 Artisanal Gelato",
-          image: "Images/gelato.jpg",
+          image: "Assets/Images/Pondicherry/Gelato.jpg",
           text: "Refreshing, hand-churned fruit gelatos perfect for the tropical afternoon."
         },
         {
           title: "🕯️ Auroville Candles",
-          image: "Images/handmade-candles.jpg",
+          image: "Assets/Images/Pondicherry/Candle.jpg",
           text: "Exquisite, scented, handmade candles crafted by local Auroville artisans."
         },
         {
           title: "📝 Handmade Paper",
-          image: "Images/handmade-paper.jpg",
+          image: "Assets/Images/Pondicherry/Handmade paper.jfif",
           text: "Premium quality eco-friendly stationery from the Sri Aurobindo Paper Factory."
         },
         {
           title: "👗 Boutique Apparel",
-          image: "Images/pondy-boutique.jpg",
+          image: "Assets/Images/Pondicherry/Boutique.webp",
           text: "Designer linens, leather goods, and high-fashion cotton found in the French Quarter."
         }
       ]
@@ -1800,6 +2608,38 @@ const places = [
     name: "Chidambaram",
     heroImage: "assets/images/chidambaram/temple.jpg",
     description: "The home of Lord Nataraja—where spirituality, classical dance, and ancient architecture converge.",
+    
+    fees: {
+      generalInfo: "Temple free. Mangrove boat ride has separate fee.",
+      parking: "Parking fees range from ₹30-50",
+      cards: [
+        {
+          title: "Nataraja Temple",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Cosmic dancer shrine"
+        },
+        {
+          title: "Pichavaram Mangroves",
+          entryFee: "₹50",
+          parkingFee: "₹50",
+          notes: "Boat ride: ₹500-1500"
+        },
+        {
+          title: "Thillai Kali Amman",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Guardian goddess"
+        },
+        {
+          title: "Vaitheeswaran Koil",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Nadi astrology"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         { title: "Nataraja Temple", image: "assets/images/chidambaram/nataraja.jpg", text: "The temple where Shiva is worshipped in his form as the Cosmic Dancer." },
@@ -1842,6 +2682,56 @@ const places = [
     name: "Rameswaram",
     heroImage: "Assets/Images/rameswaram.jpg",
     description: "The island of divine legends, majestic corridors, and the bridge that connects the soul to the sea.",
+    
+    fees: {
+      generalInfo: "Temple free. Memorials have nominal fees.",
+      parking: "Parking fees range from ₹30-50",
+      cards: [
+        {
+          title: "Ramanathaswamy Temple",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Special darshan: ₹100"
+        },
+        {
+          title: "22 Holy Theerthams",
+          entryFee: "Free",
+          parkingFee: "Included",
+          notes: "Rituals: ₹50-300"
+        },
+        {
+          title: "Agni Theertham",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Sacred bath"
+        },
+        {
+          title: "Pamban Bridge",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Under dismantling"
+        },
+        {
+          title: "Kalam Memorial",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Students: ₹10"
+        },
+        {
+          title: "Dhanushkodi Tip",
+          entryFee: "Free",
+          parkingFee: "₹50",
+          notes: "Jeep safari: ₹500"
+        },
+        {
+          title: "Gandhamadana Parvatham",
+          entryFee: "₹5",
+          parkingFee: "₹30",
+          notes: "Viewpoint"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         {
@@ -1953,6 +2843,56 @@ const places = [
     name: "Yelagiri",
     heroImage: "Assets/Images/yelagiri.jpg",
     description: "Escape to the clusters of green hills, winding hair-pin bends, and the tranquil pace of life in the clouds.",
+    
+    fees: {
+      generalInfo: "Lake and park have minimal fees. Trekking is free.",
+      parking: "Parking fees range from ₹30-40",
+      cards: [
+        {
+          title: "Punganur Lake",
+          entryFee: "₹10",
+          parkingFee: "₹40",
+          notes: "Boating: ₹100-200"
+        },
+        {
+          title: "Nature Park",
+          entryFee: "₹20",
+          parkingFee: "₹30",
+          notes: "Musical fountain"
+        },
+        {
+          title: "Swamimalai Trek",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Highest point"
+        },
+        {
+          title: "Jalagamparai Falls",
+          entryFee: "Free",
+          parkingFee: "₹40",
+          notes: "Seasonal"
+        },
+        {
+          title: "Vainu Bappu Observatory",
+          entryFee: "Free",
+          parkingFee: "₹30",
+          notes: "Prior permission needed"
+        },
+        {
+          title: "Adventure Camp",
+          entryFee: "₹200-500",
+          parkingFee: "Included",
+          notes: "Activity based"
+        },
+        {
+          title: "Fundera Bird Park",
+          entryFee: "₹30",
+          parkingFee: "₹30",
+          notes: "Walk-in aviary"
+        }
+      ]
+    },
+    
     sections: {
       morning: [
         {
@@ -2073,16 +3013,34 @@ function generateCards(sectionId, items) {
     if (!container || !items) return;
     
     const cardsHtml = items.map(item => {
-        // Check if item has under-construction status
+        // Check for different status types
         const isUnderConstruction = item.status === "under-construction";
-        const statusClass = isUnderConstruction ? "under-construction" : "";
-        const statusBadge = isUnderConstruction ? 
-            '<div class="status-badge">🚧 Under Construction</div>' : '';
+        const isUnderRenovation = item.status === "under-renovation";
+        
+        // Determine CSS class and badge text/color
+        let statusClass = "";
+        let statusBadge = "";
+        let badgeText = "";
+        let badgeExtraClass = "";
+        
+        if (isUnderConstruction) {
+            statusClass = "under-construction";
+            badgeText = "🚧 Under Construction";
+            badgeExtraClass = "construction";
+        } else if (isUnderRenovation) {
+            statusClass = "under-renovation";
+            badgeText = "🔧 Under Renovation";
+            badgeExtraClass = "renovation";
+        }
+        
+        if (badgeText) {
+            statusBadge = `<div class="status-badge ${badgeExtraClass}">${badgeText}</div>`;
+        }
         
         return `
             <div class="card ${statusClass}">
                 ${statusBadge}
-                <img src="${item.image}" alt="${item.title}" onerror="this.src='assets/images/fallback.jpg'">
+                <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.src='assets/images/fallback.jpg'">
                 <h3>${item.title}</h3>
                 <p>${item.text}</p>
             </div>
@@ -2090,6 +3048,46 @@ function generateCards(sectionId, items) {
     }).join('');
     
     container.innerHTML = cardsHtml;
+}
+
+// ===============================
+// Generate Fees Cards
+// ===============================
+function generateFees(feesData) {
+    if (!feesData) return;
+    
+    const generalContainer = document.getElementById("fees-general");
+    const feesContainer = document.getElementById("fees-grid");
+    
+    if (!feesContainer) return;
+    
+    // Set general info
+    if (generalContainer && feesData.generalInfo) {
+        generalContainer.innerHTML = `
+            <p>📌 ${feesData.generalInfo}</p>
+            <p>🅿️ ${feesData.parking || "Parking fees apply at major attractions"}</p>
+        `;
+    }
+    
+    // Generate fee cards
+    if (feesData.cards && feesData.cards.length > 0) {
+        const feesHtml = feesData.cards.map(card => `
+            <div class="fees-card">
+                <h3>${card.title}</h3>
+                <div class="fee-row">
+                    <span class="fee-label">🎟️ Entry Fee:</span>
+                    <span class="fee-value">${card.entryFee}</span>
+                </div>
+                <div class="fee-row">
+                    <span class="fee-label">🅿️ Parking Fee:</span>
+                    <span class="fee-value">${card.parkingFee || "Varies"}</span>
+                </div>
+                ${card.notes ? `<div class="fee-notes">💡 ${card.notes}</div>` : ''}
+            </div>
+        `).join('');
+        
+        feesContainer.innerHTML = feesHtml;
+    }
 }
 
 // ===============================
@@ -2106,6 +3104,16 @@ function loadPlace() {
 
   if (!selectedPlace) return;
 
+  // Check if this place has any under-renovation items
+  const hasRenovation = checkForRenovation(selectedPlace);
+  
+  if (hasRenovation) {
+    const notice = document.getElementById("renovation-notice");
+    if (notice) {
+      notice.style.display = "block";
+    }
+  }
+
   document.getElementById("place-title").textContent = selectedPlace.name;
   document.getElementById("place-description").textContent =
     selectedPlace.description;
@@ -2121,6 +3129,21 @@ function loadPlace() {
   generateCards("hidden-section", selectedPlace.sections.hidden);
   generateCards("stay-section", selectedPlace.sections.stay);
   generateCards("food-section", selectedPlace.sections.food);
+
+  generateFees(selectedPlace.fees);
+}
+
+// Helper function to check if any item has under-renovation status
+function checkForRenovation(place) {
+  const sections = ['morning', 'afternoon', 'evening', 'hidden', 'stay', 'food'];
+  
+  for (let section of sections) {
+    const items = place.sections[section];
+    if (items && items.some(item => item.status === "under-renovation")) {
+      return true;
+    }
+  }
+  return false;
 }
 
 // ===============================

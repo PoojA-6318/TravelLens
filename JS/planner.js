@@ -49,6 +49,18 @@ function generateItinerary() {
 
   container.innerHTML = "";
 
+  // Helper function to get status badge HTML (MOVED OUTSIDE THE LOOP)
+  function getStatusBadge(item) {
+    if (!item) return '';
+    
+    if (item.status === "under-construction") {
+      return '<span class="planner-status-badge construction-badge">🚧 Under Construction</span>';
+    } else if (item.status === "under-renovation") {
+      return '<span class="planner-status-badge renovation-badge">🔧 Under Renovation</span>';
+    }
+    return '';
+  }
+
   for (let day = 1; day <= finalDays; day++) {
 
     const m = morning[day - 1];
@@ -61,33 +73,78 @@ function generateItinerary() {
 
         <div class="time-block">
           <h3>🌅 Morning</h3>
-          <img src="${m.image}" class="place-img">
-          <p>${m.title}</p>
+          ${getStatusBadge(m)}
+          <img src="${m ? m.image : ''}" class="place-img" onerror="this.src='assets/images/fallback.jpg'">
+          <p><strong>${m ? m.title : 'No activity planned'}</strong></p>
+          <p class="activity-text">${m ? m.text : 'Free time to explore'}</p>
         </div>
 
         <div class="time-block">
           <h3>☀️ Afternoon</h3>
-          <img src="${a.image}" class="place-img">
-          <p>${a.title}</p>
+          ${getStatusBadge(a)}
+          <img src="${a ? a.image : ''}" class="place-img" onerror="this.src='assets/images/fallback.jpg'">
+          <p><strong>${a ? a.title : 'No activity planned'}</strong></p>
+          <p class="activity-text">${a ? a.text : 'Free time to explore'}</p>
         </div>
 
         <div class="time-block">
           <h3>🌇 Evening</h3>
-          <img src="${e.image}" class="place-img">
-          <p>${e.title}</p>
+          ${getStatusBadge(e)}
+          <img src="${e ? e.image : ''}" class="place-img" onerror="this.src='assets/images/fallback.jpg'">
+          <p><strong>${e ? e.title : 'No activity planned'}</strong></p>
+          <p class="activity-text">${e ? e.text : 'Free time to explore'}</p>
         </div>
 
       </div>
     `;
   }
 
-  summary.innerHTML = `
+  // Check if any activity in the itinerary has a status
+  function hasAnyStatus() {
+    const allItems = [...morning, ...afternoon, ...evening];
+    return allItems.some(item => item && (item.status === "under-construction" || item.status === "under-renovation"));
+  }
+
+  // Add Trip Summary
+  let summaryHTML = `
     <div class="summary-card">
       <h2>💰 Trip Summary</h2>
       <p>📅 Days: ${finalDays}</p>
       <p>💸 Budget: ₹${finalDays * 1500}</p>
-    </div>
   `;
+
+  if (hasAnyStatus()) {
+    summaryHTML += `
+      <div class="status-warning">
+        <p>⚠️ <strong>Note:</strong> Some attractions in your itinerary are currently under construction or renovation. Please check their status before visiting.</p>
+      </div>
+    `;
+  }
+
+  summaryHTML += `</div>`;
+
+  // Add Fee Information if available
+  if (placeData.fees && placeData.fees.cards && placeData.fees.cards.length > 0) {
+    const avgEntryFee = placeData.fees.cards
+        .filter(f => f.entryFee !== "Free")
+        .reduce((sum, f) => {
+            const num = parseInt(f.entryFee);
+            return sum + (isNaN(num) ? 0 : num);
+        }, 0);
+  
+    const avgFee = Math.ceil(avgEntryFee / placeData.fees.cards.length);
+  
+    summaryHTML += `
+      <div class="summary-card" style="margin-top: 15px;">
+        <h2>💰 Estimated Entry Fees</h2>
+        <p>🎟️ Average entry fee: ${avgFee > 0 ? `₹${avgFee}` : "Free entry at most places"}</p>
+        <p>🅿️ Parking typically costs ₹30-50 per attraction</p>
+        <small>💡 Check individual attraction pages for exact fees</small>
+      </div>
+    `;
+  }
+
+  summary.innerHTML = summaryHTML;
 
   window.scrollTo({
     top: container.offsetTop,

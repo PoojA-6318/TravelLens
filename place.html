@@ -17,6 +17,18 @@
     </div>
 </div>
 
+<div id="renovation-notice" style="display: none;" class="renovation-notice">
+    <div class="notice-content">
+        <span class="notice-icon">🔧</span>
+        <div class="notice-text">
+            <strong>Renovation Notice:</strong> 
+            Some areas of this destination are currently under renovation. 
+            Certain attractions may have limited access.
+        </div>
+        <button class="notice-close" onclick="this.parentElement.parentElement.style.display='none'">✕</button>
+    </div>
+</div>
+
 <!-- MORNING -->
 <div class="section-box">
     <h2 class="section-title">🌄 Misty Morning Bliss</h2>
@@ -51,6 +63,15 @@
 <div class="section-box">
     <h2 class="section-title">Taste & Take Home</h2>
     <div class="card-grid" id="food-section"></div>
+</div>
+
+<!-- ENTRY FEES SECTION -->
+<div class="section-box" id="fees-section">
+    <h2 class="section-title">💰 Entry Fees & Practical Info</h2>
+    <div class="fees-info">
+        <div class="fees-general" id="fees-general"></div>
+        <div class="card-grid" id="fees-grid"></div>
+    </div>
 </div>
 
 <div class="wave-container">

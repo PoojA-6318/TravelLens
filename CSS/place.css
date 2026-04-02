@@ -193,3 +193,224 @@ body::before{
 .card.under-construction img {
     filter: brightness(0.48);
 }
+
+/* ========== ADD THESE RENOVATION STYLES TO place.css ========== */
+
+/* Renovation Badge - Different color than construction */
+.status-badge.renovation {
+    background: rgba(255, 153, 51, 0.95);
+    background: linear-gradient(135deg, #ff9933, #ff7700);
+    animation: gentlePulse 2s ease infinite;
+}
+
+.status-badge.renovation::before {
+    content: "🔧 ";
+}
+
+@keyframes gentlePulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 0.95;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Different overlay for renovation vs construction */
+.card.under-renovation img {
+    filter: brightness(0.85) sepia(0.1);
+}
+
+.card.under-renovation::after {
+    content: "🔨";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+    z-index: 10;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+/* Optional: Add tooltip on hover */
+.card.under-renovation:hover::before {
+    content: "Under Renovation - Some areas may be restricted";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.9);
+    color: #ff9933;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 20;
+    font-weight: normal;
+    letter-spacing: normal;
+    pointer-events: none;
+}
+
+/* For smaller screens - adjust tooltip */
+@media (max-width: 768px) {
+    .card.under-renovation:hover::before {
+        white-space: normal;
+        width: 90%;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
+
+/* Renovation Notice Banner */
+.renovation-notice {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    background: linear-gradient(135deg, rgba(255, 153, 51, 0.95), rgba(255, 119, 0, 0.95));
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.notice-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.notice-icon {
+    font-size: 2rem;
+}
+
+.notice-text {
+    flex: 1;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.notice-text strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.notice-close {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.notice-close:hover {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .notice-text {
+        font-size: 0.85rem;
+    }
+    
+    .notice-icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========== FEES SECTION STYLES ========== */
+.fees-info {
+    width: 100%;
+}
+
+.fees-general {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 0.95rem;
+    backdrop-filter: blur(5px);
+}
+
+.fees-general p {
+    margin: 5px 0;
+}
+
+.fees-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 18px;
+    transition: all 0.3s ease;
+}
+
+.fees-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.fees-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #ffd700;
+}
+
+.fee-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.fee-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.fee-value {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.fee-notes {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .fee-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+    
+    .fee-value {
+        font-size: 0.85rem;
+    }
+}

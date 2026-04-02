@@ -64,7 +64,7 @@ select, input {
   background: rgba(255,255,255,0.1);
   color: white;
   font-size: 15px;
-  box-sizing: border-box; /* 🔥 IMPORTANT FIX */
+  box-sizing: border-box;
 }
 
 select option{
@@ -95,6 +95,7 @@ button:hover {
   padding: 25px;
   margin: 30px 0;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  position: relative;
 }
 
 .day-title {
@@ -102,14 +103,23 @@ button:hover {
   margin-bottom: 20px;
 }
 
-/* Sections */
+/* Sections - COMBINED VERSION */
 .time-block {
-  margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+.time-block h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .place-img {
   width: 100%;
-  height: 180px;
+  height: 230px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -144,4 +154,99 @@ button:hover {
   padding: 20px;
   border-radius: 16px;
   margin-top: 30px;
+}
+
+/* ========== STATUS BADGES FOR PLANNER ========== */
+
+.planner-status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 8px 0;
+    animation: plannerPulse 1.5s ease infinite;
+}
+
+.construction-badge {
+    background: #ff6b35;
+    color: white;
+    box-shadow: 0 2px 5px rgba(255, 107, 53, 0.3);
+}
+
+.renovation-badge {
+    background: linear-gradient(135deg, #ff9933, #ff7700);
+    color: white;
+    box-shadow: 0 2px 5px rgba(255, 153, 51, 0.3);
+}
+
+@keyframes plannerPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.95;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Activity text styling */
+.activity-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* Warning in summary card */
+.status-warning {
+    margin-top: 15px;
+    padding: 12px;
+    background: #fff3e0;
+    border-left: 4px solid #ff9933;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.status-warning p {
+    margin: 0;
+    color: #cc7700;
+}
+
+.status-warning strong {
+    color: #ff6600;
+}
+
+/* Add a subtle border to day cards that have status items */
+.day-card:has(.planner-status-badge) {
+    border: 1px solid rgba(255, 153, 51, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 153, 51, 0.1);
+}
+
+/* Warning icon for days with issues */
+.day-card.has-issues::before {
+    content: "⚠️";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    background: #ff9933;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Fallback for browsers that don't support :has() selector */
+.day-card.border-highlight {
+    border: 1px solid rgba(255, 153, 51, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 153, 51, 0.1);
 }
