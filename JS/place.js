@@ -276,7 +276,7 @@ const places = [
   {
   id: "Tirunelveli",
   name: "Tirunelveli",
-  heroImage: "assets/images/tirunelveli/hero.jpg",
+  heroImage: "assets/images/tirunelveli/tirunelveli.jpg",
   description:
     "Land of flowing Tamirabarani, majestic temples, and legendary halwa — Tirunelveli blends spirituality, nature, and timeless Tamil culture.",
 
@@ -405,7 +405,7 @@ const places = [
   {
   id: "Thoothukudi",
   name: "Thoothukudi",
-  heroImage: "assets/images/thoothukudi/hero.jpg",
+  heroImage: "assets/images/thoothukudi/thoothukudi.jpg",
   description:
     "The Pearl City of Tamil Nadu — where the Bay of Bengal meets ancient ports, sacred churches, salt pans, and rich maritime history.",
 
@@ -534,7 +534,7 @@ const places = [
   {
   id: "Valparai",
   name: "Valparai",
-  heroImage: "assets/images/valparai/hero.jpg",
+  heroImage: "assets/images/valparai/valparai.jpg",
   description:
     "A mist-covered hill retreat in the Anamalai ranges — endless tea estates, winding ghat roads, wildlife sightings, and peaceful mountain air.",
 
