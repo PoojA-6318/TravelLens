@@ -201,7 +201,7 @@
 
 {
 "name": "Yelagiri",
-"image": "assets/images/yelagiri.jpg",
+"image": "assets/images/yelagiri/yelagiri.jpg",
 "themes": ["Adventure","Romantic"],
 "budget": {"low":1200,"mid":3500,"luxury":5000},
 "popularity": 7.5,

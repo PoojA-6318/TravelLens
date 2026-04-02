@@ -663,7 +663,7 @@ const places = [
   {
   id: "Srivilliputhur",
   name: "Srivilliputhur",
-  heroImage: "assets/images/srivilliputhur/hero.jpg",
+  heroImage: "assets/images/srivilliputhur/srivilliputhur.jpg",
   description:
     "Sacred town of Andal — towering temple gopurams, divine hymns, and serene temple streets echoing centuries of devotion.",
 
