@@ -178,7 +178,7 @@ const places = [
   {
   id: "Trichy",
   name: "Trichy",
-  heroImage: "assets/images/trichy/hero.jpg",
+  heroImage: "assets/images/trichy/trichy.jpg",
   description:
     "The Temple City of Tamil Nadu — where ancient rock forts rise above the plains, sacred rivers flow beside timeless shrines, and history echoes through every street.",
 
@@ -367,7 +367,7 @@ const places = [
   {
   id: "Tirunelveli",
   name: "Tirunelveli",
-  heroImage: "assets/images/tirunelveli/hero.jpg",
+  heroImage: "assets/images/tirunelveli/tirunelveli.jpg",
   description:
     "Land of flowing Tamirabarani, majestic temples, and legendary halwa — Tirunelveli blends spirituality, nature, and timeless Tamil culture.",
 
@@ -544,7 +544,7 @@ const places = [
   {
   id: "Thoothukudi",
   name: "Thoothukudi",
-  heroImage: "assets/images/thoothukudi/hero.jpg",
+  heroImage: "assets/images/thoothukudi/thoothukudi.jpg",
   description:
     "The Pearl City of Tamil Nadu — where the Bay of Bengal meets ancient ports, sacred churches, salt pans, and rich maritime history.",
   fees: {
@@ -721,7 +721,7 @@ const places = [
   {
   id: "Valparai",
   name: "Valparai",
-  heroImage: "assets/images/valparai/hero.jpg",
+  heroImage: "assets/images/valparai/valparai.jpg",
   description:
     "A mist-covered hill retreat in the Anamalai ranges — endless tea estates, winding ghat roads, wildlife sightings, and peaceful mountain air.",
 
@@ -904,7 +904,7 @@ const places = [
   {
   id: "Srivilliputhur",
   name: "Srivilliputhur",
-  heroImage: "assets/images/srivilliputhur/hero.jpg",
+  heroImage: "assets/images/srivilliputhur/srivilliputhur.jpg",
   description:
     "Sacred town of Andal — towering temple gopurams, divine hymns, and serene temple streets echoing centuries of devotion.",
 
@@ -1063,7 +1063,7 @@ const places = [
   {
   id: "Thanjavur",
   name: "Thanjavur",
-  heroImage: "assets/images/thanjavur/hero.jpg",
+  heroImage: "assets/images/thanjavur/thanjavur.jpg",
   description:
     "The cultural capital of Tamil Nadu — land of the magnificent Brihadeeswarar Temple, classical arts, bronze sculptures, and Chola grandeur.",
 
@@ -1509,7 +1509,7 @@ const places = [
   {
     id: "madurai",
     name: "Madurai",
-    heroImage: "assets/images/Madurai/Madurai_home.jpg",
+    heroImage: "assets/images/madurai.jpg",
     description: "Experience the soul of Tamil Nadu where history is etched in stone and spirituality fills the air.",
     
     fees: {
