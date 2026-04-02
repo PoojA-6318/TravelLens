@@ -12,6 +12,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
+
 // ===============================
 // TravelLens - Dynamic Place Page
 // ===============================
@@ -1530,107 +1531,107 @@ const places = [
       morning: [
         {
           title: "🌅 Shore Temple",
-          image: "Images/shore-temple-sunrise.jpg",
+          image: "Assets/Images/Mahabalipuram/Shore Temple.avif",
           text: "Witness the first rays of the sun hitting the granite spires of this 8th-century structural masterpiece."
         },
         {
           title: "🧘 Beach Meditation",
-          image: "Images/beach-meditation.jpg",
+          image: "Assets/Images/Mahabalipuram/Meditation.webp",
           text: "Find peace on the silver sands as the Bay of Bengal waves provide a rhythmic morning chant."
         },
         {
           title: "🐚 Kadumbadi Village",
-          image: "Images/fishing-village.jpg",
+          image: "Assets/Images/Mahabalipuram/Kadambadi.avif",
           text: "A quiet stroll through the local fishing hamlets to see the day's first catch coming in."
         }
       ],
       afternoon: [
         {
           title: "🎨 Arjuna's Penance",
-          image: "Images/arjun-penance.jpg",
+          image: "Assets/Images/Mahabalipuram/Arjuna Penance.avif",
           text: "Study the world’s largest open-air bas-relief, featuring life-sized elephants and celestial beings."
         },
         {
           title: "⛰️ Krishna’s Butterball",
-          image: "Images/krishna-butterball.jpg",
+          image: "Assets/Images/Mahabalipuram/Krishna Butterball.webp",
           text: "Marvel at the massive natural boulder balanced precariously on a smooth hill slope."
         }
       ],
       evening: [
         {
           title: "🏮 Old Lighthouse",
-          image: "Images/lighthouse-view.jpg",
+          image: "Assets/Images/Mahabalipuram/Lighthouse.avif",
           text: "Climb the historic rock-cut lighthouse for a golden hour view of the entire heritage town."
         },
         {
           title: "🌊 Promenade Walk",
-          image: "Images/shore-beach.jpg",
+          image: "Assets/Images/Mahabalipuram/Promenade Walk.jfif",
           text: "Feel the cool salt spray as you walk the shoreline while the stone temples glow in the twilight."
         }
       ],
       hidden: [
         {
           title: "🗿 Five Rathas",
-          image: "Images/five-rathas.jpg",
+          image: "Assets/Images/Mahabalipuram/Five Rathas.jpg",
           text: "Monolithic temples carved out of single pieces of granite, shaped like ceremonial chariots."
         },
         {
           title: "🏛️ Varaha Cave",
-          image: "Images/varaha-cave.jpg",
+          image: "Assets/Images/Mahabalipuram/Varaha Cave.jfif",
           text: "An exquisite rock-cut cave temple showcasing the peak of Pallava era craftsmanship."
         },
         {
           title: "🐅 Tiger Cave",
-          image: "Images/tiger-cave.jpg",
+          image: "Assets/Images/Mahabalipuram/Tiger Cave.jpg",
           text: "An open-air shrine by the sea featuring a ring of carved tiger heads."
         },
         {
           title: "🐚 Seashell Museum",
-          image: "Images/seashell-museum.jpg",
+          image: "Assets/Images/Mahabalipuram/Seashell Museum.jpg",
           text: "India’s largest seashell museum, housing thousands of rare and exotic oceanic specimens."
         }
       ],
       stay: [
         {
           title: "🏨 Radisson Blu",
-          image: "Images/radisson.jpg",
+          image: "Assets/Images/Mahabalipuram/Radisson Blu.jpg",
           text: "A sprawling luxury resort with one of Asia's largest meandering pools."
         },
         {
           title: "🏡 Chariot Beach Resort",
-          image: "Images/chariot-resort.jpg",
+          image: "Assets/Images/Mahabalipuram/Chariot Beach.jfif",
           text: "Eco-conscious luxury cabins nestled right where the sand meets the grass."
         }
       ],
       food: [
         {
           title: "🦞 Grilled Seafood",
-          image: "Images/grilled-prawns.jpg",
+          image: "Assets/Images/Mahabalipuram/Grilled Seafood.webp",
           text: "Succulent butter-garlic prawns and lobsters caught fresh from the coast."
         },
         {
           title: "🥞 Traveler's Crepes",
-          image: "Images/pancakes.jpg",
+          image: "Assets/Images/Mahabalipuram/Traveler's Crepes.jfif",
           text: "Famous beachfront cafe specials—banana and honey crepes loved by global tourists."
         },
         {
           title: "☕ Degree Coffee",
-          image: "Images/filter-coffee.jpg",
+          image: "Assets/Images/Mahabalipuram/Degree Coffee.webp",
           text: "Authentic, frothy South Indian filter coffee served in traditional brassware."
         },
         {
           title: "🐚 Sea-Glass Jewelry",
-          image: "Images/seashell-mirror.jpg",
+          image: "Assets/Images/Mahabalipuram/Sea Glass Jewelery.webp",
           text: "Hand-crafted necklaces and mirrors made from locally sourced sea glass and shells."
         },
         {
           title: "🎨 Batik Prints",
-          image: "Images/pattachitra.jpg",
+          image: "Assets/Images/Mahabalipuram/Batik Prints.jpg",
           text: "Vibrant, wax-dyed clothing and wall hangings found in the artisanal town markets."
         },
         {
           title: "🔨 Granite Sculptures",
-          image: "Images/stone-statue.jpg",
+          image: "Assets/Images/Mahabalipuram/Granite Sculptures.jpg",
           text: "Authentic miniature stone carvings made by descendants of the Pallava sculptors."
         }
       ]
@@ -1863,7 +1864,8 @@ const places = [
         {
           title: "🚂 Pamban Bridge",
           image: "Assets/Images/Rameswaram/Pamban Bridge.jpg",
-          text: "Marvel at the century-old engineering feat connecting the island to mainland India over the blue sea."
+          text: "Marvel at the century-old engineering feat connecting the island to mainland India over the blue sea.",
+          status: "under-construction"
         },
         {
           title: "🚀 Kalam Memorial",
@@ -1955,107 +1957,107 @@ const places = [
       morning: [
         {
           title: "☁️ Punganur Lake",
-          image: "Images/punganur-lake-morning.jpg",
+          image: "Assets/Images/Yelagiri/Punganur Lake.jpg",
           text: "Enjoy a peaceful morning walk or a pedal-boat ride on the mist-covered waters of this man-made lake."
         },
         {
           title: "🌸 Nature Park",
-          image: "Images/nature-park.jpg",
+          image: "Assets/Images/Yelagiri/Nature Park.jfif",
           text: "Stroll through the floral walkways and the musical fountain garden as the mountain air wakes you up."
         },
         {
           title: "🧘 Swamimalai Dawn",
-          image: "Images/swamimalai-dawn.jpg",
+          image: "Assets/Images/Yelagiri/Swaminamalai dawn.jfif",
           text: "Begin an early climb to the highest point for a meditative view of the valley below."
         }
       ],
       afternoon: [
         {
           title: "🧗 Adventure Camp",
-          image: "Images/adventure-camp.jpg",
+          image: "Assets/Images/Yelagiri/Adventure camp.jfif",
           text: "Test your nerves with paragliding, rock climbing, and zip-lining across the rugged terrain."
         },
         {
           title: "🥾 Swamimalai Trek",
-          image: "Images/trekking-trails.jpg",
+          image: "Assets/Images/Yelagiri/Swamimalai Trek.jpg",
           text: "Navigate the moderate forest trails to reach the peak for breathtaking panoramic vistas."
         }
       ],
       evening: [
         {
           title: "🔭 Vainu Bappu Observatory",
-          image: "Images/telescope-obs.jpg",
+          image: "Assets/Images/Yelagiri/Vainu Bappu Observatory.jfif",
           text: "Gaze at the stars from one of Asia's most famous astronomical centers as the night falls."
         },
         {
           title: "🌲 Sunset Point",
-          image: "Images/sunset-point.jpg",
+          image: "Assets/Images/Yelagiri/Sunset.jpg",
           text: "Watch the sky turn into a purple and orange canvas over the rolling green hills."
         }
       ],
       hidden: [
         {
           title: "🛕 Jalagandeeswarar Temple",
-          image: "Images/jalagandeeswarar.jpg",
+          image: "Assets/Images/Yelagiri/Jalagandeeswarar Temple.jfif",
           text: "An ancient temple steeped in local mythology, featuring unique stone carvings and spiritual calm."
         },
         {
           title: "💦 Jalagamparai Falls",
-          image: "Images/jalagamparai.jpg",
+          image: "Assets/Images/Yelagiri/Falls.jpg",
           text: "A seasonal waterfall where the Attaru river cascades down the rocky hill slopes into a natural pool."
         },
         {
           title: "🦜 Fundera Bird Park",
-          image: "Images/bird-park.jpg",
+          image: "Assets/Images/Yelagiri/Bird park.avif",
           text: "An exotic walk-in aviary home to hundreds of rare birds from across the globe in a natural setting."
         },
         {
           title: "⛪ Velavan Temple",
-          image: "Images/velavan-temple.jpg",
+          image: "Assets/Images/Yelagiri/Velavan temple.jfif",
           text: "A hilltop shrine dedicated to Lord Murugan with a massive statue of Gadothgacha nearby."
         }
       ],
       stay: [
         {
           title: "🏡 Marigold Ridge",
-          image: "Images/marigold-ridge.jpg",
+          image: "Assets/Images/Yelagiri/Marigold Ridge.jfif",
           text: "Stay at the edge of the ridge with balconies opening directly into the mountain mist."
         },
         {
           title: "🏕️ Sterling Yelagiri",
-          image: "Images/sterling-yelagiri.jpg",
+          image: "Assets/Images/Yelagiri/Sterling.jfif",
           text: "A blend of luxury and nature with expansive gardens and stunning mountain views."
         }
       ],
       food: [
         {
           title: "🍗 Bamboo Chicken",
-          image: "Images/bamboo-chicken.jpg",
+          image: "Assets/Images/Yelagiri/Bamboo Chicken.jpg",
           text: "Marinated chicken slow-cooked inside fresh bamboo stalks over a traditional wood fire."
         },
         {
           title: "🍯 Forest Honey",
-          image: "Images/mountain-honey.jpg",
+          image: "Assets/Images/Yelagiri/Forest Honey.jfif",
           text: "Raw, organic wild honey harvested by the local tribes, famous for its medicinal properties."
         },
         {
           title: "🍵 Spiced Mountain Tea",
-          image: "Images/herbal-tea.jpg",
+          image: "Assets/Images/Yelagiri/Spicy Tea.webp",
           text: "Hot, local tea infused with fresh ginger and spices to beat the hilltop chill."
         },
         {
           title: "🍯 Wild Honey Jars",
-          image: "Images/honey-jars.jpg",
+          image: "Assets/Images/Yelagiri/Wild Honey.jfif",
           text: "Pure, unadulterated honey jars—the most famous and healthy souvenir from these hills."
         },
         {
           title: "🏺 Mountain Jackfruit",
-          image: "Images/jackfruit.jpg",
+          image: "Assets/Images/Yelagiri/Jackfruit.webp",
           text: "Freshly harvested, sweet hill jackfruit and seasonal hill-grown guavas from local orchards."
         },
         {
           title: "🧶 Bamboo Crafts",
-          image: "Images/tribal-crafts.jpg",
+          image: "Assets/Images/Yelagiri/Bamboo craft.avif",
           text: "Traditional bamboo baskets and decorative items handmade by local highland craftsmen."
         }
       ]
@@ -2063,27 +2065,32 @@ const places = [
   }
 ];
 
-
 // ===============================
-// Card Generator
+// Generate Cards with Status Support
 // ===============================
 function generateCards(sectionId, items) {
-  const container = document.getElementById(sectionId);
-
-  items.forEach(item => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-
-    card.innerHTML = `
-      <img src="${item.image}">
-      <h3>${item.title}</h3>
-      <p>${item.text}</p>
-    `;
-
-    container.appendChild(card);
-  });
+    const container = document.getElementById(sectionId);
+    if (!container || !items) return;
+    
+    const cardsHtml = items.map(item => {
+        // Check if item has under-construction status
+        const isUnderConstruction = item.status === "under-construction";
+        const statusClass = isUnderConstruction ? "under-construction" : "";
+        const statusBadge = isUnderConstruction ? 
+            '<div class="status-badge">🚧 Under Construction</div>' : '';
+        
+        return `
+            <div class="card ${statusClass}">
+                ${statusBadge}
+                <img src="${item.image}" alt="${item.title}" onerror="this.src='assets/images/fallback.jpg'">
+                <h3>${item.title}</h3>
+                <p>${item.text}</p>
+            </div>
+        `;
+    }).join('');
+    
+    container.innerHTML = cardsHtml;
 }
-
 
 // ===============================
 // Load Place Based on URL
@@ -2116,6 +2123,6 @@ function loadPlace() {
   generateCards("food-section", selectedPlace.sections.food);
 }
 
-
 // ===============================
+
 document.addEventListener("DOMContentLoaded", loadPlace);

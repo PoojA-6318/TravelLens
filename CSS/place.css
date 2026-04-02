@@ -136,3 +136,60 @@ body::before{
     from{transform:translateX(0);}
     to{transform:translateX(-50%);}
 }
+
+/* Changes */
+/* Add to your place.css */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.status-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff6b35;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+    animation: pulse 1.5s ease infinite;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 107, 53, 0.9);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Optional: Add a subtle overlay for under construction items */
+.card.under-construction {
+    position: relative;
+}
+
+.card.under-construction::before {
+    content: "🚧";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.card.under-construction img {
+    filter: brightness(0.48);
+}
