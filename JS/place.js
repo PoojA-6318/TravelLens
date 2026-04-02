@@ -1509,7 +1509,7 @@ const places = [
   {
     id: "madurai",
     name: "Madurai",
-    heroImage: "assets/images/madurai.jpg",
+    heroImage: "assets/images/Madurai/madurai.jpg",
     description: "Experience the soul of Tamil Nadu where history is etched in stone and spirituality fills the air.",
     
     fees: {
@@ -1802,12 +1802,12 @@ const places = [
       ],
       stay: [
         {
-          title: "🏨 Regency Kanchipuram",
+          title: "🏨 Silk City Hotels",
           image: "Assets/Images/Kanchipuram/Regency Hotel.jfif",
           text: "Modern luxury situated in the heart of the temple district."
         },
         {
-          title: "🏡 Babylon Resort",
+          title: "🏡 Heritage Resorts",
           image: "Assets/Images/Kanchipuram/Babylon.jpg",
           text: "A serene getaway offering peaceful surroundings away from the city bustle."
         }
@@ -2307,14 +2307,14 @@ const places = [
       ],
       stay: [
         {
-          title: "🏨 Radisson Blu",
+          title: "🏨 Heritage Hotels",
           image: "Assets/Images/Mahabalipuram/Radisson Blu.jpg",
-          text: "A sprawling luxury resort with one of Asia's largest meandering pools."
+          text: "Luxury resorts with sprawling pools and temple views."
         },
         {
-          title: "🏡 Chariot Beach Resort",
+          title: "🏡  Beachside Cottages",
           image: "Assets/Images/Mahabalipuram/Chariot Beach.jfif",
-          text: "Eco-conscious luxury cabins nestled right where the sand meets the grass."
+          text: "Eco-conscious luxury cabins right where the sand meets the grass."
         }
       ],
       food: [
@@ -2680,7 +2680,7 @@ const places = [
   {
     id: "rameswaram",
     name: "Rameswaram",
-    heroImage: "Assets/Images/rameswaram.jpg",
+    heroImage: "Assets/Images/Rameswaram/rameswaram.jpg",
     description: "The island of divine legends, majestic corridors, and the bridge that connects the soul to the sea.",
     
     fees: {
@@ -2794,14 +2794,14 @@ const places = [
       ],
       stay: [
         {
-          title: "🏨 Daiwik Hotels",
+          title: "🏨 Spiritual Retreat Hotels",
           image: "Assets/Images/Rameswaram/Daiwik Hotels.jpg",
-          text: "A refined, themed stay designed specifically for the modern spiritual traveler."
+          text: "Themed stays designed for the modern spiritual traveler with temple views."
         },
         {
-          title: "🌊 Hyatt Place",
+          title: "🌊 Seaside Resorts",
           image: "Assets/Images/Rameswaram/Hyatt Place.avif",
-          text: "Luxury and contemporary comfort located just minutes from the sacred temple complex."
+          text: "Luxury coastal accommodations with contemporary comfort near the temple."
         }
       ],
       food: [
@@ -2841,7 +2841,7 @@ const places = [
   {
     id: "yelagiri",
     name: "Yelagiri",
-    heroImage: "Assets/Images/yelagiri.jpg",
+    heroImage: "Assets/Images/Yelagiri/yelagiri.jpg",
     description: "Escape to the clusters of green hills, winding hair-pin bends, and the tranquil pace of life in the clouds.",
     
     fees: {
@@ -2959,12 +2959,12 @@ const places = [
       ],
       stay: [
         {
-          title: "🏡 Marigold Ridge",
+          title: "🏡 Hilltop Resorts",
           image: "Assets/Images/Yelagiri/Marigold Ridge.jfif",
           text: "Stay at the edge of the ridge with balconies opening directly into the mountain mist."
         },
         {
-          title: "🏕️ Sterling Yelagiri",
+          title: "🏕️ Eco Resorts",
           image: "Assets/Images/Yelagiri/Sterling.jfif",
           text: "A blend of luxury and nature with expansive gardens and stunning mountain views."
         }
